@@ -3,7 +3,7 @@ String req_uri = request.getAttribute("javax.servlet.forward.request_uri") != nu
 String req_search = req_uri.replaceAll("index.dsp","").replaceAll("/"," ");
 %>
 <%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
-	<title>ZK - Exception <%=req_uri %></title>
+	<title>Rikulo - Exception <%=req_uri %></title>
 	<link rel="stylesheet" type="text/css" href="/resource/css/error.css" />
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
 		<div id="error">
@@ -15,7 +15,7 @@ String req_search = req_uri.replaceAll("index.dsp","").replaceAll("/"," ");
 						<input type="hidden" value="008321236477929467003:63kdpeqkkvw" name="cx">
 						<input type="hidden" value="FORID:11" name="cof">
 						<input id="q2" type="text" value="<%=req_search %>" size="30" name="q">
-						<input type="image" name="sa" src="/img/search-bt.gif" id="sa2">
+						<input type="image" name="sa" src="/img/search.png" id="sa2">
 			</form>
 			<ul>
 				<li>The purpose of this is to convey to you our sincere apologies
@@ -27,9 +27,9 @@ String req_search = req_uri.replaceAll("index.dsp","").replaceAll("/"," ");
 				<li>Check URL spelling and try again.</li>
 				<li>If this problem remains, please <a href="mailto:webmaster@potix.com">inform us</a>.</li>
 			</ul>
-			<div align="center"><a href="/">Back to ZK </a></div>
+			<div align="center"><a href="/">Back to Rikulo</a></div>
 		</div>
-		<jsp:include page="/WEB-INF/templates/page/template_footer_simple.jsp" />
+		<jsp:include page="/WEB-INF/templates/page/template_footer.jsp" />
 		<script type="text/javascript">
 			$(function(){
 				$("#q2").focus().select();

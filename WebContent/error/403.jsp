@@ -1,6 +1,6 @@
 <%@page import="com.potix.website.rikulo.*"%>
 <%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
-<title>ZK - Forbidden</title>
+<title>Rikulo - Forbidden</title>
 <link rel="stylesheet" type="text/css" href="/resource/css/error.css" />
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
 <div id="error">
@@ -14,8 +14,8 @@
     <li>If this problem remains, please <a href="mailto:webmaster@potix.com">inform us</a>.</li>
   </ul>
   <div align="center">
-    <a href="/">Back to ZK </a>
+    <a href="/">Back to Rikulo </a>
   </div>
 </div>
-<jsp:include page="/WEB-INF/templates/page/template_footer_simple.jsp" />
+<jsp:include page="/WEB-INF/templates/page/template_footer.jsp" />
 <%@include file="/WEB-INF/templates/page/template_eop.jsp"%>

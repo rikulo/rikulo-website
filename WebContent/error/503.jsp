@@ -1,5 +1,5 @@
 <%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
-	<title>ZK - Service Unavailable</title>
+	<title>Rikulo - Service Unavailable</title>
 	<link rel="stylesheet" type="text/css" href="/resource/css/error.css" />
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
 		<div id="error">
@@ -15,8 +15,8 @@
 				<li>Please visit us again in a few minutes. Thanks.</li>
 				<li>If this problem remains, please <a href="mailto:webmaster@potix.com">inform us</a>.</li>
 			</ul>
-			<div align="center"><a href="/">Back to ZK </a></div>
+			<div align="center"><a href="/">Back to Rikulo </a></div>
 		</div>
-		<jsp:include page="/WEB-INF/templates/page/template_footer_simple.jsp" />
+		<jsp:include page="/WEB-INF/templates/page/template_footer.jsp" />
 		<%@include file="/WEB-INF/templates/page/template_eop.jsp"%>
 	

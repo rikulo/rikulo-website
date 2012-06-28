@@ -3,8 +3,76 @@
 @import "sub/_template_header.less";
 @import "sub/_template_footer.less";
 
-
-
+#index-header {
+	height:95px;
+}
+/*
+ * Font, Line
+ */
+#template-inner h1 {
+	font-weight: bold;
+	font-size: 180%;
+	padding-bottom: 15px;
+    padding-top: 15px;
+}
+#template-inner h2 {
+	font-size: 160%;
+    font-weight: bold;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+#template-inner h3 {
+	font-size: 115%;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#template-inner h4 {
+	font-size: 105%;
+	font-weight: bold;
+    padding-bottom: 7x;
+    padding-top: 7px;
+}
+#template-inner th {
+	border-bottom: 1px solid gray;	
+}
+#template-inner a {
+	font-size: 14px;
+}
+#template-inner a:hover {
+	text-decoration: underline;
+}
+#template-inner p {
+	margin: 10px 0;
+}
+#template-inner li {
+    list-style: inherit;
+    *list-style-type: disc;
+}
+/* Print */
+@media print {
+  #template-inner {
+  	border: 0 none;
+  	box-shadow: none;
+  }
+  #template-inner .left-wrapper {
+      width: 840px !important;
+  }
+  #index-header,#footer,.no-print {
+  	display: none !important;
+  }
+}
+/*Ipad Only*/
+@media only screen and (device-width: 768px) {
+  #main_menu {    
+    margin-left: 70px;
+  }
+  #row-achievements .testimonial {
+    border: 0 none;
+    margin-top: -4px;
+  }
+  
+}
 
 
 
