@@ -1,0 +1,144 @@
+/*ZK WebStie Global*/
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande",sans-serif;
+	/*
+	background-color: #191919;
+	 */
+	background: url("/resource/img/template/broken_noise.png") repeat 0 0 scroll transparent;
+	height: 100%;
+}
+* {
+	-webkit-text-size-adjust: none; /* Disable min font size */
+	-webkit-appearance: none; /* For iPad */
+}
+a {
+	text-decoration: none;
+	font-size: 10px;
+	color: #008DB7;
+	img {
+		border: 0 none;
+	}
+}
+
+
+#index-header header {
+	display: none;
+}
+/*Container*/
+#zk-container {	
+	background: url("/resource/img/template/blizzard.png") repeat scroll 0 0 transparent;	
+	min-width: 1024px;
+}
+
+/***Header***/
+#index-header {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 24px;
+}
+/***Menu***/
+#sub_menu {
+	position: absolute;
+	top: -24px;
+	right: 0;
+	height: 24px;
+	
+	.menuitem a {
+		font-size: 12px;
+		color: #F2F2E1;
+	}
+	
+	.menuitem-sel .menuitem-right {
+		color: #e0c6a2;
+	}
+	.menuitem-hover a:hover {
+		color: #d49b50;
+	}
+}
+#main_menu {
+	float: right;
+	margin-top: 36px;
+	.menuitem a {
+		font-size: 16px;
+		color: #0d0d0d;
+	}
+	
+	.menuitem-sel .menuitem-right {
+		color: #d49b50;
+	}
+	.menuitem-hover a:hover {
+		color: #914503;
+	}
+}
+
+ul.menu {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	li {
+		float: left;
+		display: block;
+	}
+	
+	
+	.menuitem-right {
+		padding: 0 7px;
+	}
+	
+	.menuitem a {
+		font-family: 'Oswald', sans-serif;
+		text-transform:uppercase;
+	}
+}
+
+.ie678 { 
+	.menuitem-hover {
+		border:1px solid #ccc;
+		border-width: 1px 0 0 1px ;
+	}
+	.menuitem-hover .menuitem-right {
+		padding: 6px 10px 8px 11px;
+	}
+	ul.menu ul {
+		margin-left: -1px;
+		border:1px solid #ccc;
+		border-width: 0 1px 1px;
+	}
+}
+.ie67 {
+	ul.menu .menuitem-hover ul {
+		display: inline; /*IE 6,7 UL display BUG */
+	}
+	ul.menu ul div.sep {
+    	.ie67_min-height;
+		margin-bottom: 3px;	
+	} 
+}
+
+
+/***Logo***/
+#rikulo-logo {
+	background: url('/resource/img/template/rikulo_logo.png') no-repeat scroll 0 21px transparent;
+	width: 140px;
+	height: 85px;
+	float: left;
+	top: 0;
+	.logo-img {
+		display: none;
+	}
+	a {
+		width:140px;
+		height: 85px;
+		display: block;
+		text-indent: 150%;
+		overflow:hidden;
+		white-space: nowrap;
+	}
+	img {
+		border: none;
+	}
+}
+.ie6 #zk-logo {
+	background: url("/resource/img/template/fix/rikulo_logo.png") no-repeat scroll 0 0 transparent;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<project name="Zk Ptroot" default="build" basedir=".">
+
+	<!-- VARIABLES -->
+	<property name="src.dir" value="src"/>
+	<property name="web-content.dir" value="WebContent" />
+	<property name="web-inf.dir" value="${web-content.dir}/WEB-INF" />
+	<property name="deploy.dir" value="${web-inf.dir}/lib"/>
+	<property name="resource.dir" value="${web-content.dir}/resource"/>
+	<property name="lib.dir" value="${web-inf.dir}/lib" />
+	<property name="lib.ext.dir" value="lib-ext" />
+	<property name="classes.dir" value="${web-content.dir}/WEB-INF/classes"/>
+	<property name="archive.name" value="website.jar"/>
+	<property name="yui" value="${lib.ext.dir}/yuicompressor-2.4.6.jar" />
+
+	<path id="compile.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.ext.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!-- TARGETS -->
+	<target name="clean">
+		<delete dir="${deploy.dir}/website.jar" />
+		<delete>
+			<fileset dir="${resource.dir}/js/page">
+				<include name="*.js"/>
+			</fileset>
+		</delete>
+		<mkdir dir="${classes.dir}" />
+	</target>
+
+	<target name="compress" depends="clean">
+		<apply executable="java" parallel="false" verbose="true" dest="${resource.dir}/js/page">
+			<fileset dir="${resource.dir}/js/src">
+				<include name="*.src.js"/>
+			</fileset>
+			<arg line="-jar"/>
+			<arg path="${yui}"/>
+			<arg line="--charset utf-8"/>
+			<arg line="--type js"/>
+			<srcfile/>
+			<arg line="-o"/>
+			<mapper type="glob" from="*.src.js" to="*.js" />
+			<targetfile/>
+		</apply>		
+	</target>
+
+	<target name="compile" depends="clean">
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" 
+			includeAntRuntime="yes" classpathref="compile.classpath" 
+			encoding="UTF-8" target="1.6" source="1.6" />
+	</target>
+
+
+	<target name="build" depends="compress,compile">
+		<jar basedir="${classes.dir}" destfile="${deploy.dir}/${archive.name}">
+			<fileset dir=".">
+				<exclude name=".classpath"/>
+				<exclude name=".project"/>
+				<include name="${deploy.dir}/**/*.class"/>
+			</fileset>
+		</jar>
+	</target>
+
+</project>

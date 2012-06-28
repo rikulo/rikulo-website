@@ -1,0 +1,136 @@
+/***News Row***/
+#row-news {
+	height: 450px;
+	background: #F8F8F8;
+	overflow: hidden;	
+}
+
+#row-news .row-item {
+	float: left;
+	height: 290px; /*310 each*/
+	width: 290px; /*320 each*/
+	padding: 30px 15px 0;
+	position: relative;
+}
+#row-news #articles,
+#row-news #events {
+	background: url("/resource/img/index/news_separator.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+#row-news .head {
+	width: 290px;
+	height: 30px;
+}
+#row-news .headline,
+#row-news .rss {
+	float: left;
+}
+#row-news .headline {
+	font-size: 18px;
+	color: #112F37;
+}
+#row-news .rss {
+	margin: 3px 0 5px 10px;
+	background: url("/resource/img/index/index_icons.png") no-repeat right -30px scroll transparent;
+	width: 16px;
+	height: 16px;
+}
+.ie67 #row-news .rss {
+	display: inline;
+	zoom: 1;
+}
+#row-news .rss a {
+	white-space: nowrap;/* For IE 6 7 9 */
+	font-size: 10px;
+	text-indent: 200px;
+	overflow: hidden;
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+#row-news .data {
+	text-align: right;
+	width: 50px;
+	overflow: hidden;
+}
+#row-news .date {
+	font-size: 10px;
+	color: #707070;
+}
+
+#row-news .type {
+	font-size: 10px;
+	color: #A1A1A1;
+	font-style: italic;
+}
+#row-news .more  {
+	height: 14px;
+}
+#row-news .more a {
+	float:right;
+	bottom: 0px;
+	background: url("/resource/img/index/index_icons.png") no-repeat right -773px scroll transparent;
+	padding-right: 14px;
+	text-transform: uppercase;
+}
+.ie6 #row-news .more a {
+	background: url("/resource/img/index/fix/link_arrow.gif") no-repeat right 2px transparent;
+}
+#row-news .more a:hover {
+	text-decoration: underline;
+}
+/****News Section****/
+#row-news .news {
+	
+}
+#row-news .data,
+#row-news .desc {
+	float: left;
+}
+
+#row-news .desc {
+	display:inline;
+	margin: 0 0 10px 10px;
+	width: 230px;
+	min-height: 28px;
+	font-size: 12px;	
+	overflow: hidden;
+}
+.ie6 #row-news .desc {
+	height: 28px; 
+	overflow: visible;
+}
+#row-news #events {
+	.desc {
+		margin-bottom: 0px;
+		a {
+			display:block;
+			width: 275px;
+			height: 75px;
+			padding: 0;
+			margin: 1px;
+			&:hover {
+				margin: 0;
+				border: 1px solid #008db7;				
+			}
+		}
+		
+	}
+
+} 
+#row-news .desc a {
+	color: #555555;
+	font-size: 12px;
+}
+#row-news .desc a:hover {
+	color: #008DB7;
+}
+/****Articles Section****/
+/****Events Section****/
+#row-news .highlight .data {
+	display:none;
+}
+#row-news .highlight .desc {
+	width:280px
+}

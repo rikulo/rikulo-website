@@ -1,0 +1,78 @@
+/*** Mixin ***/
+/* Div button */
+.div-button-a {	
+	display: block;	
+	height: 100%;
+}
+/* Div button Text */
+.div-button-hidden-txt {
+	display: block;
+	overflow: hidden;
+	text-indent: 180%;
+	white-space: nowrap;
+}
+/* Top Down Graident */
+.top-down-graident(@from, @to){
+    background: @from;
+    background-image: -webkit-gradient(linear, top, bottom, from(@from), to(@to)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, @from, @to); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, @from, @to); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, @from, @to); /* IE10 */
+	background-image:      -o-linear-gradient(top, @from, @to); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, @from, @to);
+    filter: formatstring("progid:DXImageTransform.Microsoft.gradient(startColorstr='{0}', endColorstr='{1}')", @from, @to); /* IE6,IE7 */
+    -ms-filter: formatstring("\"progid:DXImageTransform.Microsoft.gradient(startColorStr='{0}', EndColorStr='{1}')\"", @from, @to); /* IE8 */
+}
+/* Round Corner Area */
+.round-corner (@radiusSize) {
+	-webkit-border-radius: @radiusSize;
+	-moz-border-radius: @radiusSize;
+	border-radius: @radiusSize;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+/* General Opacity */
+.opacity(@op:100) {
+    filter:alpha(opacity=@op);
+    -moz-opacity:@op/100;
+    -khtml-opacity:@op/100;
+    opacity:@op/100;
+}
+/* Shadow */
+.shadow(@pos_x, @pos_y, @pos_rad, @color) {
+    box-shadow: @pos_x @pos_y @pos_rad @color;
+    -webkit-box-shadow:@pos_x @pos_y @pos_rad @color;
+    -moz-box-shadow:@pos_x @pos_y @pos_rad @color;
+}
+.inset-shadow(@pos_x, @pos_y, @pos_rad, @color) {
+    box-shadow: inset @pos_x @pos_y @pos_rad @color;
+    -webkit-box-shadow:inset @pos_x @pos_y @pos_rad @color;
+    -moz-box-shadow:inset @pos_x @pos_y @pos_rad @color;
+}
+.text-shadow(@pos_color:#fff) {
+    text-shadow:0 1px 0 @pos_color;
+}
+.link-color(@normal, @hover) {
+	color: @normal;
+	&:hover {
+		color:@hover;
+	}
+}
+/*** Hacks ***/
+/*IE6 Div Height Bug - about font*/
+.ie67_min-height() {
+	line-height: 0px;
+	font-size: 1px;
+}
+/* Clear Fix */
+.clearfix:before, .clearfix:after {
+   content: "";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+.clearfix {
+   zoom: 1; 
+}
