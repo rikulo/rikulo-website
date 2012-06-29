@@ -1,0 +1,158 @@
+/***News Row***/
+#row-articles {
+	background: #F8F8F8;
+	overflow: hidden;	
+	color: #0d0d0d;
+	font-family: 'Asap', sans-serif;
+}
+
+#row-articles-innter {
+	margin: 40px auto;
+}
+#row-articles {
+	.row-item {
+		float: left;
+		height: 450px; /*450 each*/
+		position: relative;
+	}
+	#blogs {
+		width: 270px;
+	}
+	#discussions {
+		width: 300px;
+		padding-left: 55px;
+	}
+	#twitter {
+		width: 300px;
+		padding-left: 20px;
+	}
+	.blogs, .discussions {
+		margin-top: 20px;
+	}
+	
+}
+
+
+
+#row-articles .head {
+	width: 290px;
+	height: 30px;
+}
+#row-articles .headline {
+	float: left;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-transform:uppercase;
+}
+#row-articles .data {
+	text-align: left;
+	overflow: hidden;
+	font-size: 12px;
+}
+/****Blog Section****/
+
+
+#row-articles .desc {
+	display:inline;
+	width: 230px;
+	min-height: 28px;
+	font-size: 12px;	
+	overflow: hidden;
+}
+.ie6 #row-articles .desc {
+	height: 28px; 
+	overflow: visible;
+}
+#row-articles {
+	.desc {
+		a {
+			font-size: 15px;
+			color: #914503;
+		}
+		a:hover {
+			color: #d49b50;
+		}
+	}
+}
+#twitter {
+	.head {
+		margin-bottom: 14px;
+	}
+	.bubble {
+		width: 238px;
+		.corner {
+			background: url("/resource/img/index/talk_corners.png") no-repeat scroll 0 0 transparent;
+		}
+		.top {
+			height: 3px;
+		}
+		
+		.bottom {
+			background-position: 0 -3px;
+			height: 13px;
+		}
+		.author {
+			color: #914503;
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.bubble-cnt {
+		    background: url("/resource/img/index/exclusive_paper.png") repeat scroll 0 0 transparent;
+		    padding: 7px 5px;
+			border: 1px solid #D7D7D7;
+			border-bottom-width: 0;
+    		border-top-width: 0;
+			.saying {
+				font-size: 13px;
+			}
+			.date {
+				font-size: 11px;
+				a {
+					color: #914503;
+				}
+				a:hover {
+					color: #d49b50;
+				}
+			}
+		}
+	}
+	.pointer {
+		background: url("/resource/img/index/pointer.png") repeat scroll 0 0 transparent;
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 13px;
+	}
+	.pointer-r {
+		left: 237px;
+	}
+	.pointer-l {
+		background-position: -12px 0;
+		right: 237px;
+	}
+	.twitters {
+		float: left;
+		width: 300px;
+		position: relative;
+	}
+	.bubble-r {
+		float: right;
+	}
+	.bubble-l {
+		float: left;
+	}
+	
+	.img-r {
+		float: right;
+	}
+	.img-l {
+		float: left;
+	}
+	
+	.pointer-r {
+		
+	}
+	.pointer-l {
+		
+	}
+}

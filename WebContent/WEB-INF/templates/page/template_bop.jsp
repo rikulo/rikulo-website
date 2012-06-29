@@ -21,4 +21,4 @@
 	 --%>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">	
 	<link rel="stylesheet" type="text/css" href="/less/template" />
-	<link href='http://fonts.googleapis.com/css?family=Oswald|Asap' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Asap|Lora' rel='stylesheet' type='text/css'>
