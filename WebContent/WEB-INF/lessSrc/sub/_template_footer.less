@@ -1,14 +1,21 @@
 /**Footer**/
 #footer {
-	background: url("/resource/img/template/broken_noise.png") repeat 0 0 scroll transparent;
 	font-family: 'Asap', sans-serif;
-	height: 69px;
+	margin-bottom: 69px;
 }
+.ie67 {
+	
+	#footer {
+		background: url("/resource/img/template/broken_noise.png") repeat 0 0 scroll transparent;
+		width:100%;
+		display: block;
+		margin-bottom: 0;
+	}
+}
+
 #footer-inner {
-	height: 39px;
 	width: 960px;
-	margin: 0 auto;
-	padding: 17px 0;
+	margin: 17px auto;
 }
 
 /**Footer text***/
@@ -16,12 +23,19 @@
 	float: left;
 	color: #f2f2e1;
 	font-size: 12px;
-} 
+}
+
+.ie8 {
+	#sns-items {
+		padding-bottom: 17px;
+	}
+}
 
 
 /**Footer SNS***/
 
 #sns-items {
+	width: 232px;
 	float:right;
 	margin-top: 2px;
 	a {
@@ -34,6 +48,7 @@
 	}
 	
 	.sns-btn {
+		background: url("/resource/img/template/footer_icons.png") no-repeat scroll 0 0 transparent;
 		float: right;
 		margin-left:5px;
 		width: 32px;
@@ -46,16 +61,27 @@
 		color: #f2f2e1;
 		font-size: 14px;
 	}
-	.facebook {
-		background: url('/resource/img/template/facebook.png') no-repeat scroll transparent;
-	}
 	.twitter {
-		background: url('/resource/img/template/twitter.png') no-repeat scroll transparent;
+		background-position: -32px 0;
 	}
 	.googleplus {
-		background: url('/resource/img/template/google+.png') no-repeat scroll transparent;
+		background-position: -64px 0;
 	}
 	.rss {
-		background: url('/resource/img/template/rss.png') no-repeat scroll transparent;
+		background-position: -96px 0;
+	}
+}
+.ie6 #sns-items {
+	.sns-btn {
+		background: url("/resource/img/template/fix/footer_icons.png") no-repeat scroll 0 0 transparent;
+	}
+	.twitter {
+		background-position: -32px 0;
+	}
+	.googleplus {
+		background-position: -64px 0;
+	}
+	.rss {
+		background-position: -96px 0;
 	}
 }

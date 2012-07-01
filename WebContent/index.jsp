@@ -53,16 +53,14 @@
 							<h2 class="text">Unleash creativity, discover endless possibilities</h2>
 						</div>
 						<p class="desc">Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications.</p>
-						<div class="buttons">
-							<div class="download-button">
-								<a href="/" title="Download"> 
-									<span class="name">Download</span><br> 
-									<span class="version">Version 1.0</span><br> 
-									<span class="license">Apache license 2.0</span>
-								</a>
-								<a href="/" class="git-button" title="Other Versions on GitHub">Other Versions on GitHub</a>
-							</div>
+						<div class="download-button">
+							<a href="/"title="Download"> 
+								<span class="name">Download</span><br> 
+								<span class="version">Version 1.0</span><br> 
+								<span class="license">Apache license 2.0</span>
+							</a>
 						</div>
+						<a href="/" class="git-link" title="Other Versions on GitHub">Other Versions on GitHub</a>
 					</header> 
 				</section>
 			</div>

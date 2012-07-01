@@ -38,6 +38,7 @@ body {
 #row-banner article header.header {
 	display: block;
 }
+
 #row-banner .title,
 #row-banner .desc {
 	float:left;
@@ -78,7 +79,7 @@ body {
 	width: 220px;
 	height: 79px;
 	float: left;
-	margin-top: 25px;			
+	margin: 25px 180px 0 0;
 	a {
 		.div-button-a;
 		color: white;
@@ -111,9 +112,18 @@ body {
 			text-transform: uppercase;
 			.text-shadow(#6F5C43);
 		}
-		
-	}						
+	}
 }
+#row-banner .git-link {
+	color: #914503;
+	float: left;
+	margin-left: 40px;
+}
+
+.ie6 #row-banner .download-button {
+	margin-right: 230px;
+}
+
 /***News Row***/
 /****News Section****/
 @import "index_articles.less";

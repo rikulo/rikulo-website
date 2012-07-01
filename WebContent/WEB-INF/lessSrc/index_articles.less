@@ -1,6 +1,6 @@
+@import "sub/__modules.less";
 /***News Row***/
 #row-articles {
-	background: #F8F8F8;
 	overflow: hidden;	
 	color: #0d0d0d;
 	font-family: 'Asap', sans-serif;
@@ -148,11 +148,14 @@
 	.img-l {
 		float: left;
 	}
-	
-	.pointer-r {
-		
+}
+
+.ie67 #twitter {
+	.corner, .pointer {
+		.ie67_min-height;
 	}
-	.pointer-l {
-		
-	}
+} 
+
+.ie67 #row-articles #discussions {
+	padding-left: 45px;
 }
