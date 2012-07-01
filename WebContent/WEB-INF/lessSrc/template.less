@@ -6,49 +6,31 @@
 #index-header {
 	height: 96px;
 }
-/*
- * Font, Line
- */
-#template-inner h1 {
-	font-weight: bold;
-	font-size: 180%;
-	padding-bottom: 15px;
-    padding-top: 15px;
+#template-inner {
+	margin: 0 auto;
+	width: 960px;
 }
-#template-inner h2 {
-	font-size: 160%;
-    font-weight: bold;
-    padding-bottom: 12px;
-    padding-top: 12px;
+.ie678 #template-inner {
+	border:1px solid #ccc;
 }
-#template-inner h3 {
-	font-size: 115%;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-top: 10px;
+
+#page-banner {
+	height: 96px;
 }
-#template-inner h4 {
-	font-size: 105%;
-	font-weight: bold;
-    padding-bottom: 7x;
-    padding-top: 7px;
+#page-content {
+	font-family: 'Asap', sans-serif;
+	color: #0d0d0d;
+	padding-top: 50;
+	h2 {
+		margin-bottom: 12px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+		text-transform:uppercase;
+	}
 }
-#template-inner th {
-	border-bottom: 1px solid gray;	
-}
-#template-inner a {
-	font-size: 14px;
-}
-#template-inner a:hover {
-	text-decoration: underline;
-}
-#template-inner p {
-	margin: 10px 0;
-}
-#template-inner li {
-    list-style: inherit;
-    *list-style-type: disc;
-}
+
+
+
 /* Print */
 @media print {
   #template-inner {

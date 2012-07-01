@@ -15,7 +15,7 @@ public class Consts {
 	
 	
 	// For Menu
-	
+	/*
 	public static final String MENU_CATEGORY_PRODUCT = "MENU_CATEGORY_PRODUCT";
 	
 	public static final String MENU_CATEGORY_DOWNLOAD = "MENU_CATEGORY_DOWNLOAD";
@@ -57,21 +57,19 @@ public class Consts {
 	public final static String INTERNAL = "internal_login";
 		
 	//
+	
+	*/
 	public static String getMenuCategory(String name) {
 		if (name.contains("demo")) {
 			return MENU_CATEGORY_DEMO;
-		} else if (name.contains("product")) {
-			return MENU_CATEGORY_PRODUCT;
-		} else if (name.contains("download")) {
-			return MENU_CATEGORY_DOWNLOAD;
-		} else if (name.contains("whyzk") || name.contains("landing")) {
-			return MENU_CATEGORY_WHYZK;
-		} else if (name.contains("community")) {
-			return MENU_CATEGORY_COMMUNITY;
-		} else if (name.contains("document")) {
-			return MENU_CATEGORY_DOC;
-		} else if (name.contains("support") || name.contains("partner")) {
-			return MENU_CATEGORY_SUPPORT;
+		} else if (name.contains("contribute")) {
+			return MENU_CATEGORY_CONTRIBUTE;
+		} else if (name.contains("discuss")) {
+			return MENU_CATEGORY_DISCUSS;
+		} else if (name.contains("learn")) {
+			return MENU_CATEGORY_LEARN;
+		} else if (name.contains("blog")) {
+			return MENU_CATEGORY_BLOG;
 		} else {
 			return null;
 		}

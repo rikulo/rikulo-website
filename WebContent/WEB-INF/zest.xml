@@ -9,23 +9,23 @@
 	
 	<!-- Layout Templating -->
 	<action path="/demo(.*)" class="com.potix.website.rikulo.action.RedirectAction" >
-		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/product.jsp&amp;pn=${action.resourceUrl}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
+		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/product.jsp&amp;pn=${action.resourcePath}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
 	</action>
 
 	<action path="/contribute(.*)" class="com.potix.website.rikulo.action.RedirectAction" >
-		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/download.jsp&amp;pn=${action.resourceUrl}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
+		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/contribute.jsp&amp;pn=${action.resourcePath}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
 	</action>
 	
 	<action path="/discuss(.*)" class="com.potix.website.rikulo.action.RedirectAction" >
-		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/download.jsp&amp;pn=${action.resourceUrl}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
+		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/download.jsp&amp;pn=${action.resourcePath}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
 	</action>
 	
 	<action path="/learn(.*)" class="com.potix.website.rikulo.action.RedirectAction" >
-		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/download.jsp&amp;pn=${action.resourceUrl}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
+		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/download.jsp&amp;pn=${action.resourcePath}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
 	</action>
 	
 	<action path="/blog(.*)" class="com.potix.website.rikulo.action.RedirectAction" >
-		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/download.jsp&amp;pn=${action.resourceUrl}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
+		<result>${action.template}?hd=yes&amp;p=${action.templateResource}/download.jsp&amp;pn=${action.resourcePath}&amp;sub=${matches[1]}&amp;menu=${matches[0]}</result>
 	</action>
 	
 	<!-- Index Page -->
