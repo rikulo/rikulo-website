@@ -19,7 +19,7 @@
 		
 	%>
 	<div class="twitters"> 
-		<img class="twitter-img" src="/resource/img/index/twitter/<%=twitter[0]%>" alt=""/>
+		<img class="twitter-img" src="/resource/img/index/twitter/<%=twitter[0]%>" alt="<%=twitter[1]%>"/>
 		<div class="pointer"></div>
 		<aside class="bubble">
 			<div class="corner top"></div>
