@@ -9,7 +9,7 @@
 <!--[if IE 8]><body id="zbody" class="ie ie8 ie678 ie89"><![endif]-->
 <!--[if gte IE 9]><body id="zbody" class="ie9"><![endif]-->
 <!--[if !IE]>--><body id="zbody" class=""><!--<![endif]-->
-	<div id="zk-container">
+	<div id="rikulo-container">
 		<%@include file="/WEB-INF/templates/page/template_header_inner.jsp" %>
-		<div id="zk-template">
+		<div id="rikulo-template">
 			<div id="template-inner">

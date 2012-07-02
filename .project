@@ -3,7 +3,6 @@
 	<name>rikulo-website</name>
 	<comment></comment>
 	<projects>
-		<project>lessStyle</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

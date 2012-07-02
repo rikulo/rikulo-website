@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>		
-<div id="page-banner">
-	<h1 class="page-name">Contribute</h1>
-</div>
+
 <div id="page-content">
 	<div class="column why">
 		<h2>Why Contribute</h2>
@@ -19,7 +17,7 @@
 	</div>
 	<div class="column how">
 		<h2>How?</h2>
-		<ul>
+		<ul class="items">
 			<li>
 				<a href="/contribute" title="Fork on GitHub">Fork on GitHub</a> 
 				and submit more code

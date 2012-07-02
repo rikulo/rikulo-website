@@ -3,7 +3,7 @@ String req_uri = request.getAttribute("javax.servlet.forward.request_uri") != nu
 String req_search = req_uri.replaceAll("index.dsp","").replaceAll("/"," ");
 %>
 <%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
-	<title><%=req_uri %>  Under Maintenance | ZK</title>
+	<title><%=req_uri %>  Under Maintenance | Rikulo</title>
 	<link rel="stylesheet" type="text/css" href="/resource/css/error.css" />
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
 		<div id="error">

@@ -3,29 +3,17 @@
 @import "sub/_template_header.less";
 @import "sub/_template_footer.less";
 
-#index-header {
-	height: 96px;
-}
-#template-inner {
-	margin: 0 auto;
-	width: 960px;
-}
-#page-banner {
-	height: 96px;
-}
-#page-content {
-	font-family: 'Asap', sans-serif;
-	color: #0d0d0d;
-	padding-top: 50;
-	h2 {
-		margin-bottom: 12px;
-		font-family: 'Oswald', sans-serif;
-		font-size: 20px;
-		text-transform:uppercase;
+.ie6 #main_menu {
+	
+	.menuitem-sel .menuitem-right a {
+		display: block;
 	}
 }
 
 
+#index-header {
+	height: 96px;
+}
 
 /* Print */
 @media print {

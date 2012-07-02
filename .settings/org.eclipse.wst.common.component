@@ -3,9 +3,6 @@
     <wb-module deploy-name="rikulo-website">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <dependent-module archiveName="lessStyle.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lessStyle/lessStyle">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="rikulo-website"/>
         <property name="java-output-path" value="/rikulo-website/build/classes"/>
     </wb-module>
