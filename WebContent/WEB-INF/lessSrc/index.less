@@ -75,50 +75,69 @@ body {
 	background: url("/resource/img/index/ajax-loader.gif") no-repeat scroll 217px 176px transparent;
 	.ie67_min-height;
 }
-#row-banner .download-button {
-	background: #FCFBF8 url("/resource/img/index/button_download.png") no-repeat -1px 0;
-	width: 220px;
-	height: 79px;
-	float: left;
-	margin: 25px 180px 0 0;
-	a {
-		.div-button-a;
-		color: white;
-		position: relative;
-		span {
-			position: absolute;
-			font-family: Verdana;
-			cursor: pointer;
-		}
-		.name {
-			top: 17px;
-			left: 70px;
-			font-size: 20px;
-			letter-spacing: -1px;
-			.text-shadow(#B9A585);
-		}
-		.version {
-			top: 36px;
-			left: 70px;
-			font-size: 13px;
-			letter-spacing: -1px;
-			.text-shadow(#B9A585);
-		}
-		.license {
-			top: 60px;
-			left: 60px;
-			font-size: 11px;
-			color: #9C825D;
-			letter-spacing: -1px;
-			text-transform: uppercase;
-			.text-shadow(#6F5C43);
+#row-banner {
+	.header {
+		font-family: 'Asap', sans-serif;
+	}
+	.download-button {
+		background: #FCFBF8 url("/resource/img/index/button_download.png") no-repeat -1px 0;
+		width: 220px;
+		height: 79px;
+		float: left;
+		margin: 25px 180px 0 0;
+		//.shadow(0 ,1px ,2px 1px, #aaa);	
+		a {
+			.div-button-a;
+			position: relative;
+			span {
+				position: absolute;
+				cursor: pointer;
+				color: #f2f2e1;
+			}
+			.name {
+				top: 17px;
+				left: 70px;
+				font-size: 22px;
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+			}
+			.version {
+				top: 38px;
+				left: 72px;
+				font-size: 12px;
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+			}
+			.license {
+				top: 60px;
+				left: 60px;
+				font-size: 11px;
+				color: #a68a63;
+				text-transform: uppercase;
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+			}
 		}
 	}
-}
-#row-banner .git-link {
-	color: #914503;
-	float: left;
-	margin-left: 40px;
+	a.git-link { 
+		float: left;
+		margin-left: 40px;
+		color: #914503;
+		font-size: 11px;
+		font-style: italic;
+		span {
+			background: url("/resource/img/index/icon_exlink.png") no-repeat scroll 0 0 transparent;
+			float: right;
+			display: block;
+			width: 8px;
+			height: 8px;
+			margin: 3px;
+		}
+	}
+	a:hover.git-link { 
+		color: #d49b50;
+		span {
+			background-position: -8px 0;
+		}
+	}
+	
 }
 
 .ie67 #row-banner .download-button {

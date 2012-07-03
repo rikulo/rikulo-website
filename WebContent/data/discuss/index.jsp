@@ -65,3 +65,21 @@
   		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$(function() {
+		$("#page-content .button").hover(function() {
+			var pos = $(this).bgPosSplit();
+			$(this).css({backgroundPosition: pos[0] + ' -40px'});
+		},function() {
+			var pos = $(this).bgPosSplit();
+			$(this).css({backgroundPosition: pos[0] + ' 0'});
+		});
+		$("#page-content .button-inner").hover(function() {
+			var pos = $(this).bgPosSplit();
+			$(this).css({backgroundPosition: pos[0] + ' -120px'});
+		},function() {
+			var pos = $(this).bgPosSplit();
+			$(this).css({backgroundPosition: pos[0] + ' -80px'});
+		});
+	});
+</script>

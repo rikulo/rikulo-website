@@ -74,6 +74,7 @@
 		}
 	}
 }
+/****Twitter Section****/
 #twitter {
 	.head {
 		margin-bottom: 14px;
@@ -91,28 +92,25 @@
 			background-position: 0 -3px;
 			height: 13px;
 		}
-		.author {
-			color: #914503;
-			font-size: 15px;
-			font-weight: bold;
+		a {
+			.link-color(#914503, #d49b50);
 		}
+		
 		.bubble-cnt {
 		    background: url("/resource/img/index/exclusive_paper.png") repeat scroll 0 0 transparent;
 		    padding: 7px 5px;
 			border: 1px solid #D7D7D7;
 			border-bottom-width: 0;
     		border-top-width: 0;
-			.saying {
-				font-size: 13px;
+			.author a {
+				font-weight: bold;
+				font-size: 12px;
 			}
-			.date {
+			.saying {
+				font-size: 12px;
+			}
+			.date a {
 				font-size: 11px;
-				a {
-					color: #914503;
-				}
-				a:hover {
-					color: #d49b50;
-				}
 			}
 		}
 	}

@@ -60,7 +60,7 @@
 								<span class="license">Apache license 2.0</span>
 							</a>
 						</div>
-						<a href="/" class="git-link" title="Other Versions on GitHub">Other Versions on GitHub</a>
+						<a href="/" class="git-link" title="Other Versions on GitHub">Other Versions on GitHub<span></span></a>
 					</header> 
 				</section>
 			</div>

@@ -24,7 +24,9 @@
 		<aside class="bubble">
 			<div class="corner top"></div>
 			<div class="bubble-cnt">
-				<div class="author"><%=twitter[1]%></div>
+				<div class="author">
+					<a href="/"><%=twitter[1]%></a>
+				</div>
 		  		<div class="saying"><%=twitter[3]%></div>
 		  		<div class="date">
 		  			<a href="/"><%=twitter[2]%></a>
