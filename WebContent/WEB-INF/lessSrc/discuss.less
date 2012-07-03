@@ -1,0 +1,111 @@
+@import "sub/__modules.less";
+@import "sub/_template_page_common.less";
+#page-content {
+	height: 580px;
+	
+	.column {
+		float: left;
+		width: 400px;
+		margin-right: 40px;
+	}
+	.how,  a {
+		font-size: 14px;
+	}
+	
+	.how {
+		a {
+			color: #914503;
+		}
+		a:hover {
+			color: #d49b50;
+		}
+		img {
+			margin: 22px 20px;
+		}
+		.item {
+			height: 140px;
+			background: url("/resource/img/discuss/how-background.png") no-repeat scroll 0 0 transparent;
+			margin-bottom: 22px;
+		}
+		.item-cnt {
+			float: right;
+			margin: 22px 27px 0 0;
+			width: 270px;
+		}
+		
+		.stackoverflow {
+			p {
+				margin-bottom: 9px;
+			}
+			.button {
+				width: 215px;
+			}
+		}
+		
+		.email {
+			p {
+				margin-bottom: 7px;
+			}
+			.button {
+				width: 76px;
+			}
+		}
+	}
+	
+	.discussions {
+		margin-bottom: 20px;
+	 	.desc {
+			display:inline;
+			width: 230px;
+			min-height: 28px;
+			overflow: hidden;
+			a {
+				font-size: 15px;
+				color: #914503;
+			}
+			a:hover {
+				color: #d49b50;
+			}
+		}
+		.data {
+			text-align: left;
+			overflow: hidden;
+			font-size: 12px;
+		}
+	}
+	.discussion {
+		.button {
+			width: 156px;
+			a {
+				padding-left: 34px;
+			}
+		}
+	}
+	
+	.button, .button-inner {
+		background: url("/resource/img/discuss/button-background.png") no-repeat scroll 0 0 transparent;
+		height: 39px;
+	}
+	.button {
+		margin-right: 5px;
+	}
+	
+	.button-inner {
+		background-position: right -39px;
+		margin-right: -5px;
+	}
+	.button a {
+		display: block;
+    	height: 100%;
+		padding: 8px 0 0 13px;
+		color: #F2F2E1;
+		text-shadow: 0 -1px 0 #6E5C42;
+	}
+	.button a:hover {
+		color: #F2F2E1;
+	}
+}
+
+.ie67 .how img {
+	float: left;
+}
