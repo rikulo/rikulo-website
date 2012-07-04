@@ -102,15 +102,20 @@
 			border: 1px solid #D7D7D7;
 			border-bottom-width: 0;
     		border-top-width: 0;
-			.author a {
+			a.author {
 				font-weight: bold;
 				font-size: 12px;
 			}
 			.saying {
 				font-size: 12px;
 			}
-			.date a {
-				font-size: 11px;
+			.reply, .retweet, .favorte {
+				display: none;
+			}
+		}
+		.edit {
+			.reply, .retweet, .favorte {
+				display: inline;
 			}
 		}
 	}

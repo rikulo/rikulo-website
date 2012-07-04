@@ -24,13 +24,12 @@
 		<aside class="bubble">
 			<div class="corner top"></div>
 			<div class="bubble-cnt">
-				<div class="author">
-					<a href="/"><%=twitter[1]%></a>
-				</div>
+				<a class="author" href="/"><%=twitter[1]%></a>
 		  		<div class="saying"><%=twitter[3]%></div>
-		  		<div class="date">
-		  			<a href="/"><%=twitter[2]%></a>
-		  		</div>
+	  			<a class="date" href="/"><%=twitter[2]%></a>
+	  			<a class="reply" href="/">- reply</a>
+	  			<a class="retweet" href="/">- retweet</a>
+	  			<a class="favorte" href="/">- favorte</a>
 			</div>
 			<div class="corner bottom"></div>
 		</aside>

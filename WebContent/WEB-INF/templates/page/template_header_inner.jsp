@@ -1,7 +1,7 @@
 <div id="index-header">
 	<h1 id="rikulo-logo">
 		<em><a href="/" rel="canonical" title="Rikulo Home" name="top"> <img
-				width="63" src="/resource/img/template/rikulo_logo.png"
+				width="141" src="/resource/img/template/rikulo_logo.png"
 				title="Rikulo" alt="Rikulo" class="logo-img">Rikulo</a>
 		</em>
 	</h1>
