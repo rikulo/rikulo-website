@@ -19,6 +19,7 @@
  --%>
 
 <link rel="stylesheet" type="text/css" href="/less/index" />
+    
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
 </div>
 </div>
@@ -46,6 +47,7 @@
 							<img class="img" src="/resource/img/index/src/banner_image.png" alt="Rikulo Live Demo" title="Rikulo Live Demo" />
 						</a>
 					<!--<![endif]-->
+						<iframe class="rikulo-demo" src="/data/index/demo1.html"></iframe>
 				</div>
 				<section> 
 					<header class="header">
