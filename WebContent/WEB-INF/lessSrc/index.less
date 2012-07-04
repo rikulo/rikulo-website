@@ -6,6 +6,10 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande",sans-serif;	
 }
 /**Header**/
+#index-header {
+	height: 100px;
+}
+
 .h5header, article header, section header, footer header {
 	display: none;
 }
@@ -15,7 +19,7 @@ body {
 }
 #row-banner-inner, 
 #row-articles-innter {
-	 width: 960px;
+	 width: 947px;
 	 margin: 0 auto;
 }
 /***Image Row***/
@@ -43,10 +47,11 @@ body {
 #row-banner .title,
 #row-banner .desc {
 	float:left;
-	width: 480px;
+	width: 475px;
 }
 #row-banner .title {
 	height: 120px;	
+	margin-top: 8px;
 }
 #row-banner .title .text {
     padding: 30px 0 0 0;
@@ -54,24 +59,28 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-size: 36px;
 	color: #0d0d0d;
+	line-height: 117%;
 }
 #row-banner .desc {
-	margin-top: 25px;
-	width: 400px;
+	margin-top: 7px;
+	width: 450px;
+	letter-spacing: 0.95px;
+    line-height: 146%;
 	font-family: 'Lora', serif;
     font-size: 16px;
 	color: #0d0d0d;
 }
 #row-banner .banner-img {
-	width:478px;
-	height:376px;
+	width:472px;
+	height:374px;
 	float: right;
 }
 #row-banner .banner-img a {
 	color: #18343C;
 	display:block;
-	width:478px;
-	height:376px;
+	width:472px;
+	height:374px;
+	margin-left: -9px;
 	background: url("/resource/img/index/ajax-loader.gif") no-repeat scroll 217px 176px transparent;
 	.ie67_min-height;
 }
@@ -84,7 +93,7 @@ body {
 		width: 220px;
 		height: 79px;
 		float: left;
-		margin: 25px 180px 0 0;
+		margin: 30px 180px 0 0;
 		//.shadow(0 ,1px ,2px 1px, #aaa);	
 		a {
 			.div-button-a;
@@ -95,20 +104,21 @@ body {
 				color: #f2f2e1;
 			}
 			.name {
-				top: 17px;
+				top: 13px;
 				left: 70px;
+				letter-spacing: -0.5px;
 				font-weight: bold;
 				font-size: 22px;
 				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 			}
 			.version {
-				top: 38px;
-				left: 72px;
+				top: 34px;
+				left: 71px;
 				font-size: 12px;
 				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 			}
 			.license {
-				top: 60px;
+				top: 61px;
 				left: 60px;
 				font-size: 11px;
 				color: #a68a63;
@@ -119,7 +129,7 @@ body {
 	}
 	a.git-link { 
 		float: left;
-		margin-left: 40px;
+		margin:1px 0 0 37px;
 		color: #914503;
 		font-size: 11px;
 		font-style: italic;
@@ -129,7 +139,7 @@ body {
 			display: block;
 			width: 8px;
 			height: 8px;
-			margin: 3px;
+			margin: 3px 0 0 4px;
 		}
 	}
 	a:hover.git-link { 
