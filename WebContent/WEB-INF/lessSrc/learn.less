@@ -1,25 +1,25 @@
 @import "sub/_template_page_common.less";
 #page-content {
 	.grid3 {
-		margin-bottom: 31px;
+		margin-bottom: 37px;
 	}
 	.grid {
 		float: left;
-		margin: 0 150px 0 0;
+		margin: 0 177px 0 0;
 	}
 	p, a {
 		font-size: 14px;
 	}
 	a {
-		font-size: 14px;
-		color: #914503;
+		.link-color(#914503, #d49b50);
 	}
-	
-	a:hover {
-		color: #d49b50;
-	}
-	ul.items li{
-		margin-bottom: 4px;
+	ul.items {
+		list-style: none outside none;
+		margin-top: 7px;
+		li{
+			letter-spacing: 0.5px;
+    		line-height: 160%;
+		}
 	}
 	.license {
 		width: 300px;
@@ -30,10 +30,23 @@
 	.license-cnt {
 		img {
 			float: left;
-			margin-right: 25px;
+			margin-right: 22px;
 		}
 		p {
-			line-height: 20px;
+			margin-top: -2px;
+			letter-spacing: 0.4px;
+    		line-height: 150%;
 		}
+	}
+}
+
+.safari {
+	#sns-items, #footer-txt {
+		margin-top: -20px;
+	}
+}
+.ie9 {
+	#sns-items, #footer-txt {
+		margin-top: -20px;
 	}
 }
