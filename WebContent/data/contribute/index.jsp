@@ -2,7 +2,7 @@
 
 <div id="page-content">
 	<div class="column why">
-		<h2>Why Contribute</h2>
+		<h2>Why Contribute?</h2>
 		<p>Rikulo is a free and open source framework for writing impressive 
 			and stylish web and mobile applications. There is a large community 
 			currently supporting Rikulo but we are always looking for 
@@ -23,7 +23,7 @@
 				and submit more code
 			</li>
 			<li>
-				<a href="/contribute" title="Write tutorials">Write tutorials</a> 
+				<a href="/contribute" title="Write tutorials">Write some tutorials</a> 
 				and let us publish them
 			</li>
 			<li>

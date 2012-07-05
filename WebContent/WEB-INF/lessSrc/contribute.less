@@ -1,33 +1,44 @@
+@import "sub/__modules.less";
 @import "sub/_template_page_common.less";
 #page-content {
-	height: 580px;
+	height: 690px;
 	.column {
 		float: left;
-		width: 400px;
-		margin: 0 40px 0 0;
 	}
 	p, a {
 		font-size: 14px;
 	}
 	p {
-		padding-top: 1px;
+		letter-spacing: 0.45px;
+	    line-height: 150%;
+	    margin-left: 1px;
+	    margin-top: 11px;
 	}
 	a {
-		color: #914503;
+		color: ;
+		.link-color(#914503, #d49b50);
 	}
-	
-	a:hover {
-		color: #d49b50;
+	.why {
+		width: 400px;
+		margin-right: 80px;
 	}
 	ul.benefits {
-		margin: 20px 0 0 25px;
+		margin: 12px 0 0 25px;
 		li {
-			list-style-type: inherit;
 			list-style-image: url('/resource/img/contribute/bullet.png');
-			margin-bottom: 5px;
+			padding-left: 2px;
+			letter-spacing: 0.45px;
+			line-height: 160%;
 		}
 	}
-	.how li {
-		margin-bottom: 4px;
+	.how {
+		ul {
+			margin: 9px 0 0 1px;
+		}
+		li {
+			list-style: none outside none;
+			letter-spacing: 0.9px;
+			line-height: 172%;
+		}
 	}
 }
