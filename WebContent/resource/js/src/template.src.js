@@ -1,6 +1,9 @@
 var step = 0;
 $(function() {
 	ie6 = $.browser.msie && $.browser.version == '6.0';
+	if ($.browser.safari)
+		$("body").addClass("safari");
+	
 	/*Fix JQ For Idiot IE*/
 	$.fn.bgPos = function() {
 		var p = $(this).css('background-position');
@@ -16,33 +19,31 @@ $(function() {
 	if (isTouch) {
 		$("body").addClass("touch");
 		/* Menu */
-		var sel;
-		$(document).mousedown(function(e){
-			if (sel && !$.contains($("#main_menu")[0] ,e.target))
-				sel.removeClass("menuitem-hover");
-		});
-		$(".menuitem-right > a").bind('click', function(e) {
-			var menu = $(this).parents("li.menuitem"),
-				menus = $("li.menuitem");
-			if (menu.hasClass("menuitem-hover")){
-				return true;
-			} else {
-				if (sel)
-					sel.removeClass("menuitem-hover");
-				menu.addClass("menuitem-hover");
-				sel = menu;
-				return false;
-			}
-		});
-		$(".touch-close > a").click(function() {
-			$(this).parents("li.menuitem").removeClass("menuitem-hover");	
-		});
-		$("#index-header .item").click(function() {
-			$(this).toggleClass("item-hover");	
-		});
+//		var sel;
+//		$(document).mousedown(function(e){
+//			if (sel && !$.contains($("#main_menu")[0] ,e.target))
+//				sel.removeClass("menuitem-hover");
+//		});
+//		$(".menuitem-right > a").bind('click', function(e) {
+//			var menu = $(this).parents("li.menuitem"),
+//				menus = $("li.menuitem");
+//			if (menu.hasClass("menuitem-hover")){
+//				return true;
+//			} else {
+//				if (sel)
+//					sel.removeClass("menuitem-hover");
+//				menu.addClass("menuitem-hover");
+//				sel = menu;
+//				return false;
+//			}
+//		});
+//		$(".touch-close > a").click(function() {
+//			$(this).parents("li.menuitem").removeClass("menuitem-hover");	
+//		});
+//		$("#index-header .item").click(function() {
+//			$(this).toggleClass("item-hover");	
+//		});
 	} else {
-		if ($.browser.safari)
-			$("body").addClass("safari");
 		
 		/* Menu */
 		$(".menuitem").hover(function() {	

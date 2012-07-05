@@ -33,20 +33,14 @@
 			<div class="banners banner1">
 				<div class="banner-img">
 					<!--[if lt IE 7]>
-			        	<a href="/" title="Rikulo Live Demo">
-			        		<img class="img" src="/resource/img/index/src/banner_imagebg.png" alt="Rikulo Live Demo"  title="Rikulo Live Demo"/>
-		        		</a>
+		        		<img class="img" src="/resource/img/index/src/banner_imagebg.png" alt="Rikulo Live Demo"  title="Rikulo Live Demo"/>
 		        	<![endif]-->
 					<!--[if !IE 6]>
-						<a href="/" title="Rikulo Live Demo">
-							<img class="img" src="/resource/img/index/src/banner_image.png" alt="Rikulo Live Demo" title="Rikulo Live Demo"/>
-						</a>
+						<img class="img" src="/resource/img/index/src/banner_image.png" alt="Rikulo Live Demo" title="Rikulo Live Demo"/>
 					<![endif]-->
 					<!--[if !IE]>-->
-						<a href="/" title="Rikulo Live Demo"> 
-							<img class="img" src="/resource/img/index/src/banner_image_emptybg.png" alt="Rikulo Live Demo" title="Rikulo Live Demo" />
-						</a>
-						<iframe class="rikulo-demo" src="/data/index/demo1.html"></iframe>
+						<img class="img" src="/resource/img/index/src/banner_image_emptybg.png" alt="Rikulo Live Demo" title="Rikulo Live Demo" />
+						<iframe class="rikulo-demo" src="/data/index/demo1.html" ></iframe>
 					<!--<![endif]-->
 				</div>
 				<section> 
@@ -56,7 +50,7 @@
 						</div>
 						<p class="desc">Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications.</p>
 						<div class="download-button">
-							<a href="/"title="Download"> 
+							<a href="/" title="Download"> 
 								<span class="name">Download</span><br> 
 								<span class="version">Version 1.0</span><br> 
 								<span class="license">Apache license 2.0</span>
