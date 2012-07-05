@@ -114,3 +114,7 @@ body {
   opacity: .6;
   background: #E0E1E3;
 }
+
+#v_h, #v_l {
+	cursor: pointer;
+}

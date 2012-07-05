@@ -44,10 +44,10 @@
 					<![endif]-->
 					<!--[if !IE]>-->
 						<a href="/" title="Rikulo Live Demo"> 
-							<img class="img" src="/resource/img/index/src/banner_image.png" alt="Rikulo Live Demo" title="Rikulo Live Demo" />
+							<img class="img" src="/resource/img/index/src/banner_image_emptybg.png" alt="Rikulo Live Demo" title="Rikulo Live Demo" />
 						</a>
-					<!--<![endif]-->
 						<iframe class="rikulo-demo" src="/data/index/demo1.html"></iframe>
+					<!--<![endif]-->
 				</div>
 				<section> 
 					<header class="header">
