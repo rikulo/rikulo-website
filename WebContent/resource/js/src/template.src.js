@@ -41,6 +41,9 @@ $(function() {
 			$(this).toggleClass("item-hover");	
 		});
 	} else {
+		if ($.browser.safari)
+			$("body").addClass("safari");
+		
 		/* Menu */
 		$(".menuitem").hover(function() {	
 			$(this).addClass("menuitem-hover");	
