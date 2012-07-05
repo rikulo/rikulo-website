@@ -7,7 +7,7 @@
   			<div class="item-cnt">
 	  			<p class="desc">
 		  			Rikulo's official forum is <a href="/">Stackoverflow</a>, to ask a Rikulo question 
-		  			on Stackoverflow please use the "rikulo" tag.
+		  			on Stackoverflow please use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.
 		  		</p>
 		  		<div class="button">
 		  			<div class="button-inner">
@@ -34,14 +34,18 @@
 	<div class="column discussion">
 		<h2>Latest discussions</h2>
 		<%
-		String[][] discussions = new String[2][];
-		discussions[0] = new String[]{"Sunt in culpa qui offcia desernut mollit anim id est laborum",
+		String[][] discussions = new String[4][];
+		discussions[0] = new String[]{"Sunt in culpa qui officia deserunt mollit anim id est laborum",
 				"23 minutes ago",""};
 		
 		discussions[1] = new String[]{"Officia deserunt mollit anim id est laborum velit irure",
 				"May 17, 2012","by Captain Hook"};
 	
+		discussions[2] = new String[]{"Lorem ipsum dolor sit amet",
+				"3 days ago",""};
 		
+		discussions[3] = new String[]{"Sunt in culpa qui officia deserunt mollit anim id est laborum",
+				"23 minutes ago",""};
 		
 		for (int i = 0, j = discussions.length; i < j; i++) {
 			String[] discussion = (String[]) discussions[i];

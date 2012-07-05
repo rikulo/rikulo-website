@@ -5,23 +5,21 @@
 	
 	.column {
 		float: left;
-		width: 400px;
-		margin-right: 40px;
+		margin-right: 60px;
 	}
 	.how,  a {
 		font-size: 14px;
 	}
 	
 	.how {
+		width: 400px;
 		a {
 			color: #914503;
 		}
 		a:hover {
 			color: #d49b50;
 		}
-		img {
-			margin: 22px 20px;
-		}
+		
 		.item {
 			height: 140px;
 			background: url("/resource/img/discuss/how-background.png") no-repeat scroll 0 0 transparent;
@@ -29,13 +27,23 @@
 		}
 		.item-cnt {
 			float: right;
-			margin: 22px 27px 0 0;
+			margin: 16px 30px 0 0;
 			width: 270px;
 		}
 		
 		.stackoverflow {
+			margin-top: 13px;
+			img {
+				margin: 19px 20px 0;
+			}
 			p {
 				margin-bottom: 9px;
+				line-height: 140%;
+				
+				img.tag {
+					margin: -1px 2px 0 1px;
+					vertical-align: middle;
+				}
 			}
 			.button {
 				width: 215px;
@@ -43,37 +51,45 @@
 		}
 		
 		.email {
+			img {
+				margin: 23px 20px 0;
+			}
+			.item-cnt {
+				margin-top: 19px;
+			}
+			
 			p {
-				margin-bottom: 7px;
+				margin-bottom: 6px;
+				line-height: 140%;
 			}
 			.button {
 				width: 76px;
+				a {
+					padding-left: 14px;
+				}
 			}
 		}
 	}
 	
 	.discussions {
-		margin-bottom: 20px;
-	 	.desc {
-			display:inline;
-			width: 230px;
-			min-height: 28px;
-			overflow: hidden;
+		margin: 11px 0 16px 0;
+		
+		.desc {
+			margin-left: 1px;
 			a {
 				font-size: 15px;
-				color: #914503;
-			}
-			a:hover {
-				color: #d49b50;
+	    		line-height: 110%;
+				.link-color(#914503, #d49b50)
 			}
 		}
 		.data {
-			text-align: left;
-			overflow: hidden;
 			font-size: 12px;
+			margin-top: 2px;
+			
 		}
 	}
 	.discussion {
+		width: 300px;
 		.button {
 			width: 156px;
 			a {
@@ -97,7 +113,7 @@
 	.button a {
 		display: block;
     	height: 100%;
-		padding: 9px 0 0 13px;
+		padding: 9px 0 0 15px;
 		color: #F2F2E1;
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 	}
