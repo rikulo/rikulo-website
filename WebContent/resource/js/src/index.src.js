@@ -1,10 +1,8 @@
 $(function() {
 	$("#row-banner-inner .download-button").hover(function() {
-		var pos = $(this).bgPosSplit();
-		$(this).css({backgroundPosition: pos[0] + ' -82px'});
+		$(this).children().first().fadeTo(200, 1);//duration, opacity
 	},function() {
-		var pos = $(this).bgPosSplit();
-		$(this).css({backgroundPosition: pos[0] + ' 0px'});
+		$(this).children().first().fadeTo(200, 0);
 	});
 	
 	$('.twitters').each(function(index) {
