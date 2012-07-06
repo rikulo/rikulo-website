@@ -19,27 +19,20 @@ color: #0d0d0d;
 	margin: -9px 0 0 6px;
 }
 
-.button, .button-inner {
-	background: url("/resource/img/discuss/button-background.png") no-repeat scroll 0 0 transparent;
-	height: 40px;
-}
 .button {
 	width: 155px;
 	margin-right: 5px;
 	margin: 28px 5px 0 6px;
+	background: url("/img/button-backhome.png") no-repeat scroll 0 0 transparent;
 }
 
-.button-inner {
-	background-position: right -80px;
-	margin-right: -5px;
-}
 .button a {
 	display: block;
 	height: 27px;
 	padding: 9px 0 0 15px;
 	color: #F2F2E1;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-	letter-spacing: 0.3px;
+	letter-spacing: -0.25px;
 	font-size: 14px;
 }
 .button a:hover {

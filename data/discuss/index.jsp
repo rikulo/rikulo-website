@@ -10,9 +10,7 @@
 		  			on Stackoverflow please use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.
 		  		</p>
 		  		<div class="button">
-		  			<div class="button-inner">
-		  				<a href="/" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
-		  			</div>
+	  				<a href="/" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
 		  		</div>
 	  		</div>
 		</div>
@@ -24,9 +22,7 @@
 		  			a technical problem please drop us an email.
 		  		</p>
 		  		<div class="button">
-		  			<div class="button-inner">
-		  				<a href="/" title="Email Us">Email Us</a>
-	  				</div>
+	  				<a href="/" title="Email Us">Email Us</a>
 		  		</div>
 	  		</div>
 		</div>
@@ -63,9 +59,7 @@
 			}
 		%> 
 		<div class="button">
-			<div class="button-inner">
-  				<a href="/" title="Join Discussion">Join Discussion</a>
-  			</div>
+			<a href="/" title="Join Discussion">Join Discussion</a>
   		</div>
 	</div>
 </div>

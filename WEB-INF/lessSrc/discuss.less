@@ -11,10 +11,7 @@
 	.how {
 		width: 400px;
 		a {
-			color: #914503;
-		}
-		a:hover {
-			color: #d49b50;
+			.link-color(#914503, #d49b50);
 		}
 		
 		.item {
@@ -43,7 +40,8 @@
 				}
 			}
 			.button {
-				width: 215px;
+				width: 220px;
+				background: url("/resource/img/discuss/button-stackoverflow.png") no-repeat scroll 0 0 transparent;
 			}
 		}
 		
@@ -60,7 +58,8 @@
 				line-height: 140%;
 			}
 			.button {
-				width: 76px;
+				width: 81px;
+				background: url("/resource/img/discuss/button-email.png") no-repeat scroll 0 0 transparent;
 				a {
 					padding-left: 14px;
 				}
@@ -76,7 +75,7 @@
 			a {
 				font-size: 15px;
 	    		line-height: 110%;
-				.link-color(#914503, #d49b50)
+				.link-color(#914503, #d49b50);
 			}
 		}
 		.data {
@@ -88,34 +87,21 @@
 	.discussion {
 		width: 300px;
 		.button {
-			width: 156px;
+			width: 161px;
+			background: url("/resource/img/discuss/button-discussion.png") no-repeat scroll 0 0 transparent;
 			a {
 				padding-left: 34px;
 			}
 		}
 	}
 	
-	.button, .button-inner {
-		background: url("/resource/img/discuss/button-background.png") no-repeat scroll 0 0 transparent;
-		height: 40px;
-	}
-	.button {
-		margin-right: 5px;
-	}
-	
-	.button-inner {
-		background-position: right -80px;
-		margin-right: -5px;
-	}
 	.button a {
 		display: block;
     	height: 27px;
 		padding: 9px 0 0 15px;
 		color: #F2F2E1;
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-	}
-	.button a:hover {
-		color: #F2F2E1;
+		.link-color(#F2F2E1, #F2F2E1);
 	}
 }
 

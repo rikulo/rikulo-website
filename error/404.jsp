@@ -11,9 +11,7 @@ String req_uri = request.getAttribute("javax.servlet.forward.request_uri") != nu
 				Looks like the page you are looking for does not exist, sorry.
 			</div>
 			<div class="button">
-	  			<div class="button-inner">
-	  				<a href="/" title="Let's go back Home">Let's go back Home</a>
-	  			</div>
+  				<a href="/" title="Let's go back Home">Let's go back Home</a>
 	  		</div>
 		</div>
 		<jsp:include page="/WEB-INF/templates/page/template_footer.jsp" />
