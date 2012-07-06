@@ -2,14 +2,13 @@
 <project name="Zk Ptroot" default="build" basedir=".">
 
 	<!-- VARIABLES -->
-	<property name="src.dir" value="src"/>
-	<property name="web-content.dir" value="WebContent" />
-	<property name="web-inf.dir" value="${web-content.dir}/WEB-INF" />
+	<property name="src.dir" value="../WEB-INF/javaSrc"/>
+	<property name="web-inf.dir" value="../WEB-INF" />
 	<property name="deploy.dir" value="${web-inf.dir}/lib"/>
-	<property name="resource.dir" value="${web-content.dir}/resource"/>
+	<property name="resource.dir" value="../resource"/>
 	<property name="lib.dir" value="${web-inf.dir}/lib" />
-	<property name="lib.ext.dir" value="lib-ext" />
-	<property name="classes.dir" value="${web-content.dir}/WEB-INF/classes"/>
+	<property name="lib.ext.dir" value="${web-inf.dir}/lib-ext" />
+	<property name="classes.dir" value="../WEB-INF/classes"/>
 	<property name="archive.name" value="website.jar"/>
 	<property name="yui" value="${lib.ext.dir}/yuicompressor-2.4.6.jar" />
 
