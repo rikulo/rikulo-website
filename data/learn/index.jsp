@@ -12,13 +12,16 @@
 		<div class="grid">
 			<h2>Rikulo Reference</h2>
 			<ul class="items">
-				<li><a href="/" title="Dart Doc">Dart Doc</a></li>
+				<li><a href="http://docs.rikulo.org" title="Rikulo Documentation">Rikulo Documentation</a></li>
+			</ul>
+			<ul class="items">
+				<li><a href="http://api.rikulo.org" title="Dart Doc">Dart Doc</a></li>
 			</ul>
 		</div>
 		<div class="grid">
 			<h2>Support</h2>
 			<ul class="items">
-				<li><a href="/" title="Stackoverflow">Stackoverflow</a></li>
+				<li><a href="http://stackoverflow.com/questions/tagged/rikulo" title="Stackoverflow">Stackoverflow</a></li>
 			</ul>
 		</div>
 	</div>
