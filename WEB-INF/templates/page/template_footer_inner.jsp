@@ -6,9 +6,9 @@
 		<ul>
 			<li class="label">Follow us on</li>
 			<li class="sns-btn rss"><a href="http://feeds.feedburner.com/zkoss" title="ZK RSS">ZK RSS</a></li>
-			<li class="sns-btn twitter"><a href="http://twitter.com/zkoss" title="ZK Twitter">twitter @zkoss</a></li>
-			<li class="sns-btn facebook"><a href="http://www.facebook.com/zk.framework" title="ZK Facebook">facebook</a></li>
-			<li class="sns-btn googleplus"><a href="/" title="ZK GooglePlus">google plus</a></li>
+			<li class="sns-btn twitter"><a href="http://twitter.com/RikuloUI" title="ZK Twitter">twitter @zkoss</a></li>
+			<li class="sns-btn facebook"><a href="http://www.facebook.com/rikulo" title="ZK Facebook">facebook</a></li>
+			<li class="sns-btn googleplus"><a href="https://plus.google.com/u/0/b/117602514255061155793/117602514255061155793" title="Rikulo GooglePlus">google plus</a></li>
 		</ul>
 	</div>
 </div>
