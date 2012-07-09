@@ -19,19 +19,15 @@
 		<h2>How?</h2>
 		<ul class="items">
 			<li>
-				<a href="/contribute" title="Fork on GitHub">Fork on GitHub</a> 
+				<a href="https://github.com/rikulo/rikulo" title="Fork on GitHub">Fork on GitHub</a> 
 				and submit more code
 			</li>
 			<li>
-				<a href="/contribute" title="Write tutorials">Write some tutorials</a> 
-				and let us publish them
-			</li>
-			<li>
-				<a href="/contribute" title="Answer Rikulo questions">Answer Rikulo questions</a>  
+				<a href="http://stackoverflow.com/questions/tagged/rikulo" title="Answer Rikulo questions">Answer Rikulo questions</a>  
 				on Stackoverflow
 			</li>
 			<li>
-				<a href="/contribute" title="Share your thoughts">Share your thoughts</a> 
+				<a href="mailto:info@rikulo.org" title="Share your thoughts">Share your thoughts</a> 
 				on the framework
 			</li>
 		</ul>
