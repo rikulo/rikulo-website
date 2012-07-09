@@ -14,11 +14,6 @@
 			<h5>Navigation Menu</h5>
 		</header>
 		<ul class='menu <%=oldBrowser ? "old-style" : "new-style"%>'>
-			<li class='menuitem <%=name.equals(Consts.MENU_CATEGORY_DEMO) ? selClass: ""%>'>
-				<div class="menuitem-right">
-					<a href="/demo/" class="menulink">Demo</a>
-				</div>
-			</li>
 			<li class='menuitem <%=name.equals(Consts.MENU_CATEGORY_CONTRIBUTE) ? selClass: ""%>'>
 				<div class="menuitem-right">
 					<a href="/contribute/" class="menulink">Contribute</a>
@@ -36,7 +31,7 @@
 			</li>
 			<li class='menuitem <%=name.equals(Consts.MENU_CATEGORY_BLOG) ? selClass: ""%>'>
 				<div class="menuitem-right">
-					<a href="/blog/" class="menulink">Blog</a>
+					<a href="http://blog.rikulo.org" class="menulink">Blog</a>
 				</div>
 			</li>
 		</ul>
