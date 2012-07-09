@@ -10,7 +10,7 @@
 			</ul>
 		</div>
 		<div class="grid">
-			<h2>Rikulo Reference</h2>
+			<h2>Reference</h2>
 			<ul class="items">
 				<li><a href="http://docs.rikulo.org" title="Documentation">Documentation</a></li>
 				<li><a href="http://api.rikulo.org" title="API Reference">API Reference</a></li>
