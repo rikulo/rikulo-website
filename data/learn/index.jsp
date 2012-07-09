@@ -13,8 +13,6 @@
 			<h2>Rikulo Reference</h2>
 			<ul class="items">
 				<li><a href="http://docs.rikulo.org" title="Rikulo Documentation">Rikulo Documentation</a></li>
-			</ul>
-			<ul class="items">
 				<li><a href="http://api.rikulo.org" title="Dart Doc">Dart Doc</a></li>
 			</ul>
 		</div>
