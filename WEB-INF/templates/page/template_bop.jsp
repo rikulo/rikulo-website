@@ -18,8 +18,8 @@
 	
 	<link href="http://feeds.feedburner.com/zkoss?format=xml" rel="alternate" type="application/rss+xml" title="ZK RSS FEED" />
 	 --%>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">	
 	<link rel="shortcut icon" type="image/ico" href="/resource/img/favicon.ico" >
 	<link rel="bookmark" href="/resource/img/favicon.ico" >
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">	
 	<link rel="stylesheet" type="text/css" href="/less/template" />
 	<link href='http://fonts.googleapis.com/css?family=Oswald|Asap|Lora' rel='stylesheet' type='text/css'>
