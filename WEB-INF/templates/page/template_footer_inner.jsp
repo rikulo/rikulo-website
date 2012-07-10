@@ -5,7 +5,7 @@
 	<div id="sns-items">
 		<ul>
 			<li class="label">Follow us on</li>
-			<li class="sns-btn rss"><a href="http://blog.rikulo.org/feeds/all.rss.xml" title="Rikulo RSS">ZK RSS</a></li>
+			<li class="sns-btn rss"><a href="http://blog.rikulo.org/feeds/all.rss.xml" title="Rikulo RSS">Rikulo RSS</a></li>
 			<li class="sns-btn twitter"><a href="http://twitter.com/RikuloUI" title="ZK Twitter">twitter @zkoss</a></li>
 			<li class="sns-btn facebook"><a href="http://www.facebook.com/rikulo" title="ZK Facebook">facebook</a></li>
 			<li class="sns-btn googleplus"><a href="https://plus.google.com/u/0/b/117602514255061155793/117602514255061155793" title="Rikulo GooglePlus">google plus</a></li>
