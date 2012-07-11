@@ -8,15 +8,12 @@ a {
 	ms-text-size-adjust: 100%;
 	webkit-text-size-adjust: 100%;
 	a, a code {
+		.link-color(#914503, #d49b50);
 		background: none;
-		color: #0645ad;
 		text-decoration: none;
 	}
 	a code {
 		border: none
-	}
-	a:hover, a:hover code {
-		color: #06e;
 	}
 	a:active, a:active code {
 		color: #faa700;
@@ -143,16 +140,13 @@ a {
 	border-radius: 3px;
 	float: left;
 	margin-top: 30px;
-	width: 160px;
+	width: 220px;
 	ul, ol {
 		margin: 0;
 		padding: 0 0 0 1.3em;
 	}
 	li {
 		margin: 3px 0;
-	}
-	a {
-		.link-color(#914503, #d49b50);
 	}
 	.item-sel {
 		color: #0d0d0d;
@@ -161,9 +155,10 @@ a {
 #content {
 	background: #fefefe;
 	line-height: 1.5em;
-	margin: 10px 0px 10px 160px;
+	margin: 10px 0px 10px 220px;
 	padding: 15px 15px 15px 25px;
-	width: 747px;
+	width: 687px;
+	font-family: 'Asap',sans-serif;
 	h1, h2, h3, h4, h5, h6 {
 		color: #111;
 		font-weight: normal;
@@ -173,15 +168,20 @@ a {
 		font-weight: bold;
 	}
 	h1 {
-		font-size: 2em;
+		color: #914503;
+    	font-size: 28px;
 		margin: 20px 0;
 	}
 	h2 {
 		border-bottom: 1px solid #CCC;
-		font-size: 1.6em;
+		font-size: 24px;
+		margin-bottom: 12px;
+    	margin-top: 14px;
 	}
 	h3 {
-		font-size: 1.3em;
+		font-size: 20px;
+	    margin-bottom: 8px;
+	    margin-top: 12px;
 	}
 	h4 {
 		font-size: 1.1em;
@@ -223,7 +223,7 @@ a {
 }
 @media only screen and (min-width: 768px) {
 	#content {
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 @media print {
