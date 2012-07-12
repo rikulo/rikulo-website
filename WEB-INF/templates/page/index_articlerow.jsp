@@ -3,15 +3,15 @@
 	<div id="row-articles-innter">
 		<section> 
 			<header><h5>Rikulo Blog</h5></header>
-			<jsp:include page="/WEB-INF/templates/articles/blog.jsp" />
+			<jsp:include page="/WEB-INF/templates/articles/blog.html" />
 		</section>
 		<section> 
 			<header><h5>Rikulo Discussions</h5></header>
-			<jsp:include page="/WEB-INF/templates/articles/discussions.jsp" />
+			<jsp:include page="/WEB-INF/templates/articles/discussions.html" />
 		</section>
 		<section> 
 			<header><h5>Rikulo Twitter</h5></header>
-			<jsp:include page="/WEB-INF/templates/articles/twitter.jsp" />
+			<jsp:include page="/WEB-INF/templates/articles/twitter.html" />
 		</section>
 	</div>	
 </div>
