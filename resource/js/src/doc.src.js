@@ -11,4 +11,5 @@ $(function() {
 		
 		return prefix + href;
 	});
+	$('a.item-sel').removeAttr('href');
 });

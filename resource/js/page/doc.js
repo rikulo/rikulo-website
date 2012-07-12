@@ -1,1 +1,1 @@
-$(function(){$("#toc a").attr("href",function(c,a){var f=window.location.href,b=f.indexOf("latest/"),e=f.substring(0,b+7),d=f.substring(b+7,f.length);if(a==d){$(this).addClass("item-sel")}return e+a})});
+$(function(){$("#toc a").attr("href",function(c,a){var f=window.location.href,b=f.indexOf("latest/"),e=f.substring(0,b+7),d=f.substring(b+7,f.length);if(a==d){$(this).addClass("item-sel")}return e+a});$("a.item-sel").removeAttr("href")});
