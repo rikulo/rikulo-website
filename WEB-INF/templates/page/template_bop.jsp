@@ -22,4 +22,4 @@
 	<link rel="shortcut icon" type="image/ico" href="/resource/img/favicon.ico" >
 	<link rel="bookmark" href="/resource/img/favicon.ico" >
 	<link rel="stylesheet" type="text/css" href="/less/template" />
-	<link href='http://fonts.googleapis.com/css?family=Oswald|Asap|Lora' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oswald:400,300,700|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
