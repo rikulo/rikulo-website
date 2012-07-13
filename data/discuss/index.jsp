@@ -29,7 +29,7 @@
 	</div>
 	<div class="column discussion">
 		<h2>Latest discussions</h2>
-		<jsp:include page="/WEB-INF/templates/articles/discussions.html" />
+		<jsp:include page="/WEB-INF/templates/articles/discussions-page.html" />
 		<div class="button">
 			<a href="http://stackoverflow.com/questions/tagged/rikulo" title="Join Discussion">Join Discussion</a>
   		</div>
