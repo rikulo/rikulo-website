@@ -6,7 +6,7 @@
 			<img src="/resource/img/discuss/stackoverflow.png" alt="Stackoverflow" title="Stackoverflow"/>
   			<div class="item-cnt">
 	  			<p class="desc">
-		  			Rikulo's official forum is <a href="/">Stackoverflow</a>, to ask a Rikulo question 
+		  			Rikulo's official forum is <a href="http://www.stackoverflow.com">Stackoverflow</a>, to ask a Rikulo question 
 		  			on Stackoverflow please use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.
 		  		</p>
 		  		<div class="button">
