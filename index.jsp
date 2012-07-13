@@ -11,12 +11,11 @@
 <%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
 <%--
 <meta name="alexaVerifyID" content="Pm7SNmKasZyei0xlIk-o1dFuxro">
-<meta name="description" content="ZK is the leading open source Ajax + Mobile Java Web framework integrating jQuery, Spring, JPA, Hibernate, JavaEE, Grails, Scala and many more.">
-<meta name="keywords" content="ZK, Web, Ajax, Web framework, Ajax framekwork, Java framework, RIA, Java, jQuery, Spring, Java EE, Open Source, Groovy, Grails, LGPL">
 <meta name="verify-v1" content="gBA1yn9Oo4XnNC1ORE1yoH0Q/ssiWgaPOwCGZAXzM4Q=">
-<title>Leading Enterprise Java Web Framework | ZK</title>
-
- --%>
+--%>
+<meta name="description" content="Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications in Dart and HTML5.">
+<meta name="keywords" content="Rikulo, Web, Mobile, Dart, Web framework, Ajax framekwork, Open Source, Apache">
+<title>Native Mobile in Dart | Rikulo</title>
 
 <link rel="stylesheet" type="text/css" href="/less/index" />
     
@@ -48,16 +47,16 @@
 						<div class="title">
 							<h2 class="text">Unleash creativity, discover endless possibilities</h2>
 						</div>
-						<p class="desc">Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications.</p>
+						<h1 class="desc">Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications in Dart &amp; HTML5.</h1>
 						<div class="download-button">
 							<div class="hover"></div>
-							<a href="/" title="Download"> 
+							<a href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-13.zip" title="Download"> 
 								<span class="name">Download</span><br> 
-								<span class="version">Version 1.0</span><br> 
+								<span class="version"></span><br> 
 								<span class="license">Apache license 2.0</span>
 							</a>
 						</div>
-						<a href="/" class="git-link" title="Other Versions on GitHub">Other Versions on GitHub<span></span></a>
+						<a href="https://github.com/rikulo/rikulo/downloads" class="git-link" title="Other Versions on GitHub">Other Versions on GitHub<span></span></a>
 					</header> 
 				</section>
 			</div>

@@ -4,8 +4,8 @@
 		<div class="grid">
 			<h2>Getting Started</h2>
 			<ul class="items">
-				<li><a href="/" title="Downloading Rikulo">Downloading Rikulo</a></li>
-				<li><a href="/" title="Philosophy">Philosophy</a></li>
+				<li><a href="https://github.com/rikulo/rikulo/downloads" title="Download Rikulo">Download Rikulo</a></li>
+				<li><a href="http://blog.rikulo.org/posts/2012/Jul/General/the-rikulo-way/" title="The Rikulo Way">The Rikulo Way</a></li>
 				<li><a href="http://docs.rikulo.org/rikulo/latest/Getting_Started/Hello_World.html" title="Tutorial">Tutorial</a></li>
 			</ul>
 		</div>
@@ -30,9 +30,8 @@
 			<div class="license-cnt">
 				<img alt="Apache License" src="/resource/img/learn/apachelicense.png"/>
 				<blockquote>
-					<p>Rikulo is licensed under the <a href="/">Apache Software License 2.0</a> 
-						which means you can use it both for non-commercial and commercial projects 
-						free of charge.
+					<p>Rikulo is licensed under the <a href="/">Apache Software License 2.0</a>. 
+						You can use it wherever you please, including open source and commercial applications.
 					</p>
 				</blockquote>
 			</div>
