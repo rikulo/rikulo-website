@@ -1,15 +1,11 @@
 $(function() {
-	$('#toc a').attr("href", function(i, href) {
-		var path = window.location.href,
-			index = path.indexOf('latest/'),
-			prefix = path.substring(0, index + 7),
-			relPath = path.substring(index + 7, path.length);
-		
-		if (href == relPath) {
-			$(this).addClass('item-sel');
+	var path = window.location.href;
+	
+	$('#toc a').each(function() {
+		var $n = $(this);
+		if ($n.attr('href') == path) {
+			$n.addClass('item-sel');
+			$n.removeAttr('href');
 		}
-		
-		return prefix + href;
 	});
-	$('a.item-sel').removeAttr('href');
 });
