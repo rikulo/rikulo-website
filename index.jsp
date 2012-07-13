@@ -27,7 +27,7 @@
 	<div id="row-banner-inner">
 		<article> 
 			<header class="h5header">
-				<h2>Rikulo - Java Ajax Framework</h2>
+				<h2>Rikulo - Web and Mobile in Dart</h2>
 			</header>
 			<div class="banners banner1">
 				<div class="banner-img">
@@ -45,9 +45,9 @@
 				<section> 
 					<header class="header">
 						<div class="title">
-							<h2 class="text">Unleash creativity, discover endless possibilities</h2>
+							<h2 class="text">Apps on target</h2>
 						</div>
-						<h1 class="desc">Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications in Dart &amp; HTML5.</h1>
+						<h1 class="desc">Rikulo is a free and open source framework for creating incredible cross-platform web and native mobile applications in Dart &amp; HTML5.</h1>
 						<div class="download-button">
 							<div class="hover"></div>
 							<a onclick="_gaq.push(['_trackEvent', 'download', 'version', 'latest']);" href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-13.zip" title="Download"> 

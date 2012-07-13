@@ -20,6 +20,7 @@
 			<h2>Support</h2>
 			<ul class="items">
 				<li><a onclick="_gaq.push(['_trackEvent', 'question', 'support-stack']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Discussion at Stackoverflow">Discussion</a></li>
+				<li><a href="https://github.com/rikulo/rikulo/issues" title="Issues">Issues</a></li>
 			</ul>
 		</div>
 	</div>
@@ -30,7 +31,7 @@
 			<div class="license-cnt">
 				<img alt="Apache License" src="/resource/img/learn/apachelicense.png"/>
 				<blockquote>
-					<p>Rikulo is licensed under the <a href="/">Apache Software License 2.0</a>. 
+					<p>Rikulo is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</a>. 
 						You can use it wherever you please, including open source and commercial applications.
 					</p>
 				</blockquote>
