@@ -15,7 +15,7 @@
 --%>
 <meta name="description" content="Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications in Dart and HTML5.">
 <meta name="keywords" content="Rikulo, Web, Mobile, Dart, Web framework, Ajax framekwork, Open Source, Apache">
-<title>Web and Mobile Apps in Dart | Rikulo</title>
+<title>Native Mobile in Dart | Rikulo</title>
 
 <link rel="stylesheet" type="text/css" href="/less/index" />
     
