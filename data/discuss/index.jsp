@@ -22,7 +22,7 @@
 		  			a technical problem please drop us an email.
 		  		</p>
 		  		<div class="button">
-	  				<a href="mailto:info@zkoss.org" title="Email Us">Email Us</a>
+	  				<a href="mailto:info@rikulo.org" title="Email Us">Email Us</a>
 		  		</div>
 	  		</div>
 		</div>
