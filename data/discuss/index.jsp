@@ -10,7 +10,7 @@
 		  			on Stackoverflow please use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.
 		  		</p>
 		  		<div class="button">
-	  				<a href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
+	  				<a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
 		  		</div>
 	  		</div>
 		</div>
@@ -31,7 +31,7 @@
 		<h2>Latest discussions</h2>
 		<jsp:include page="/WEB-INF/templates/articles/discussions-page.html" />
 		<div class="button">
-			<a href="http://stackoverflow.com/questions/tagged/rikulo" title="Join Discussion">Join Discussion</a>
+			<a onclick="_gaq.push(['_trackEvent', 'question', 'join-discussion']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Join Discussion">Join Discussion</a>
   		</div>
 	</div>
 </div>

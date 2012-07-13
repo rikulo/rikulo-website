@@ -4,7 +4,7 @@
 		<div class="grid">
 			<h2>Getting Started</h2>
 			<ul class="items">
-				<li><a href="https://github.com/rikulo/rikulo/downloads" title="Download Rikulo">Download Rikulo</a></li>
+				<li><a onclick="_gaq.push(['_trackEvent', 'download', 'list']);" href="https://github.com/rikulo/rikulo/downloads" title="Download Rikulo">Download Rikulo</a></li>
 				<li><a href="http://blog.rikulo.org/posts/2012/Jul/General/the-rikulo-way/" title="The Rikulo Way">The Rikulo Way</a></li>
 				<li><a href="http://docs.rikulo.org/rikulo/latest/Getting_Started/Hello_World.html" title="Tutorial">Tutorial</a></li>
 			</ul>
@@ -19,7 +19,7 @@
 		<div class="grid">
 			<h2>Support</h2>
 			<ul class="items">
-				<li><a href="http://stackoverflow.com/questions/tagged/rikulo" title="Discussion at Stackoverflow">Discussion</a></li>
+				<li><a onclick="_gaq.push(['_trackEvent', 'question', 'support-stack']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Discussion at Stackoverflow">Discussion</a></li>
 			</ul>
 		</div>
 	</div>
