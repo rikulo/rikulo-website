@@ -5,18 +5,18 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" >
 	
 	<%--
-	<meta property="og:title" content="ZK - Leading Enterprise Java Web Framework" >
+	<meta property="og:title" content="Rikulo - Web and Mobile Apps in Dart" >
 	<meta property="og:type" content="website" >
-	<meta property="og:url" content="http://www.zkoss.org/" >
+	<meta property="og:url" content="http://rikulo.org/" >
 	<meta property="og:image" content="http://www.zkoss.org/resource/img/logo/zklogo_s.png" >
-	<meta property="og:site_name" content="ZK - Java Web Framework" >
+	<meta property="og:site_name" content="Rikulo - Dart Web Framework" >
 	<meta property="og:description"
-          content="A highly productive open source Java framework for building amazing enterprise web and mobile applications." >
+          content="A free and open source framework for creating incredible cross-platform native mobile applications in Dart and HTML5.
 	<meta property="fb:app_id" content="215879398442065" > 
 	<meta property="fb:admins" content="760738270" >
 	
 	
-	<link href="http://feeds.feedburner.com/zkoss?format=xml" rel="alternate" type="application/rss+xml" title="ZK RSS FEED" />
+	<link href="http://feeds.feedburner.com/zkoss?format=xml" rel="alternate" type="application/rss+xml" title="Rikulo RSS FEED" />
 	 --%>
 	<meta name="description" content="Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications in Dart and HTML5.">
 	<meta name="keywords" content="Rikulo, Web, Mobile, Dart, Web framework, Ajax framekwork, Open Source, Apache">

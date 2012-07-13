@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Zk Ptroot" default="build" basedir=".">
+<project name="Rikulo Ptroot" default="build" basedir=".">
 
 	<!-- VARIABLES -->
 	<property name="src.dir" value="../WEB-INF/javaSrc"/>
