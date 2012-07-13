@@ -1,1 +1,1 @@
-$(function(){$("#toc a").attr("href",function(c,a){var f=window.location.href,b=f.indexOf("latest/"),e=f.substring(0,b+7),d=f.substring(b+7,f.length);if(a==d){$(this).addClass("item-sel")}return e+a});$("a.item-sel").removeAttr("href")});
+$(function(){var a=window.location.href;a=a.substring(a.indexOf("/rikulo/latest/"),a.length);$("#toc a").each(function(){var b=$(this);if(b.attr("href")==a){b.addClass("item-sel");b.removeAttr("href")}})});
