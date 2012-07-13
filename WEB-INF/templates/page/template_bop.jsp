@@ -18,6 +18,8 @@
 	
 	<link href="http://feeds.feedburner.com/zkoss?format=xml" rel="alternate" type="application/rss+xml" title="ZK RSS FEED" />
 	 --%>
+	<meta name="description" content="Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications in Dart and HTML5.">
+	<meta name="keywords" content="Rikulo, Web, Mobile, Dart, Web framework, Ajax framekwork, Open Source, Apache">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">	
 	<link rel="shortcut icon" type="image/ico" href="/resource/img/favicon.ico" >
 	<link rel="bookmark" href="/resource/img/favicon.ico" >
