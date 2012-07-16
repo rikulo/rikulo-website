@@ -2,7 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@page import="com.potix.website.rikulo.*,com.potix.website.rikulo.util.*"%>
 <%
-	String ua = request.getHeader("user-agent").toLowerCase();
+	String ua = request.getHeader("user-agent");
+	if (ua != null)
+		ua = ua.toLowerCase();
 	String name = request.getAttribute(Consts.MENU_CATEGORY) == null ? ""
 			: request.getAttribute(Consts.MENU_CATEGORY).toString();
 	String selClass = "menuitem-sel";
