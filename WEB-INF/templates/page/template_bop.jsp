@@ -25,3 +25,4 @@
 	<link rel="bookmark" href="/resource/img/favicon.ico" >
 	<link rel="stylesheet" type="text/css" href="/less/template" />
 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oswald:400,300,700|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href="http://blog.rikulo.org/feeds/all.rss.xml" rel="alternate" type="application/rss+xml" title="Rikulo RSS FEED" />
