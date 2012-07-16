@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	session="false" pageEncoding="UTF-8"%>
 <%@page import="com.potix.website.rikulo.*"%>
 <%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
 <title>Rikulo - Forbidden</title>

@@ -1,4 +1,4 @@
-<%@ page buffer="4096kb" language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@page import="com.potix.website.rikulo.*,java.text.*,java.util.*,java.io.*"%>
 <%
 	String header = request.getParameter("hd");
