@@ -244,10 +244,6 @@ a {
 	}
 	
 	#box {
-		#content {
-			font-size: 12pt;
-			max-width: 100%;
-		}
 		a, a:visited {
 			text-decoration: underline;
 		}
@@ -283,11 +279,15 @@ a {
 		h2, h3 {
 			page-break-after: avoid;
 		}
-		#toc {
-			display: none;
-		}
 	}
-	
+	#toc {
+		display: none;
+	}
+	#content {
+		font-size: 12pt;
+		width: 800px;
+		margin-left: 160px;
+	}
 	
 	@page :left {
 		margin: 15mm 20mm 15mm 10mm;
