@@ -17,12 +17,14 @@
 	
 	
 	<link href="http://feeds.feedburner.com/zkoss?format=xml" rel="alternate" type="application/rss+xml" title="Rikulo RSS FEED" />
+	 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 	 --%>
 	<meta name="description" content="Rikulo is a free and open source framework for creating incredible cross-platform native mobile applications in Dart and HTML5.">
 	<meta name="keywords" content="Rikulo, Web, Mobile, Dart, Web framework, Ajax framekwork, Open Source, Apache">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">	
 	<link rel="shortcut icon" type="image/ico" href="/resource/img/favicon.ico" >
 	<link rel="bookmark" href="/resource/img/favicon.ico" >
+	<link rel="stylesheet" type="text/css" href="/less/responsive_960" />
 	<link rel="stylesheet" type="text/css" href="/less/template" />
 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oswald:400,300,700|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href="http://blog.rikulo.org/feeds/all.rss.xml" rel="alternate" type="application/rss+xml" title="Rikulo RSS FEED" />

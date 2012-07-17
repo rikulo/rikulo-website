@@ -24,13 +24,13 @@
 </div>
 <%--END OF TEMPLATE, NO NEED FOR INDEX--%>
 <div id="row-banner">
-	<div id="row-banner-inner">
+	<div id="row-banner-inner" class="container_12">
 		<article> 
 			<header class="h5header">
 				<h2>Rikulo - Web and Mobile in Dart</h2>
 			</header>
 			<div class="banners banner1">
-				<div class="banner-img">
+				<div class="banner-img grid_6">
 					<!--[if lt IE 7]>
 		        		<img class="img" src="/resource/img/index/src/banner_imagebg.png" alt="Rikulo Live Demo"  title="Rikulo Live Demo"/>
 		        	<![endif]-->
@@ -43,7 +43,7 @@
 					<!--<![endif]-->
 				</div>
 				<section> 
-					<header class="header">
+					<header class="header grid_6">
 						<div class="title">
 							<h2 class="text">Apps on target</h2>
 						</div>

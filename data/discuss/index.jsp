@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>		
-<div id="page-content"  class="clearfix">
-	<div class="column how">
+<div id="page-content"  class="grid_12 clearfix">
+	<div class="how grid_6 alpha">
 		<h2>How?</h2>
 		<div class="item stackoverflow">
 			<img src="/resource/img/discuss/stackoverflow.png" alt="Stackoverflow" title="Stackoverflow"/>
@@ -27,7 +27,7 @@
 	  		</div>
 		</div>
 	</div>
-	<div class="column discussion">
+	<div class="discussion grid_6 omega">
 		<h2>Latest discussions</h2>
 		<jsp:include page="/WEB-INF/templates/articles/discussions-page.html" />
 		<div class="button">

@@ -7,7 +7,10 @@ String req_uri = request.getAttribute("javax.servlet.forward.request_uri") != nu
 	<title>Rikulo - Not Found <%=req_uri %></title>
 	<link rel="stylesheet" type="text/css" href="/resource/css/error.css" />
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
-		<div id="error">
+		<div class="grid_6 omega" >
+			<img class="image" src="/resource/img/error/footprints_bg.jpg">
+		</div>
+		<div class="header grid_6 alpha">
 			<div class="title">Whoops!</div>
 			<div class="desc">
 				Looks like the page you are looking for does not exist, sorry.

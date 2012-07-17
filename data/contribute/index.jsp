@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>		
 
-<div id="page-content"  class="clearfix">
-	<div class="column why">
+<div id="page-content"  class="grid_12 clearfix">
+	<div class="why grid_6 alpha">
 		<h2>Why Contribute?</h2>
 		<p>Rikulo is a free and open source framework for writing impressive 
 			and stylish web and mobile applications. There is a large community 
@@ -15,7 +15,7 @@
 			<li>Experiment with different technologies</li>
 		</ul>
 	</div>
-	<div class="column how">
+	<div class="how grid_6 omega clearfix">
 		<h2>How?</h2>
 		<ul class="items">
 			<li>

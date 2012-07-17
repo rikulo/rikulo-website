@@ -1,9 +1,10 @@
-#error {
+.image {
+	margin-left: -10px;
+}
+.header {
 	color: #0d0d0d;
-	background: url("/resource/img/error/footprints_bg.jpg") no-repeat scroll -11px 0 transparent;
-	width: 492px;
 	height: 447px;
-	padding: 130px 0 0 455px;
+	padding-top: 130px;
 	font-family: 'Asap',sans-serif;
 }
 .title {
@@ -17,14 +18,13 @@
 	font-family: 'Lora', sans-serif;
 	font-size: 20px;
 	width: 350px;
-	margin: -9px 0 0 6px;
+	margin-top: -9px;
 }
 
 .button {
 	width: 155px;
 	height: 40px;
-	margin-right: 5px;
-	margin: 28px 5px 0 6px;
+	margin-top: 28px;
 	background: url("/img/button-backhome.png") no-repeat scroll 0 0 transparent;
 }
 
