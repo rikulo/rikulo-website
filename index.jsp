@@ -48,13 +48,28 @@
 							<h2 class="text">Apps on target</h2>
 						</div>
 						<h1 class="desc">Rikulo is a free and open source framework for creating incredible cross-platform web and native mobile applications in Dart &amp; HTML5.</h1>
-						<div class="download-button">
-							<div class="hover"></div>
-							<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);" href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-16.zip" title="Download"> 
-								<span class="name">Download</span><br> 
-								<span class="version"></span><br> 
-								<span class="license">Apache license 2.0</span>
-							</a>
+						<div>
+							<div class="download-button">
+								<div class="hover"></div>	
+								<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);" href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-16.zip" title="Download"> 
+									<span class="name">Download</span><br> 
+									<span class="version">Latest Version</span><br> 
+									<span class="license">Apache license 2.0</span>
+								</a>
+							</div>
+							<div class="google-plus">
+								<!-- Place this tag where you want the +1 button to render. -->
+								<div class="g-plusone" data-href="http://www.rikulo.org"></div>
+								
+								<!-- Place this tag after the last +1 button tag. -->
+								<script type="text/javascript">
+								  (function() {
+								    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+								    po.src = 'https://apis.google.com/js/plusone.js';
+								    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+								  })();
+								</script>
+							</div>	
 						</div>
 						<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo-list']);" href="https://github.com/rikulo/rikulo/downloads" class="git-link" title="Other Versions on GitHub">Other Versions on GitHub<span></span></a>
 					</header> 
