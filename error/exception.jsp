@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	session="false" pageEncoding="UTF-8"%>
 <%
 String req_uri = request.getAttribute("javax.servlet.forward.request_uri") != null ?  request.getAttribute("javax.servlet.forward.request_uri").toString() : "";
 String req_search = req_uri.replaceAll("index.dsp","").replaceAll("/"," ");
