@@ -24,7 +24,7 @@
 </div>
 <%--END OF TEMPLATE, NO NEED FOR INDEX--%>
 <div id="row-banner">
-	<div id="row-banner-inner" class="container_12">
+	<div id="row-banner-inner" class="container_12 clearfix">
 		<article> 
 			<header class="h5header">
 				<h2>Rikulo - Web and Mobile in Dart</h2>
