@@ -12,4 +12,4 @@
 	<div id="rikulo-container">
 		<%@include file="/WEB-INF/templates/page/template_header_inner.jsp" %>
 		<div id="rikulo-template">
-			<div id="template-inner">
+			<div id="template-inner" class="container_12">

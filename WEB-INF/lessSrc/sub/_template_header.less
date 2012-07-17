@@ -23,7 +23,9 @@ a {
 /*Container*/
 #rikulo-container {	
 	background: url("/resource/img/template/blizzard.png") repeat scroll 0 0 transparent;	
-	min-width: 1024px;
+	/*
+	 min-width: 1024px;
+	 */
 }
 
 /***Header***/
@@ -32,8 +34,9 @@ a {
 		display: none;
 	}
 	position: relative;
-	width: 947px;
-	margin: 24px auto 0 ;
+	margin-bottom: 28px;
+    margin-top: 24px;
+	
 }
 /***Menu***/
 #sub_menu {
@@ -47,7 +50,7 @@ a {
 		color: #F2F2E1;
 	}
 	
-	.menuitem-sel .menuitem-right {
+	.menuitem-sel {
 		color: #e0c6a2;
 	}
 	.menuitem-hover a:hover {
@@ -64,14 +67,13 @@ a {
 }
 
 #main_menu {
-	float: right;
 	margin-top: 35px;
 	.menuitem a {
 		font-size: 16px;
 		color: #0d0d0d;
 	}
 	
-	.menuitem-sel .menuitem-right a {
+	.menuitem-sel a {
 		border-color: #D49B50;
 	    border-style: solid;
 	    border-width: 0 0 3px;
@@ -85,17 +87,11 @@ a {
 
 ul.menu {
 	list-style: none outside none;
-	margin: 0;
-	padding: 0;
+	float: right;
 	li {
 		float: left;
 		display: block;
-		padding-left: 8px;
-	}
-	
-	
-	.menuitem-right {
-		padding: 0 7px;
+		padding-left: 22px;
 	}
 	
 	.menuitem a {
@@ -115,10 +111,7 @@ ul.menu {
 /***Logo***/
 #rikulo-logo {
 	background: url('/resource/img/template/rikulo_logo.png') no-repeat scroll 0 0 transparent;
-	width: 141px;
 	height: 42px;
-	float: left;
-	top: 0;
 	margin-top: 26px;
 	.logo-img {
 		display: none;

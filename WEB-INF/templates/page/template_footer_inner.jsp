@@ -1,8 +1,8 @@
-<div id="footer-inner">
-	<div id="footer-txt">
+<div id="footer-inner" class="container_12">
+	<div id="footer-txt" class="grid_8">
 	Rikulo is a registered trademark of Potix Corporation.<br />
 	Copyright &copy; 2012 Potix Corporation. All rights reserved.</div>
-	<div id="sns-items">
+	<div id="sns-items" class="grid_4">
 		<ul>
 			<li class="label">Follow us on</li>
 			<li class="sns-btn rss"><a href="http://blog.rikulo.org/feeds/all.rss.xml" title="Rikulo RSS">Rikulo RSS</a></li>
