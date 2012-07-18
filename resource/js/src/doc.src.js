@@ -6,6 +6,9 @@ $(function() {
 		if ($n.attr('href') == path) {
 			$n.addClass('item-sel');
 			$n.removeAttr('href');
+			var $title = $('title');
+			$title.html($n.html() + ' | ' + $title.html());
+			return false;
 		}
 	});
 });
