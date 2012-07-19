@@ -25,6 +25,18 @@
 	padding-bottom: 25px;
 }
 
+/* Clear Fix */
+.clearfix:before, .clearfix:after {
+   content: "";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+.clearfix {
+   zoom: 1; 
+}
+
 /* Print */
 @media print {
   #template-inner {

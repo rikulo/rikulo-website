@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div id="page-content">
-	<div class="row grid_12 clearfix">
+<div id="page-content" class="grid_12 clearfix">
 		<div class="grid_4 alpha">
 			<h2>Getting Started</h2>
 			<ul class="items">
@@ -23,9 +22,7 @@
 				<li><a href="https://github.com/rikulo/rikulo/issues" title="Issues">Issues</a></li>
 			</ul>
 		</div>
-	</div>
-	<br/>
-	<div class="row grid_12 clearfix">
+		<div class="sep clearfix"></div>
 		<div class="grid_4 alpha license">
 			<h2>Licensing</h2>
 			<div class="license-cnt">
@@ -37,5 +34,4 @@
 				</blockquote>
 			</div>
 		</div>
-	</div>
 </div>

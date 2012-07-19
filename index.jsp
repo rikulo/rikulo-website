@@ -24,7 +24,7 @@
 </div>
 <%--END OF TEMPLATE, NO NEED FOR INDEX--%>
 <div id="row-banner">
-	<div id="row-banner-inner" class="container_12">
+	<div id="row-banner-inner" class="container_12 clearfix">
 		<article> 
 			<header class="h5header">
 				<h2>Rikulo - Web and Mobile in Dart</h2>
@@ -51,7 +51,7 @@
 						<div>
 							<div class="download-button">
 								<div class="hover"></div>	
-								<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);" href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-16.zip" title="Download"> 
+								<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);" href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-18.zip" title="Download"> 
 									<span class="name">Download</span><br> 
 									<span class="version">Latest Version</span><br> 
 									<span class="license">Apache license 2.0</span>
