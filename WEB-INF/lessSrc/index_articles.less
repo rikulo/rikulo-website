@@ -24,7 +24,6 @@
 
 
 #row-articles .head {
-	width: 290px;
 	height: 30px;
 	margin-bottom: 10px;
 }
@@ -48,14 +47,11 @@
 
 
 #row-articles .desc {
-	display:inline;
-	width: 230px;
-	min-height: 28px;
+	display: inline;
 	font-size: 12px;	
 	overflow: hidden;
 }
 .ie6 #row-articles .desc {
-	height: 28px; 
 	overflow: visible;
 }
 #row-articles {
@@ -82,11 +78,11 @@
 		.corner {
 			background: url("/resource/img/index/talk_corners.png") no-repeat scroll 0 0 transparent;
 		}
-		.top {
+		div.top {
 			height: 3px;
 		}
 		
-		.bottom {
+		div.bottom {
 			background-position: 0 -3px;
 			height: 13px;
 		}
@@ -109,12 +105,12 @@
 				margin-bottom: -1px;
 			}
 			.reply, .retweet, .favorte {
-				display: none;
+				visibility: hidden;
 			}
 		}
 		.edit {
 			.reply, .retweet, .favorte {
-				display: inline;
+				visibility: visible;
 			}
 		}
 	}
@@ -134,11 +130,13 @@
 	}
 	.twitters {
 		float: left;
-		width: 300px;
 		position: relative;
 	}
 	.bubble-r {
 		float: right;
+		div.bottom {
+			background-position: 0 -16px;
+		}
 	}
 	.bubble-l {
 		float: left;

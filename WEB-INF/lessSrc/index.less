@@ -7,7 +7,6 @@ body {
 }
 /**Header**/
 #index-header {
-	//height: 100px;
 	margin-bottom: 32px;
 }
 
@@ -18,12 +17,9 @@ body {
 #rikulo-template {
 	display:none;
 }
+
 /***Image Row***/
-#row-banner {
-   // height: 380px;
-}
 #row-banner-inner {
-	//height: 380px;
 	background: url("/resource/img/index/banner_texture.jpg") no-repeat scroll 0 140px transparent;
 }
 .ie6 #row-banner-inner {
@@ -44,10 +40,8 @@ body {
 #row-banner .title,
 #row-banner .desc {
 	float:left;
-	width: 475px;
 }
 #row-banner .title {
-	height: 85px;	
 	margin-top: 8px;
 }
 #row-banner .title .text {
@@ -59,8 +53,7 @@ body {
 	line-height: 117%;
 }
 #row-banner .desc {
-	margin-top: 7px;
-	width: 450px;
+	margin-top: 16px;
 	letter-spacing: 0.95px;
     line-height: 130%;
 	font-family: 'Lora', serif;
@@ -87,24 +80,25 @@ body {
 	.header {
 		font-family: 'Asap', sans-serif;
 	}
+	.buttons {
+		margin-top: 45px;
+	}
 	.download-button {
-		background: #FCFBF8 url("/resource/img/index/button_download.png") no-repeat -1px 0;
-		width: 220px;
+		background: url("/resource/img/index/button_download.png") no-repeat scroll -1px 0 transparent;
 		height: 79px;
 		float: left;
-		margin: 45px 100px 0 0;
-		//.shadow(0 ,1px ,2px 1px, #aaa);
 		position: relative;
 		.hover {
 			position: absolute;
-			background: #FCFBF8 url("/resource/img/index/button_download.png") no-repeat -1px -82px;
-			width: 220px;
+			background: #FCFBF8 url("/resource/img/index/button_download.png") no-repeat scroll -1px -82px transparent;
 			height: 79px;
+			width: 220px;
 			top: 0;
 			.opacity(0);
 		}
 		a {
 			.div-button-a;
+			width: 220px;
 			position: relative;
 			span {
 				position: absolute;
@@ -137,13 +131,12 @@ body {
 	}
 
 	.google-plus {
-		float: left;
-		margin: 70px 0 0 0
+		margin-top: 70px;
 	}
 	
 	a.git-link { 
+		margin: 1px 0 0 37px;
 		float: left;
-		margin:1px 0 0 37px;
 		color: #914503;
 		font-size: 11px;
 		font-style: italic;

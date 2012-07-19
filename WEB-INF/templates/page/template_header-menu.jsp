@@ -10,7 +10,7 @@
 	String selClass = "menuitem-sel";
 	boolean oldBrowser = false;//(WebUtil.isMSIE(ua) && WebUtil.getIEVer(ua) < 9);
 %>
-<div id="main_menu" class="grid_6">
+<div id="main_menu" class="grid_6 clearfix">
 	<nav class="navigation_menu"> 
 		<header>
 			<h5>Navigation Menu</h5>
