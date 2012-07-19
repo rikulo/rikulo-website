@@ -28,11 +28,16 @@
 	height: 30px;
 	margin-bottom: 10px;
 }
-#row-articles .headline {
-	float: left;
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	text-transform:uppercase;
+#row-articles {
+	.headline {
+		float: left;
+		a {
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			text-transform:uppercase;
+			.link-color(#0d0d0d, #914503);
+		}
+	}
 }
 #row-articles .data {
 	text-align: left;

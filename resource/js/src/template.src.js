@@ -18,13 +18,6 @@ $(function() {
 	if (isTouch) {
 		$("body").addClass("touch");
 	} else {
-		
-		/* Menu */
-		$(".menuitem").hover(function() {	
-			$(this).addClass("menuitem-hover");	
-		}, function(){
-		   $(this).removeClass("menuitem-hover");
-		});
 	}
 	/* Facebook Like 
 	window.fbAsyncInit = function() { 

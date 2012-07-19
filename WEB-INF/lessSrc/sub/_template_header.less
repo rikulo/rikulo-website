@@ -68,22 +68,25 @@ a {
 
 #main_menu {
 	margin-top: 35px;
-	.menuitem a {
-		font-size: 16px;
-		color: #0d0d0d;
-	}
+	.menuitem {
+		a {
+			font-size: 16px;
+			color: #0d0d0d;
+		}
+		a:hover {
+			color: #914503;
+			border-color: #914503;
+		}
+	} 
 	
 	.menuitem-sel a {
+		color: #D49B50;
 		border-color: #D49B50;
 	    border-style: solid;
 	    border-width: 0 0 3px;
-		color: #d49b50;
-	}
-	.menuitem-hover a:hover {
-		color: #914503;
-		border-color: #914503;
 	}
 }
+
 
 ul.menu {
 	list-style: none outside none;
@@ -117,7 +120,7 @@ ul.menu {
 		display: none;
 	}
 	a {
-		width:140px;
+		width:142px;
 		height: 69px;
 		display: block;
 		text-indent: 150%;
