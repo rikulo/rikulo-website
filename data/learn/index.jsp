@@ -3,7 +3,9 @@
 		<div class="grid_4 alpha">
 			<h2>Getting Started</h2>
 			<ul class="items">
+				<%-- Jumpping to github might confuse for new users (might enable it when we have official release)
 				<li><a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo-list']);" href="https://github.com/rikulo/rikulo/downloads" title="Download Rikulo">Download Rikulo</a></li>
+				--%>
 				<li><a href="http://blog.rikulo.org/posts/2012/Jul/General/the-rikulo-way/" title="The Rikulo Way">The Rikulo Way</a></li>
 				<li><a href="http://docs.rikulo.org/rikulo/latest/Getting_Started/Hello_World.html" title="Tutorial">Tutorial</a></li>
 			</ul>
