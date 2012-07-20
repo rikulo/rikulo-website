@@ -6,10 +6,6 @@
 	
 	 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	
-		body {
-		  min-width: 768px;
-		}
-		
 		/* `Container
 		----------------------------------------------------------------------------------------------------*/
 		
@@ -97,12 +93,18 @@
 		}
 		
 		#main_menu {
-			margin-left: 10px;
+			margin-left: 10px !important;// fix ipad
 		}
 		
 		#footer-inner #sns-items .sns-btn {
 			margin-left: 1px;	
 		}
+		#sns-items .label {
+			width: 230px;
+			margin-top: -7px;
+			padding-top: 0;
+		}
+		
 		#row-banner {
 			.buttons {
 				margin-top: 30px;
@@ -115,8 +117,8 @@
 		
 		#twitter {
 			.bubble {
-				width: 173px;
-				.corner {
+				width: 173px !important;
+				div.corner {
 					background: url("/resource/img/index/talk_corners_173.png") no-repeat scroll 0 0 transparent;
 				}
 				
@@ -126,12 +128,28 @@
 					margin-top: 5px;
 				}
 			}
-			.pointer-r {
+			div.pointer-r {
 				left: 172px;
 			}
-			.pointer-l {
+			div.pointer-l {
 				background-position: -12px 0;
 				right: 172px;
 			}
 		}
+		
+		#page-content.discuss-page {
+			.how  div.item {
+				background: url("/resource/img/discuss/how-background_364.png") no-repeat scroll 0 0 transparent;
+				.item-cnt {
+					width: 255px;
+				}
+			}
+			.discussion  {
+				padding-left: 40px;
+				width: 324px;
+			}
+		}
+		
+		
+		
 	}

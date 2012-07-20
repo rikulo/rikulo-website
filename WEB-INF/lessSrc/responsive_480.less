@@ -4,11 +4,7 @@
     /* Note: Design for a width of 480px */
 
    @media only screen and (min-width: 480px) and (max-width: 767px) {
-        body {
-		  min-width: 460px;
-		}
-		
-		/* `Container
+       	/* `Container
 		----------------------------------------------------------------------------------------------------*/
 		
 		.container_12 {
@@ -32,13 +28,82 @@
 		.container_12 .grid_10,
 		.container_12 .grid_11,
 		.container_12 .grid_12 {
-		  margin: 0;
-		  width: 460px;
+			margin-left: 10px;
+			margin-right: 10px;
+			width: 460px;
 		}
+		
+		/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+		----------------------------------------------------------------------------------------------------*/
+		.container_12 {
+			.alpha {
+			  margin-left: 0;
+			}
+
+			.omega {
+			  margin-right: 0;
+			}
+		}
+		
 		.navigation_menu ul.menu {
 		    float: left;
 		}
+		
+		#row-banner {
+			.banner-img {
+				img {
+					margin-left: 0 !important;
+				}
+				iframe.rikulo-demo {
+					left: 111px;
+				}
+			}
+			#row-banner-inner {
+				background-image: none;
+			}
+		}
+		
 		#twitter .twitters {
 			width: 300px;
+		}
+		#row-articles-innter .row-item {
+			margin-bottom: 36px;
+		}
+		
+		#footer-inner #sns-items {
+			float: left;
+			margin-bottom: 17px;
+		}
+		
+		.contribute-page  {
+			.why {
+				margin-bottom: 44px;
+			}
+			.how  {
+				margin-left: 0;
+			}
+			
+		}
+		
+		#page-content.learn-page {
+			.reference, .support {
+				margin-left: 0;
+			}
+			.item {
+				margin-bottom: 20px;
+			}
+			.sep {
+				margin-bottom: 0;
+			}
+		}
+		
+		.discuss-page {
+			.how {
+				margin-bottom: 44px;
+			}
+			
+			.discussion {
+				margin-bottom: 19px;
+			}
 		}
 	}
