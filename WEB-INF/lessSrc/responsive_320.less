@@ -4,11 +4,7 @@
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
-        body {
-		  min-width: 300px;
-		}
-		
-		/* `Container
+        /* `Container
 		----------------------------------------------------------------------------------------------------*/
 		
 		.container_12 {
@@ -32,14 +28,53 @@
 		.container_12 .grid_10,
 		.container_12 .grid_11,
 		.container_12 .grid_12 {
-		  margin: 0;
-		  width: 300px;
+			margin-left: 10px;
+			margin-right: 10px;
+			width: 300px;
+		}
+		
+		/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+		----------------------------------------------------------------------------------------------------*/
+
+		.container_12 {
+			.alpha {
+			  margin-left: 0;
+			}
+
+			.omega {
+			  margin-right: 0;
+			}
 		}
 		
 		.navigation_menu ul.menu {
 		    float: left;
 		}
+		
 		.navigation_menu ul.menu li{
 		    padding-left: 18px;
+		}
+		
+		#row-banner {
+			.banner-img {
+				img {
+					margin-left: 0 !important;
+				}
+				iframe.rikulo-demo {
+					left: 106px;
+					top: 50px;
+				}
+			}
+			#row-banner-inner {
+				background-image: none;
+			}
+		}
+		
+		.row-item {
+			margin-bottom: 36px;
+		}
+		
+		#footer-inner #sns-items {
+			float: left;
+			margin-bottom: 17px;
 		}
 	}
