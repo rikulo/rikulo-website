@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div id="page-content" class="grid_12 clearfix">
+<div id="page-content" class="learn-page grid_12 clearfix">
 		<div class="grid_4 alpha">
 			<h2>Getting Started</h2>
 			<ul class="items">

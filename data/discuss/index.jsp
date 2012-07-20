@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>		
-<div id="page-content" class="grid_12 clearfix">
+<div id="page-content" class="discuss-page grid_12 clearfix">
 	<div class="how grid_6 alpha">
 		<h2>How?</h2>
 		<div class="item stackoverflow">
