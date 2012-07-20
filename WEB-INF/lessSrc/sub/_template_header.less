@@ -68,6 +68,7 @@ a {
 
 #main_menu {
 	margin-top: 35px;
+	margin-left: 10px !important;// fix ipad: 960 grid
 	.menuitem {
 		a {
 			font-size: 16px;
@@ -107,6 +108,12 @@ ul.menu {
 .ie67 {
 	ul.menu .menuitem-hover ul {
 		display: inline; /*IE 6,7 UL display BUG */
+	}
+}
+
+.ie6 #main_menu {
+	.menuitem-sel a {
+		display: block;
 	}
 }
 

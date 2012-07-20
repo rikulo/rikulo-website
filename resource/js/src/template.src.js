@@ -1,5 +1,6 @@
 $(function() {
-	ie6 = $.browser.msie && $.browser.version == '6.0';
+	var ie6 = $.browser.msie && $.browser.version == '6.0';
+	
 	if ($.browser.safari)
 		$("body").addClass("safari");
 	
@@ -51,7 +52,6 @@ google.setOnLoadCallback(function() {
 	document.getElementById('q'),'cse-search-box');
 });
 */
-
 var ADAPT_CONFIG = {
   // Where is your CSS?
   path: 'http://rikulo.org/less/',
@@ -59,7 +59,25 @@ var ADAPT_CONFIG = {
   // false = Only run once, when page first loads.
   // true = Change on window resize and page tilt.
   dynamic: true,
-
+  callback: function(i, width) {
+	if (i == 0) {//responsive_320
+		$('.responsive-image').each(function() {
+			var $n = $(this),
+				src = $n.attr('src');
+			
+			if (src != $n.attr('data-320src'))
+				$n.attr('src', $n.attr('data-320src'));
+		});
+	} else {
+		$('.responsive-image').each(function() {
+			var $n = $(this),
+				src = $n.attr('src');
+			
+			if (src == $n.attr('data-320src'))
+				$n.attr('src', $n.attr('data-fullsrc'));
+		});
+	}
+  },
   // First range entry is the minimum.
   // Last range entry is the maximum.
   // Separate ranges by "to" keyword.
@@ -94,17 +112,19 @@ var range_len = range.length;
 
 // Create empty link tag:
 // <link rel="stylesheet" />
-var css = d.createElement('link');
+var css = $('link[href*="responsive"]')[0];
 css.rel = 'stylesheet';
 css.media = 'screen';
 
 // Called from within adapt().
 function change(i, width) {
-  // Set the URL.
-  css.href = url;
-  url_old = url;
-  // Call callback, if defined.
-  callback && callback(i, width);
+	if (css.href != url) {
+		// Set the URL.
+		css.href = url;
+		url_old = url;
+		// Call callback, if defined.
+		callback && callback(i, width);
+	}
 }
 
 // Adapt to width.
@@ -166,7 +186,7 @@ function adapt() {
 
     // Add the CSS, only if path is defined.
     // Use faster document.head if possible.
-    path && (d.head || d.getElementsByTagName('head')[0]).appendChild(css);
+    //path && (d.head || d.getElementsByTagName('head')[0]).appendChild(css);
   }
   else if (url_old !== url) {
     // Apply changes.
@@ -214,5 +234,3 @@ if (config.dynamic) {
 
 //Pass in window, document, config, undefined.
 })(this, this.document, ADAPT_CONFIG);
-
-

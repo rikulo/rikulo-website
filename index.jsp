@@ -1,14 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	session="false" pageEncoding="UTF-8"%>
-<%@page import="java.text.*,java.util.*,com.potix.website.*"%>
+<%@page import="java.text.*,java.util.*,com.potix.website.*,com.potix.website.rikulo.util.*"%>
+<%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
 <%
 	SimpleDateFormat fmt = new SimpleDateFormat(
 			"EEE, dd MMM yyyy HH:mm:ss zz");
 	response.setHeader("Pragma", "no-cache");
 	response.setDateHeader("Expires", -10);
 	response.setHeader("Last-Modified", fmt.format(new Date()));
+	
+	String bannerImage = "banner_image_emptybg.png";
+	if (ua != null) {//ua declare in template_bop.jsp
+		ua = ua.toLowerCase();
+		if (WebUtil.isPhone(ua))
+			bannerImage = "banner_image_responsive.png";
+	}
 %>
-<%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
 <%--
 <meta name="alexaVerifyID" content="Pm7SNmKasZyei0xlIk-o1dFuxro">
 <meta name="verify-v1" content="gBA1yn9Oo4XnNC1ORE1yoH0Q/ssiWgaPOwCGZAXzM4Q=">
@@ -38,7 +45,10 @@
 						<img class="img" src="/resource/img/index/src/banner_image.png" alt="Rikulo Live Demo" title="Rikulo Live Demo"/>
 					<![endif]-->
 					<!--[if !IE]>-->
-						<img class="img" src="/resource/img/index/src/banner_image_emptybg.png" alt="Rikulo Live Demo" title="Rikulo Live Demo" />
+						<img class="responsive-image" alt="Rikulo Live Demo" title="Rikulo Live Demo" 
+							src="/resource/img/index/src/<%=bannerImage%>" 
+							data-320src="/resource/img/index/src/banner_image_responsive.png" 
+							data-fullsrc="/resource/img/index/src/banner_image_emptybg.png"/>
 						<iframe class="rikulo-demo" src="/data/index/demo1.html" ></iframe>
 					<!--<![endif]-->
 				</div>
