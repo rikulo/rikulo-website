@@ -51,7 +51,7 @@
 						<div>
 							<div class="download-button">
 								<div class="hover"></div>	
-								<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);" href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-18.zip" title="Download"> 
+								<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);" href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-07-20.zip" title="Download"> 
 									<span class="name">Download</span><br> 
 									<span class="version">Latest Version</span><br> 
 									<span class="license">Apache license 2.0</span>
