@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>		
-<div id="page-content"  class="grid_12 clearfix">
+<div id="page-content"  class="contribute-page grid_12 clearfix">
 	<div class="why grid_6 alpha">
 		<h2>Why Contribute?</h2>
 		<p>Rikulo is a free and open source framework for writing impressive 

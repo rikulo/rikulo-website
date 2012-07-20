@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>		
-<div id="page-content" class="grid_12 clearfix">
+<div id="page-content" class="discuss-page grid_12 clearfix">
 	<div class="how grid_6 alpha">
 		<h2>How?</h2>
 		<div class="item stackoverflow">
@@ -9,9 +9,9 @@
 		  			Rikulo's official forum is <a href="http://www.stackoverflow.com">Stackoverflow</a>, to ask a Rikulo question 
 		  			on Stackoverflow please use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.
 		  		</p>
-		  		<div class="button">
-	  				<a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
-		  		</div>
+	  		</div>
+	  		<div class="button">
+  				<a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
 	  		</div>
 		</div>
 		<div class="item email">
@@ -21,9 +21,9 @@
 		  			If you have any questions related directly to the framework rather than 
 		  			a technical problem please drop us an email.
 		  		</p>
-		  		<div class="button">
-	  				<a href="mailto:info@rikulo.org" title="Email Us">Email Us</a>
-		  		</div>
+	  		</div>
+	  		<div class="button">
+  				<a href="mailto:info@rikulo.org" title="Email Us">Email Us</a>
 	  		</div>
 		</div>
 	</div>
