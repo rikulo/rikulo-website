@@ -101,6 +101,11 @@ if (!config) {
   return;
 }
 
+var hostname = window.location.hostname;
+
+if (hostname == 'docs.rikulo.org' || hostname == 'blog.rikulo.org')
+	return;
+
 // Empty vars to use later.
 var url, url_old, timer;
 
