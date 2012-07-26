@@ -1620,9 +1620,10 @@ $$.SnakeCanvas = {"":
  },
  onCreate_$0: function() {
   this.set$title('Snake');
-  this.get$mainView().set$width(572);
-  this.get$mainView().set$height(396);
-  this.get$mainView().get$style().set$backgroundImage('url(\'http://blog.rikulo.org/static/files/tutorial/creating-snake/res/snake_bg.png\')');
+  this.get$mainView().set$width(460);
+  this.get$mainView().set$height(300);
+  this.get$mainView().get$style().set$backgroundImage('url(\'res/snake_bg_mobile.png\')');
+  this.get$mainView().get$profile().set$location('center center');
   var vlayout = $.View$();
   vlayout.get$layout().set$type('linear');
   vlayout.get$layout().set$orient('vertical');
@@ -1636,7 +1637,7 @@ $$.SnakeCanvas = {"":
   vlayout.addChild$1(this.canvas);
   this.scoreBar = $.TextView$('Your score is: ' + $.S(this.get$score()));
   this.scoreBar.get$profile().set$width('flex');
-  this.scoreBar.get$profile().set$height('30');
+  this.scoreBar.get$profile().set$height('15');
   vlayout.addChild$1(this.scoreBar);
   this.get$mainView().addChild$1(vlayout);
   this.ctx2d = this.canvas.get$context2D();
@@ -4173,7 +4174,8 @@ $$._DialogInfo = {"":
  createMask$1: function(parent$) {
   var t1 = this.maskClass;
   if (!(t1 == null)) {
-    this._maskNode = $._ElementFactoryProvider_Element$html('<div class="v- ' + $.S(t1) + '" style="width:' + $.S($.browser.get$size().get$width()) + 'px;height:' + $.S($.browser.get$size().get$height()) + 'px"></div>');
+    var sz = $.browser.get$size();
+    this._maskNode = $._ElementFactoryProvider_Element$html('<div class="v- ' + $.S(t1) + '" style="width:' + $.S(sz.get$width()) + 'px;height:' + $.S(sz.get$height()) + 'px"></div>');
     t1 = $.activity.get$container();
     !(t1 == null) && this._maskNode.get$style().set$position('absolute');
     parent$.$dom_appendChild$1(this._maskNode);
@@ -4244,12 +4246,12 @@ $$._EmptyColl = {"":
   return true;
  },
  filter$1: function(f) {
-  return $.CTC66;
+  return $.CTC67;
  },
  forEach$1: function(f) {
  },
  iterator$0: function() {
-  return $.CTC67;
+  return $.CTC68;
  },
  is$Collection: function() { return true; }
 };
@@ -4285,11 +4287,11 @@ $$._OnDemandMap = {"":
  },
  getValues$0: function() {
   var t1 = this._lib7_map;
-  return !(t1 == null) ? t1.getValues$0() : $.CTC66;
+  return !(t1 == null) ? t1.getValues$0() : $.CTC67;
  },
  getKeys$0: function() {
   var t1 = this._lib7_map;
-  return !(t1 == null) ? t1.getKeys$0() : $.CTC66;
+  return !(t1 == null) ? t1.getKeys$0() : $.CTC67;
  },
  forEach$1: function(f) {
   var t1 = this._lib7_map;
@@ -4530,92 +4532,6 @@ $$._Size = {"":
  is$Size: true
 };
 
-$$._Animator = {"":
- ["_prevTime=", "_callback?", "_tmpRemoved", "_anims?"],
- super: "Object",
- remove$1: function(animate) {
-  var t1 = this._tmpRemoved;
-  if (!(t1 == null)) $.add$1(t1, animate);
-  else $.ListUtil_remove(this._anims, animate);
- },
- add$1: function(animate) {
-  var t1 = this._anims;
-  t1.push(animate);
-  t1 = t1.length;
-  if (t1 === 1) {
-    this._prevTime = $._Animator__now();
-    $.window().requestAnimationFrame$1(this._callback);
-  }
- },
- _isRemoved$1: function(index) {
-  if (typeof index !== 'number') return this._isRemoved$1$bailout(1, index);
-  if ($.isEmpty(this._tmpRemoved) !== true) {
-    var t1 = this._anims;
-    if (index !== (index | 0)) throw $.iae(index);
-    var t2 = t1.length;
-    if (index < 0 || index >= t2) throw $.ioore(index);
-    var t3 = t1[index];
-    for (t2 = $.iterator(this._tmpRemoved), cnt = 0; t2.hasNext$0() === true; ) {
-      if ($.eqB(t2.next$0(), t3)) ++cnt;
-    }
-    if (cnt > 0) {
-      for (var j = 0; j < index; ++j) {
-        t2 = t1.length;
-        if (j < 0 || j >= t2) throw $.ioore(j);
-        if ($.eqB(t1[j], t3)) {
-          --cnt;
-          t2 = cnt === 0;
-        } else t2 = false;
-        if (t2) return false;
-      }
-      return true;
-    }
-  }
-  return false;
-  var cnt;
- },
- _isRemoved$1$bailout: function(state, index) {
-  if ($.isEmpty(this._tmpRemoved) !== true) {
-    var t1 = this._anims;
-    if (index !== (index | 0)) throw $.iae(index);
-    var t2 = t1.length;
-    if (index < 0 || index >= t2) throw $.ioore(index);
-    var t3 = t1[index];
-    for (t2 = $.iterator(this._tmpRemoved), cnt = 0; t2.hasNext$0() === true; ) {
-      if ($.eqB(t2.next$0(), t3)) ++cnt;
-    }
-    if (cnt > 0) {
-      for (var j = 0; j < index; ++j) {
-        t2 = t1.length;
-        if (j < 0 || j >= t2) throw $.ioore(j);
-        if ($.eqB(t1[j], t3)) {
-          --cnt;
-          t2 = cnt === 0;
-        } else t2 = false;
-        if (t2) return false;
-      }
-      return true;
-    }
-  }
-  return false;
-  var cnt;
- },
- _afterCallback$0: function() {
-  var removed = this._tmpRemoved;
-  this._tmpRemoved = null;
-  for (var t1 = $.iterator(removed); t1.hasNext$0() === true; ) {
-    this.remove$1(t1.next$0());
-  }
- },
- _beforeCallback$0: function() {
-  this._tmpRemoved = $.ListFactory_List(null);
- },
- _callback$2: function(arg0, arg1) { return this._callback.$call$2(arg0, arg1); },
- _Animator$0: function() {
-  this._callback = new $.anon(this);
- }
-};
-
 $$.Browser = {"":
  ["size?", "androidVersion?", "iosVersion?", "webkitVersion", "touch?", "mobile?", "android?", "ios?", "webkit", "firefox?", "msie", "chrome", "safari", "version!", "name="],
  super: "Object",
@@ -4770,221 +4686,6 @@ $$._NullQuery = {"":
  },
  get$innerWidth: function() {
   return 0;
- }
-};
-
-$$._DragGestureState = {"":
- ["_time!", "_moved=", "data", "_pending=", "_touched=", "_dragged=", "_range", "_initTxOfs=", "_ofs", "_velocity?", "_delta", "_initPgOfs?", "_ownerOfs?", "_gesture"],
- super: "Object",
- _setDelta$2: function(x, y) {
-  var t1 = this._delta;
-  t1.set$x(x);
-  t1.set$y(y);
- },
- _setOfs$2: function(x, y) {
-  var t1 = this._ofs;
-  t1.set$x(x);
-  t1.set$y(y);
- },
- get$range: function() {
-  var t1 = this._range;
-  if (t1 == null) {
-    t1 = this._gesture.get$_fnRange();
-    var t2 = !(t1 == null);
-    t1 = t2;
-  } else t1 = false;
-  if (t1) this._range = this._gesture._fnRange$0();
-  return this._range;
- },
- get$delta: function() {
-  return this._delta;
- },
- get$offset: function() {
-  return this._ofs;
- },
- _DragGestureState$3: function(gesture, pageX, pageY) {
-  this._ofs = $.sub(this._initPgOfs, this._ownerOfs);
- }
-};
-
-$$._DragGesture = {"":
- ["_fnRange?"],
- super: "Object",
- _constraint$2: function(x, y) {
-  var range = this._state.get$range();
-  var off = $._Offset$(x, y);
-  return !(range == null) ? range.snap$1(off) : off;
- },
- _moveBy$6: function(ofsX, ofsY, deltaX, deltaY, time, callback) {
-  var initofs = this._state.get$_initTxOfs();
-  var move = this._constraint$2($.add(deltaX, initofs.get$x()), $.add(deltaY, initofs.get$y()));
-  if (!(callback == null)) {
-    this._state._setOfs$2(ofsX, ofsY);
-    this._state._setDelta$2($.sub(move.get$x(), initofs.get$x()), $.sub(move.get$y(), initofs.get$y()));
-    this._state.set$_time(time);
-    var t1 = this._state.get$_moved() === true || !$.eqB(deltaX, 0) || !$.eqB(deltaY, 0);
-    this._state.set$_moved(t1);
-    var done = callback.$call$1(this._state);
-    if (!(done == null) && done === true) return;
-  }
-  if (this._transform === true) {
-    t1 = $.CSS_translate3d(move.get$x(), move.get$y(), null);
-    this._state.get$_dragged().get$style().set$transform(t1);
-  } else {
-    t1 = $.CSS_px(move.get$x());
-    this._state.get$_dragged().get$style().set$left(t1);
-    t1 = $.CSS_px(move.get$y());
-    this._state.get$_dragged().get$style().set$top(t1);
-  }
- },
- _touchEnd$3: function(pageX, pageY, time) {
-  var t1 = this._state;
-  if (!(t1 == null)) {
-    t1 = this._snapTime;
-    var t2 = !(t1 == null);
-    t1 = t2;
-  } else t1 = false;
-  if (t1 && !(time == null)) {
-    var diffTime = $.sub(time, this._snapTime);
-    t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageX, this._snapX), diffTime);
-    this._state.get$_velocity().set$x(t1);
-    t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageY, this._snapY), diffTime);
-    this._state.get$_velocity().set$y(t1);
-    this._snapY = null;
-    this._snapX = null;
-    this._snapTime = null;
-  }
-  t1 = this._state;
-  if (!(t1 == null)) {
-    t1 = t1.get$_touched();
-    t2 = !(t1 == null);
-    t1 = t2;
-  } else t1 = false;
-  t1 && this._moveBy$6($.sub(pageX, this._state.get$_ownerOfs().get$x()), $.sub(pageY, this._state.get$_ownerOfs().get$y()), $.sub(pageX, this._state.get$_initPgOfs().get$x()), $.sub(pageY, this._state.get$_initPgOfs().get$y()), time, this._end);
-  this._stop$0();
- },
- _touchMove$3: function(pageX, pageY, time) {
-  var t1 = this._state;
-  if (!(t1 == null)) {
-    var initPgOfs = t1.get$_initPgOfs();
-    t1 = this._state.get$_pending();
-    if (!(t1 == null)) {
-      var v = $.sub(pageX, initPgOfs.get$x());
-      t1 = this._movement;
-      if (!($.gtB(v, t1) || $.ltB(v, $.neg(t1)))) {
-        v = $.sub(pageY, initPgOfs.get$y());
-        var t2 = $.gtB(v, t1);
-      } else t2 = true;
-      (t2 || $.ltB(v, $.neg(t1))) && this._activate$0();
-    }
-    t1 = this._state;
-    if (!(t1 == null) && !(time == null)) {
-      t1 = this._snapTime;
-      if (!(t1 == null)) {
-        var diffTime = $.sub(time, t1);
-        t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageX, this._snapX), diffTime);
-        this._state.get$_velocity().set$x(t1);
-        t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageY, this._snapY), diffTime);
-        this._state.get$_velocity().set$y(t1);
-      } else diffTime = null;
-      t1 = this._snapTime;
-      if (t1 == null || $.gtB(diffTime, 250)) {
-        this._snapTime = time;
-        this._snapX = pageX;
-        this._snapY = pageY;
-      }
-    }
-    t1 = this._state.get$_touched();
-    !(t1 == null) && this._moveBy$6($.sub(pageX, this._state.get$_ownerOfs().get$x()), $.sub(pageY, this._state.get$_ownerOfs().get$y()), $.sub(pageX, initPgOfs.get$x()), $.sub(pageY, initPgOfs.get$y()), time, this._moving);
-  }
- },
- _activate$0: function() {
-  var t1 = this._state.get$_pending();
-  this._state.set$_touched(t1);
-  this._state.set$_pending(null);
-  t1 = this._start;
-  var dragged = !(t1 == null) ? this._start$1(this._state) : this.get$owner();
-  this._state.set$_dragged(dragged);
-  if (dragged == null) {
-    this._stop$0();
-    return;
-  }
-  t1 = this._transform === true ? $.CSS_offset3dOf(dragged.get$style().get$transform()) : $.DOMQuery_DOMQuery(dragged).get$offset();
-  this._state.set$_initTxOfs(t1);
- },
- _touchStart$4: function(touched, pageX, pageY, time) {
-  this._stop$0();
-  this._state = $._DragGestureState$(this, pageX, pageY);
-  this._state.set$_pending(touched);
-  $.ltB(this._movement, 0) && this._activate$0();
- },
- _stop$0: function() {
-  this._state = null;
- },
- get$handle: function() {
-  return this._handle;
- },
- get$owner: function() {
-  return this._lib4_owner;
- },
- _fnRange$0: function() { return this._fnRange.$call$0(); },
- _start$1: function(arg0) { return this._start.$call$1(arg0); },
- _DragGesture$_init$8: function(_owner, _handle, _transform, _fnRange, _movement, _start, _end, _moving) {
-  this._listen$0();
- }
-};
-
-$$._TouchDragGesture = {"":
- ["_pgy=", "_pgx=", "_elEnd", "_elMove", "_elStart", "_snapTime", "_snapY", "_snapX", "_transform", "_state", "_movement", "_fnRange", "_moving", "_end", "_start", "_handle", "_lib4_owner"],
- super: "_DragGesture",
- _listen$0: function() {
-  var on = this.get$handle().get$on();
-  var t1 = on.get$touchStart();
-  var t2 = new $._TouchDragGesture__listen_anon(this);
-  this._elStart = t2;
-  $.add$1(t1, t2);
-  t2 = on.get$touchMove();
-  t1 = new $._TouchDragGesture__listen_anon0(this);
-  this._elMove = t1;
-  $.add$1(t2, t1);
-  t1 = on.get$touchEnd();
-  t2 = new $._TouchDragGesture__listen_anon1(this);
-  this._elEnd = t2;
-  $.add$1(t1, t2);
- }
-};
-
-$$._MouseDragGesture = {"":
- ["_captured", "_elEnd", "_elMove", "_elStart", "_snapTime", "_snapY", "_snapX", "_transform", "_state", "_movement", "_fnRange", "_moving", "_end", "_start", "_handle", "_lib4_owner"],
- super: "_DragGesture",
- _listen$0: function() {
-  var t1 = this.get$handle().get$on().get$mouseDown();
-  var t2 = new $._MouseDragGesture__listen_anon(this);
-  this._elStart = t2;
-  $.add$1(t1, t2);
- },
- _capture$0: function() {
-  this._captured = true;
-  var on = $.document().get$on();
-  var t1 = on.get$mouseMove();
-  var t2 = new $._MouseDragGesture__capture_anon(this);
-  this._elMove = t2;
-  $.add$1(t1, t2);
-  t2 = on.get$mouseUp();
-  t1 = new $._MouseDragGesture__capture_anon0(this);
-  this._elEnd = t1;
-  $.add$1(t2, t1);
- },
- _stop$0: function() {
-  if (this._captured === true) {
-    this._captured = false;
-    var on = $.document().get$on();
-    var t1 = this._elMove;
-    !(t1 == null) && on.get$mouseMove().remove$1(this._elMove);
-    t1 = this._elEnd;
-    !(t1 == null) && on.get$mouseUp().remove$1(this._elEnd);
-  }
-  $._DragGesture.prototype._stop$0.call(this);
  }
 };
 
@@ -5288,9 +4989,6 @@ $$.View = {"":
  requestLayout$0: function() {
   return this.requestLayout$2(false,false)
 },
- requestLayout$1$descendantOnly: function(descendantOnly) {
-  return this.requestLayout$2(false,descendantOnly)
-},
  _mntClean$0: function() {
   this._mntAttrs = null;
   this._inDoc = false;
@@ -5328,7 +5026,6 @@ $$.View = {"":
   try {
     this._mntInit$0();
     this.mount_$0();
-    this.requestLayout$1$descendantOnly(true);
   } finally {
     $.View__mntCnt = $.sub($.View__mntCnt, 1);
   }
@@ -5376,6 +5073,7 @@ $$.View = {"":
     !(p == null) && p.insertAdjacentHTML$2('beforeEnd', html);
   }
   this._mount$0();
+  this.requestLayout$0();
   !(location$ == null) && $.layoutManager.afterLayout$1(new $.View__addToDoc_anon(this, location$));
  },
  addToDocument$6: function(node, outer, inner, before, keepId, location$) {
@@ -5977,6 +5675,7 @@ $$.TextView = {"":
  },
  set$text: function(text) {
   this._text = !(text == null) ? text : '';
+  this.get$classes().remove$1('v-html');
   this.updateInner_$0();
  },
  get$text: function() {
@@ -6213,6 +5912,307 @@ $$.PopupEvent = {"":
   return this._source;
  },
  source$1: function(arg0) { return this.get$source().$call$1(arg0); }
+};
+
+$$._DragGestureState = {"":
+ ["_time!", "_moved=", "data", "_pending=", "_touched=", "_dragged=", "_range", "_initTxOfs=", "_ofs", "_velocity?", "_delta", "_initPgOfs?", "_ownerOfs?", "_gesture"],
+ super: "Object",
+ _setDelta$2: function(x, y) {
+  var t1 = this._delta;
+  t1.set$x(x);
+  t1.set$y(y);
+ },
+ _setOfs$2: function(x, y) {
+  var t1 = this._ofs;
+  t1.set$x(x);
+  t1.set$y(y);
+ },
+ get$range: function() {
+  var t1 = this._range;
+  if (t1 == null) {
+    t1 = this._gesture.get$_fnRange();
+    var t2 = !(t1 == null);
+    t1 = t2;
+  } else t1 = false;
+  if (t1) this._range = this._gesture._fnRange$0();
+  return this._range;
+ },
+ get$delta: function() {
+  return this._delta;
+ },
+ get$offset: function() {
+  return this._ofs;
+ },
+ _DragGestureState$3: function(gesture, pageX, pageY) {
+  this._ofs = $.sub(this._initPgOfs, this._ownerOfs);
+ }
+};
+
+$$._DragGesture = {"":
+ ["_fnRange?"],
+ super: "Object",
+ _constraint$2: function(x, y) {
+  var range = this._state.get$range();
+  var off = $._Offset$(x, y);
+  return !(range == null) ? range.snap$1(off) : off;
+ },
+ _moveBy$6: function(ofsX, ofsY, deltaX, deltaY, time, callback) {
+  var initofs = this._state.get$_initTxOfs();
+  var move = this._constraint$2($.add(deltaX, initofs.get$x()), $.add(deltaY, initofs.get$y()));
+  if (!(callback == null)) {
+    this._state._setOfs$2(ofsX, ofsY);
+    this._state._setDelta$2($.sub(move.get$x(), initofs.get$x()), $.sub(move.get$y(), initofs.get$y()));
+    this._state.set$_time(time);
+    var t1 = this._state.get$_moved() === true || !$.eqB(deltaX, 0) || !$.eqB(deltaY, 0);
+    this._state.set$_moved(t1);
+    var done = callback.$call$1(this._state);
+    if (!(done == null) && done === true) return;
+  }
+  if (this._transform === true) {
+    t1 = $.CSS_translate3d(move.get$x(), move.get$y(), null);
+    this._state.get$_dragged().get$style().set$transform(t1);
+  } else {
+    t1 = $.CSS_px(move.get$x());
+    this._state.get$_dragged().get$style().set$left(t1);
+    t1 = $.CSS_px(move.get$y());
+    this._state.get$_dragged().get$style().set$top(t1);
+  }
+ },
+ _touchEnd$3: function(pageX, pageY, time) {
+  var t1 = this._state;
+  if (!(t1 == null)) {
+    t1 = this._snapTime;
+    var t2 = !(t1 == null);
+    t1 = t2;
+  } else t1 = false;
+  if (t1 && !(time == null)) {
+    var diffTime = $.sub(time, this._snapTime);
+    t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageX, this._snapX), diffTime);
+    this._state.get$_velocity().set$x(t1);
+    t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageY, this._snapY), diffTime);
+    this._state.get$_velocity().set$y(t1);
+    this._snapY = null;
+    this._snapX = null;
+    this._snapTime = null;
+  }
+  t1 = this._state;
+  if (!(t1 == null)) {
+    t1 = t1.get$_touched();
+    t2 = !(t1 == null);
+    t1 = t2;
+  } else t1 = false;
+  t1 && this._moveBy$6($.sub(pageX, this._state.get$_ownerOfs().get$x()), $.sub(pageY, this._state.get$_ownerOfs().get$y()), $.sub(pageX, this._state.get$_initPgOfs().get$x()), $.sub(pageY, this._state.get$_initPgOfs().get$y()), time, this._end);
+  this._stop$0();
+ },
+ _touchMove$3: function(pageX, pageY, time) {
+  var t1 = this._state;
+  if (!(t1 == null)) {
+    var initPgOfs = t1.get$_initPgOfs();
+    t1 = this._state.get$_pending();
+    if (!(t1 == null)) {
+      var v = $.sub(pageX, initPgOfs.get$x());
+      t1 = this._movement;
+      if (!($.gtB(v, t1) || $.ltB(v, $.neg(t1)))) {
+        v = $.sub(pageY, initPgOfs.get$y());
+        var t2 = $.gtB(v, t1);
+      } else t2 = true;
+      (t2 || $.ltB(v, $.neg(t1))) && this._activate$0();
+    }
+    t1 = this._state;
+    if (!(t1 == null) && !(time == null)) {
+      t1 = this._snapTime;
+      if (!(t1 == null)) {
+        var diffTime = $.sub(time, t1);
+        t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageX, this._snapX), diffTime);
+        this._state.get$_velocity().set$x(t1);
+        t1 = $.gtB(diffTime, 250) ? 0 : $.div($.sub(pageY, this._snapY), diffTime);
+        this._state.get$_velocity().set$y(t1);
+      } else diffTime = null;
+      t1 = this._snapTime;
+      if (t1 == null || $.gtB(diffTime, 250)) {
+        this._snapTime = time;
+        this._snapX = pageX;
+        this._snapY = pageY;
+      }
+    }
+    t1 = this._state.get$_touched();
+    !(t1 == null) && this._moveBy$6($.sub(pageX, this._state.get$_ownerOfs().get$x()), $.sub(pageY, this._state.get$_ownerOfs().get$y()), $.sub(pageX, initPgOfs.get$x()), $.sub(pageY, initPgOfs.get$y()), time, this._move);
+  }
+ },
+ _activate$0: function() {
+  var t1 = this._state.get$_pending();
+  this._state.set$_touched(t1);
+  this._state.set$_pending(null);
+  t1 = this._start;
+  var dragged = !(t1 == null) ? this._start$1(this._state) : this.get$owner();
+  this._state.set$_dragged(dragged);
+  if (dragged == null) {
+    this._stop$0();
+    return;
+  }
+  t1 = this._transform === true ? $.CSS_offset3dOf(dragged.get$style().get$transform()) : $.DOMQuery_DOMQuery(dragged).get$offset();
+  this._state.set$_initTxOfs(t1);
+ },
+ _touchStart$4: function(touched, pageX, pageY, time) {
+  this._stop$0();
+  this._state = $._DragGestureState$(this, pageX, pageY);
+  this._state.set$_pending(touched);
+  $.ltB(this._movement, 0) && this._activate$0();
+ },
+ _stop$0: function() {
+  this._state = null;
+ },
+ get$handle: function() {
+  return this._handle;
+ },
+ get$owner: function() {
+  return this._lib4_owner;
+ },
+ _fnRange$0: function() { return this._fnRange.$call$0(); },
+ _start$1: function(arg0) { return this._start.$call$1(arg0); },
+ _DragGesture$_init$8: function(_owner, _handle, _transform, _fnRange, _movement, _start, _end, _move) {
+  this._listen$0();
+ }
+};
+
+$$._TouchDragGesture = {"":
+ ["_pgy=", "_pgx=", "_elEnd", "_elMove", "_elStart", "_snapTime", "_snapY", "_snapX", "_transform", "_state", "_movement", "_fnRange", "_move", "_end", "_start", "_handle", "_lib4_owner"],
+ super: "_DragGesture",
+ _listen$0: function() {
+  var on = this.get$handle().get$on();
+  var t1 = on.get$touchStart();
+  var t2 = new $._TouchDragGesture__listen_anon(this);
+  this._elStart = t2;
+  $.add$1(t1, t2);
+  t2 = on.get$touchMove();
+  t1 = new $._TouchDragGesture__listen_anon0(this);
+  this._elMove = t1;
+  $.add$1(t2, t1);
+  t1 = on.get$touchEnd();
+  t2 = new $._TouchDragGesture__listen_anon1(this);
+  this._elEnd = t2;
+  $.add$1(t1, t2);
+ }
+};
+
+$$._MouseDragGesture = {"":
+ ["_captured", "_elEnd", "_elMove", "_elStart", "_snapTime", "_snapY", "_snapX", "_transform", "_state", "_movement", "_fnRange", "_move", "_end", "_start", "_handle", "_lib4_owner"],
+ super: "_DragGesture",
+ _listen$0: function() {
+  var t1 = this.get$handle().get$on().get$mouseDown();
+  var t2 = new $._MouseDragGesture__listen_anon(this);
+  this._elStart = t2;
+  $.add$1(t1, t2);
+ },
+ _capture$0: function() {
+  this._captured = true;
+  var on = $.document().get$on();
+  var t1 = on.get$mouseMove();
+  var t2 = new $._MouseDragGesture__capture_anon(this);
+  this._elMove = t2;
+  $.add$1(t1, t2);
+  t2 = on.get$mouseUp();
+  t1 = new $._MouseDragGesture__capture_anon0(this);
+  this._elEnd = t1;
+  $.add$1(t2, t1);
+ },
+ _stop$0: function() {
+  if (this._captured === true) {
+    this._captured = false;
+    var on = $.document().get$on();
+    var t1 = this._elMove;
+    !(t1 == null) && on.get$mouseMove().remove$1(this._elMove);
+    t1 = this._elEnd;
+    !(t1 == null) && on.get$mouseUp().remove$1(this._elEnd);
+  }
+  $._DragGesture.prototype._stop$0.call(this);
+ }
+};
+
+$$._Animator = {"":
+ ["_prevTime=", "_callback?", "_tmpRemoved", "_anims?"],
+ super: "Object",
+ remove$1: function(animate) {
+  var t1 = this._tmpRemoved;
+  if (!(t1 == null)) $.add$1(t1, animate);
+  else $.ListUtil_remove(this._anims, animate);
+ },
+ add$1: function(animate) {
+  var t1 = this._anims;
+  t1.push(animate);
+  t1 = t1.length;
+  if (t1 === 1) {
+    this._prevTime = $._Animator__now();
+    $.window().requestAnimationFrame$1(this._callback);
+  }
+ },
+ _isRemoved$1: function(index) {
+  if (typeof index !== 'number') return this._isRemoved$1$bailout(1, index);
+  if ($.isEmpty(this._tmpRemoved) !== true) {
+    var t1 = this._anims;
+    if (index !== (index | 0)) throw $.iae(index);
+    var t2 = t1.length;
+    if (index < 0 || index >= t2) throw $.ioore(index);
+    var t3 = t1[index];
+    for (t2 = $.iterator(this._tmpRemoved), cnt = 0; t2.hasNext$0() === true; ) {
+      if ($.eqB(t2.next$0(), t3)) ++cnt;
+    }
+    if (cnt > 0) {
+      for (var j = 0; j < index; ++j) {
+        t2 = t1.length;
+        if (j < 0 || j >= t2) throw $.ioore(j);
+        if ($.eqB(t1[j], t3)) {
+          --cnt;
+          t2 = cnt === 0;
+        } else t2 = false;
+        if (t2) return false;
+      }
+      return true;
+    }
+  }
+  return false;
+  var cnt;
+ },
+ _isRemoved$1$bailout: function(state, index) {
+  if ($.isEmpty(this._tmpRemoved) !== true) {
+    var t1 = this._anims;
+    if (index !== (index | 0)) throw $.iae(index);
+    var t2 = t1.length;
+    if (index < 0 || index >= t2) throw $.ioore(index);
+    var t3 = t1[index];
+    for (t2 = $.iterator(this._tmpRemoved), cnt = 0; t2.hasNext$0() === true; ) {
+      if ($.eqB(t2.next$0(), t3)) ++cnt;
+    }
+    if (cnt > 0) {
+      for (var j = 0; j < index; ++j) {
+        t2 = t1.length;
+        if (j < 0 || j >= t2) throw $.ioore(j);
+        if ($.eqB(t1[j], t3)) {
+          --cnt;
+          t2 = cnt === 0;
+        } else t2 = false;
+        if (t2) return false;
+      }
+      return true;
+    }
+  }
+  return false;
+  var cnt;
+ },
+ _afterCallback$0: function() {
+  var removed = this._tmpRemoved;
+  this._tmpRemoved = null;
+  for (var t1 = $.iterator(removed); t1.hasNext$0() === true; ) {
+    this.remove$1(t1.next$0());
+  }
+ },
+ _beforeCallback$0: function() {
+  this._tmpRemoved = $.ListFactory_List(null);
+ },
+ _callback$2: function(arg0, arg1) { return this._callback.$call$2(arg0, arg1); },
+ _Animator$0: function() {
+  this._callback = new $.anon(this);
+ }
 };
 
 $$.LayoutManager = {"":
@@ -7622,7 +7622,13 @@ $$.ProfileDeclarationImpl = {"":
  },
  get$anchorView: function() {
   var t1 = this._anchorView;
-  return !(t1 == null) ? t1 : this._lib0_owner.query$1(this.get$anchor());
+  if (!!(t1 == null)) {
+    var anc = this.get$anchor();
+    if ($.isEmpty(anc) === true) {
+      t1 = $.isEmpty(this.get$location()) === true ? null : this._lib0_owner.get$parent();
+    } else t1 = this._lib0_owner.query$1(anc);
+  }
+  return t1;
  },
  get$anchor: function() {
   return this.getPropertyValue$1('anchor');
@@ -9665,9 +9671,9 @@ $.StringUtil__init = function() {
   }
 };
 
-$._TouchDragGesture$ = function(owner, handle, transform, range, movement, start, end, moving) {
-  var t1 = new $._TouchDragGesture(null, null, null, null, null, null, null, null, transform, null, movement, range, moving, end, start, handle, owner);
-  t1._DragGesture$_init$8(owner, handle, transform, range, movement, start, end, moving);
+$._TouchDragGesture$ = function(owner, handle, transform, range, movement, start, end, move) {
+  var t1 = new $._TouchDragGesture(null, null, null, null, null, null, null, null, transform, null, movement, range, move, end, start, handle, owner);
+  t1._DragGesture$_init$8(owner, handle, transform, range, movement, start, end, move);
   return t1;
 };
 
@@ -10215,7 +10221,7 @@ $._JsSerializer$ = function() {
 };
 
 $.SnakeCanvas$ = function() {
-  var t1 = new $.SnakeCanvas(null, null, null, null, null, null, 0, null, null, 0, 400, 250, 100, null, [], null, '');
+  var t1 = new $.SnakeCanvas(null, null, null, null, null, null, 0, null, null, 0, 360, 220, 100, null, [], null, '');
   t1.Activity$0();
   return t1;
 };
@@ -10519,7 +10525,7 @@ $.dynamicFunction = function(name$) {
   var f = (Object.prototype[name$]);
   if (!(f == null) && (!!f.methods)) return f.methods;
   var methods = ({});
-  var dartMethod = (Object.getPrototypeOf($.CTC69)[name$]);
+  var dartMethod = (Object.getPrototypeOf($.CTC70)[name$]);
   !(dartMethod == null) && (methods['Object'] = dartMethod);
   var bind = (function() {return $.dynamicBind.$call$4(this, name$, methods, Array.prototype.slice.call(arguments));});
   bind.methods = methods;
@@ -11288,9 +11294,9 @@ $.isEmpty = function(receiver) {
   return receiver.isEmpty$0();
 };
 
-$._DragGesture__DragGesture = function(owner, handle, transform, range, movement, start, end, moving) {
+$._DragGesture__DragGesture = function(owner, handle, transform, range, movement, start, end, move) {
   if (handle == null) handle = owner;
-  return $.browser.get$touch() === true ? $._TouchDragGesture$(owner, handle, transform, range, movement, start, end, moving) : $._MouseDragGesture$(owner, handle, transform, range, movement, start, end, moving);
+  return $.browser.get$touch() === true ? $._TouchDragGesture$(owner, handle, transform, range, movement, start, end, move) : $._MouseDragGesture$(owner, handle, transform, range, movement, start, end, move);
 };
 
 $.iterator = function(receiver) {
@@ -11639,9 +11645,9 @@ $._WorkerEventsImpl$ = function(_ptr) {
   return new $._WorkerEventsImpl(_ptr);
 };
 
-$._MouseDragGesture$ = function(owner, handle, transform, range, movement, start, end, moving) {
-  var t1 = new $._MouseDragGesture(false, null, null, null, null, null, null, transform, null, movement, range, moving, end, start, handle, owner);
-  t1._DragGesture$_init$8(owner, handle, transform, range, movement, start, end, moving);
+$._MouseDragGesture$ = function(owner, handle, transform, range, movement, start, end, move) {
+  var t1 = new $._MouseDragGesture(false, null, null, null, null, null, null, transform, null, movement, range, move, end, start, handle, owner);
+  t1._DragGesture$_init$8(owner, handle, transform, range, movement, start, end, move);
   return t1;
 };
 
@@ -12296,7 +12302,7 @@ $.getFunctionForTypeNameOf = function() {
   var t1 = (typeof(navigator));
   if (!(t1 === 'object')) return $.typeNameInChrome;
   var userAgent = (navigator.userAgent);
-  if ($.contains$1(userAgent, $.CTC68) === true) return $.typeNameInChrome;
+  if ($.contains$1(userAgent, $.CTC69) === true) return $.typeNameInChrome;
   if ($.contains$1(userAgent, 'Firefox') === true) return $.typeNameInFirefox;
   if ($.contains$1(userAgent, 'MSIE') === true) return $.typeNameInIE;
   return $.constructorNameFallback;
@@ -12312,6 +12318,7 @@ $.CSSStyleDeclarationImpl__check = function(propertyName) {
     }
   }
   if ($.contains$1($.CSSStyleDeclarationImpl__illnms, propertyName) === true) throw $.captureStackTrace($.UIException$($.S(propertyName) + ' not allowed. Please use View\'s API instead, such as left, width and hidden.'));
+  if ($.startsWith(propertyName, 'margin') === true) throw $.captureStackTrace($.CTC66);
 };
 
 $.PseudoClass$ = function(name$) {
@@ -13015,69 +13022,70 @@ $.CTC12 = Isolate.makeConstantList([0, 1]);
 $.CTC9 = Isolate.makeConstantList([1, 4]);
 $.CTC10 = Isolate.makeConstantList([2, 4]);
 $.CTC11 = Isolate.makeConstantList([3, 4]);
-$.CTC17 = Isolate.makeConstantList([4, 3]);
-$.CTC3 = new Isolate.$isolateProperties._DeletedKeySentinel();
-$.CTC43 = new Isolate.$isolateProperties.UIException('type required');
-$.CTC15 = Isolate.makeConstantList([4, 1]);
 $.CTC13 = Isolate.makeConstantList([0, 2]);
+$.CTC3 = new Isolate.$isolateProperties._DeletedKeySentinel();
+$.CTC17 = Isolate.makeConstantList([4, 3]);
+$.CTC15 = Isolate.makeConstantList([4, 1]);
+$.CTC16 = Isolate.makeConstantList([4, 2]);
 $.CTC14 = Isolate.makeConstantList([0, 3]);
 $.CTC62 = new Isolate.$isolateProperties.IllegalArgumentException('Require initialValue');
 $.CTC18 = Isolate.makeConstantList([1, 1]);
-$.CTC16 = Isolate.makeConstantList([4, 2]);
+$.CTC23 = Isolate.makeConstantList([3, 2]);
 $.CTC20 = Isolate.makeConstantList([3, 1]);
 $.CTC19 = Isolate.makeConstantList([2, 1]);
 $.CTC49 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '<(\\w+)');
-$.CTC30 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '([-]?[0-9]+)');
-$.CTC23 = Isolate.makeConstantList([3, 2]);
-$.CTC24 = Isolate.makeConstantList([1, 3]);
-$.CTC21 = Isolate.makeConstantList([1, 2]);
-$.CTC44 = new Isolate.$isolateProperties.UIException('listener required');
-$.CTC53 = Isolate.makeConstantList(['<', '>', '&', '"']);
-$.CTC54 = new Isolate.$isolateProperties.ConstantMap(Isolate.$isolateProperties.CTC53, {'<': 'lt', '>': 'gt', '&': 'amp', '"': 'quot'}, 4);
+$.CTC66 = new Isolate.$isolateProperties.UIException('You can\'t change margin');
 $.CTC22 = Isolate.makeConstantList([2, 2]);
 $.CTC25 = Isolate.makeConstantList([2, 3]);
-$.CTC34 = new Isolate.$isolateProperties.SystemException('document not ready yet');
-$.CTC52 = new Isolate.$isolateProperties.UIException('No dialog at all');
-$.CTC39 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(safari)[ /]([\\w.]+)');
-$.CTC26 = Isolate.makeConstantList([3, 3]);
+$.CTC24 = Isolate.makeConstantList([1, 3]);
+$.CTC21 = Isolate.makeConstantList([1, 2]);
+$.CTC53 = Isolate.makeConstantList(['<', '>', '&', '"']);
+$.CTC54 = new Isolate.$isolateProperties.ConstantMap(Isolate.$isolateProperties.CTC53, {'<': 'lt', '>': 'gt', '&': 'amp', '"': 'quot'}, 4);
 $.CTC61 = new Isolate.$isolateProperties.IllegalArgumentException('Allow only one view');
+$.CTC30 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '([-]?[0-9]+)');
+$.CTC26 = Isolate.makeConstantList([3, 3]);
+$.CTC39 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(safari)[ /]([\\w.]+)');
+$.CTC34 = new Isolate.$isolateProperties.SystemException('document not ready yet');
 $.CTC27 = Isolate.makeConstantList(['north start', 'north center', 'north end', 'south start', 'south center', 'south end', 'west start', 'west center', 'west end', 'east start', 'east center', 'east end', 'top left', 'top center', 'top right', 'center left', 'center center', 'center right', 'bottom left', 'bottom center', 'bottom right']);
-$.CTC69 = new Isolate.$isolateProperties.Object();
 $.CTC28 = new Isolate.$isolateProperties.ConstantMap(Isolate.$isolateProperties.CTC27, {'north start': Isolate.$isolateProperties.CTC6, 'north center': Isolate.$isolateProperties.CTC7, 'north end': Isolate.$isolateProperties.CTC8, 'south start': Isolate.$isolateProperties.CTC9, 'south center': Isolate.$isolateProperties.CTC10, 'south end': Isolate.$isolateProperties.CTC11, 'west start': Isolate.$isolateProperties.CTC12, 'west center': Isolate.$isolateProperties.CTC13, 'west end': Isolate.$isolateProperties.CTC14, 'east start': Isolate.$isolateProperties.CTC15, 'east center': Isolate.$isolateProperties.CTC16, 'east end': Isolate.$isolateProperties.CTC17, 'top left': Isolate.$isolateProperties.CTC18, 'top center': Isolate.$isolateProperties.CTC19, 'top right': Isolate.$isolateProperties.CTC20, 'center left': Isolate.$isolateProperties.CTC21, 'center center': Isolate.$isolateProperties.CTC22, 'center right': Isolate.$isolateProperties.CTC23, 'bottom left': Isolate.$isolateProperties.CTC24, 'bottom center': Isolate.$isolateProperties.CTC25, 'bottom right': Isolate.$isolateProperties.CTC26}, 21);
+$.CTC70 = new Isolate.$isolateProperties.Object();
+$.CTC33 = new Isolate.$isolateProperties.ConstantMap(Isolate.$isolateProperties.CTC1, {}, 0);
 $.CTC37 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(webkit)[ /]([\\w.]+)');
 $.CTC65 = Isolate.makeConstantList(['left', 'top', 'right', 'bottom', 'width', 'height', 'display']);
 $.CTC29 = new Isolate.$isolateProperties.IllegalAccessException();
-$.CTC63 = new Isolate.$isolateProperties.UIException('The anchor can\'t be itself.');
-$.CTC33 = new Isolate.$isolateProperties.ConstantMap(Isolate.$isolateProperties.CTC1, {}, 0);
+$.CTC0 = new Isolate.$isolateProperties.UIException('run() called twice?');
 $.CTC2 = new Isolate.$isolateProperties.NullPointerException(Isolate.$isolateProperties.CTC1, null);
 $.CTC4 = new Isolate.$isolateProperties.NoMoreElementsException();
 $.CTC5 = new Isolate.$isolateProperties.EmptyQueueException();
-$.CTC0 = new Isolate.$isolateProperties.UIException('run() called twice?');
 $.CTC36 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, 'os[ /]([\\w_]+) like mac os');
 $.CTC45 = new Isolate.$isolateProperties.UnsupportedOperationException('');
 $.CTC41 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(mozilla)(?:.*? rv:([\\w.]+))?');
-$.CTC50 = Isolate.makeConstantList(['body', 'head', 'caption', 'td', 'colgroup', 'col', 'tr', 'tbody', 'tfoot', 'thead', 'track']);
-$.CTC32 = new Isolate.$isolateProperties._AnchorOfRoot();
-$.CTC48 = new Isolate.$isolateProperties._AnchorOfPoint();
 $.CTC = new Isolate.$isolateProperties.UIException('Only one activity is allowed');
-$.CTC40 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(msie) ([\\w.]+)');
+$.CTC50 = Isolate.makeConstantList(['body', 'head', 'caption', 'td', 'colgroup', 'col', 'tr', 'tbody', 'tfoot', 'thead', 'track']);
 $.CTC46 = new Isolate.$isolateProperties.NotImplementedException(null);
-$.CTC68 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, 'Chrome|DumpRenderTree');
+$.CTC32 = new Isolate.$isolateProperties._AnchorOfRoot();
+$.CTC40 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(msie) ([\\w.]+)');
+$.CTC48 = new Isolate.$isolateProperties._AnchorOfPoint();
+$.CTC69 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, 'Chrome|DumpRenderTree');
 $.CTC38 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(chrome)[ /]([\\w.]+)');
 $.CTC47 = new Isolate.$isolateProperties.IllegalArgumentException('Invalid list length');
 $.CTC42 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '^#[_a-zA-Z]\\w*$');
 $.CTC31 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '(\\w+)');
 $.CTC57 = Isolate.makeConstantList(['blur', 'click', 'focus', 'mouseDown', 'mouseMove', 'mouseOut', 'mouseOver', 'mouseUp', 'mouseWheel', 'scroll']);
 $.CTC35 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, 'android[ /]([\\w.]+)');
-$.CTC66 = new Isolate.$isolateProperties._EmptyColl();
-$.CTC67 = new Isolate.$isolateProperties._EmptyIter();
+$.CTC67 = new Isolate.$isolateProperties._EmptyColl();
+$.CTC68 = new Isolate.$isolateProperties._EmptyIter();
 $.CTC58 = new Isolate.$isolateProperties.UnsupportedOperationException('Not IdSpace');
 $.CTC51 = new Isolate.$isolateProperties.ConstantMap(Isolate.$isolateProperties.CTC50, {'body': 'html', 'head': 'html', 'caption': 'table', 'td': 'tr', 'colgroup': 'table', 'col': 'colgroup', 'tr': 'tbody', 'tbody': 'table', 'tfoot': 'table', 'thead': 'table', 'track': 'audio'}, 11);
 $.CTC64 = Isolate.makeConstantList(['animation', 'animation-delay', 'animation-direction', 'animation-duration', 'animation-fill-mode', 'animation-iteration-count', 'animation-name', 'animation-play-state', 'animation-timing-function', 'appearance', 'backface-visibility', 'background-composite', 'border-after', 'border-after-color', 'border-after-style', 'border-after-width', 'border-before', 'border-before-color', 'border-before-style', 'border-before-width', 'border-end', 'border-end-color', 'border-end-style', 'border-end-width', 'border-fit', 'border-horizontal-spacing', 'border-start', 'border-start-color', 'border-start-style', 'border-start-width', 'border-vertical-spacing', 'box-align', 'box-direction', 'box-flex', 'box-flex-group', 'box-lines', 'box-ordinal-group', 'box-orient', 'box-pack', 'box-reflect', 'color-correction', 'column-break-after', 'column-break-before', 'column-break-inside', 'column-count', 'column-gap', 'column-rule', 'column-rule-color', 'column-rule-style', 'column-rule-width', 'column-span', 'column-width', 'columns', 'filter', 'flex-align', 'flex-flow', 'flex-order', 'flex-pack', 'flow-from', 'flow-into', 'font-feature-settings', 'font-size-delta', 'font-smoothing', 'highlight', 'hyphenate-character', 'hyphenate-limit-after', 'hyphenate-limit-before', 'hyphenate-limit-lines', 'hyphens', 'line-box-contain', 'line-break', 'line-clamp', 'locale', 'logical-height', 'logical-width', 'margin-after', 'margin-after-collapse', 'margin-before', 'margin-before-collapse', 'margin-bottom-collapse', 'margin-collapse', 'margin-end', 'margin-start', 'margin-top-collapse', 'marquee', 'marquee-direction', 'marquee-increment', 'marquee-repetition', 'marquee-speed', 'marquee-style', 'mask', 'mask-attachment', 'mask-box-image', 'mask-box-image-outset', 'mask-box-image-repeat', 'mask-box-image-slice', 'mask-box-image-source', 'mask-box-image-width', 'mask-clip', 'mask-composite', 'mask-image', 'mask-origin', 'mask-position', 'mask-position-x', 'mask-position-y', 'mask-repeat', 'mask-repeat-x', 'mask-repeat-y', 'mask-size', 'match-nearest-mail-blockquote-color', 'max-logical-height', 'max-logical-width', 'min-logical-height', 'min-logical-width', 'nbsp-mode', 'padding-after', 'padding-before', 'padding-end', 'padding-start', 'perspective', 'perspective-origin', 'perspective-origin-x', 'perspective-origin-y', 'region-break-after', 'region-break-before', 'region-break-inside', 'region-overflow', 'rtl-ordering', 'tap-highlight-color', 'text-combine', 'text-decorations-in-effect', 'text-emphasis', 'text-emphasis-color', 'text-emphasis-position', 'text-emphasis-style', 'text-fill-color', 'text-orientation', 'text-security', 'text-size-adjust', 'text-stroke', 'text-stroke-color', 'text-stroke-width', 'transform', 'transform-origin', 'transform-origin-x', 'transform-origin-y', 'transform-origin-z', 'transform-style', 'transition', 'transition-delay', 'transition-duration', 'transition-property', 'transition-timing-function', 'user-drag', 'user-modify', 'user-select', 'wrap-shape', 'writing-mode']);
 $.CTC55 = new Isolate.$isolateProperties._SimpleClientRect(0, 0, 0, 0);
 $.CTC56 = new Isolate.$isolateProperties.EmptyElementRect(Isolate.$isolateProperties.CTC1, Isolate.$isolateProperties.CTC55, Isolate.$isolateProperties.CTC55, Isolate.$isolateProperties.CTC55, Isolate.$isolateProperties.CTC55);
+$.CTC44 = new Isolate.$isolateProperties.UIException('listener required');
 $.CTC60 = new Isolate.$isolateProperties.IllegalArgumentException('null');
+$.CTC52 = new Isolate.$isolateProperties.UIException('No dialog at all');
+$.CTC43 = new Isolate.$isolateProperties.UIException('type required');
 $.CTC59 = new Isolate.$isolateProperties.UnsupportedOperationException('Cannot modify');
+$.CTC63 = new Isolate.$isolateProperties.UIException('The anchor can\'t be itself.');
 $._pendingRequests = null;
 $.StringUtil__CC_a = null;
 $._$anchorXHandlers = null;
