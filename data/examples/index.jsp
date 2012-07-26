@@ -49,16 +49,16 @@
 	</div>
 	<div class="sep clearfix"></div>
 	<div class="item grid_4 alpha">
-		<a class="img" target="_blank" href="/resource/js/examples/index-starchart.html">
+		<a class="img" target="_blank" href="/resource/js/examples/index-star.html">
 			<img alt="Star Chart" src="/resource/img/examples/demo_scroll-view-starchart.png">
 		</a>
-		<h3 class="title"><a target="_blank" href="/resource/js/examples/index-starchart.html">
+		<h3 class="title"><a target="_blank" href="/resource/js/examples/index-star.html">
 			Star Chart</a></h3>
 		<p class="desc">
 			Create the stars using Rikulo's ScrollView!
 		</p>
 		<div class="buttons">
-			<a class="demo" target="_blank" href="/resource/js/examples/index-starchart.html">Demo</a>
+			<a class="demo" target="_blank" href="/resource/js/examples/index-star.html">Demo</a>
 			<span class="sepbar"></span>
 			<a class="source" target="_blank" href="https://github.com/rikulo/rikulo/blob/master/samples/scroll-view/StarChartDemo.dart">Source Code</a>
 		</div>
