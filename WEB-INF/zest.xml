@@ -33,10 +33,8 @@
 		<result>/index.jsp</result>
 	</action>
 
-	
-	
-
-	
-	
+	<action path="/examples(.*)" class="com.potix.website.rikulo.action.RedirectAction" >
+		<result>${action.template}?t=Examples%20|%20Rikulo&amp;css=/less/examples&amp;p=${action.templateResource}/template_pagecontent.jsp&amp;banner=Examples&amp;pn=${action.resourcePath}&amp;menu=${matches[0]}</result>
+	</action>
 	
 </zest>

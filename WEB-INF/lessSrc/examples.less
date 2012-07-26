@@ -1,0 +1,77 @@
+@import "sub/_template_page_common.less";
+#page-content {
+	font-size: 12px;
+	margin-top: 6px;
+	margin-bottom: -23px;
+	.item {
+		margin-bottom: 57px;
+	}
+	
+	a.img, a img {
+		width: 298px;
+		height: 198px;
+	}
+	
+	a.img {
+		border: 1px solid #f2f2e1;
+		display: block;
+		margin-bottom: 5px;
+	}
+	
+	a:hover.img {
+		border-color: #e0c6a2;
+	}
+	
+	.title {
+		margin-bottom: 4px;
+		a {
+			.link-color(#914503, #d49b50);
+			font-size: 16px;
+		}
+	}
+	.desc {
+		margin-bottom: 7px;
+		line-height: 150%;
+		letter-spacing: 0.45px;
+	}
+	
+	.highlight {
+		color: #914503;
+		font-size: 12px;
+	}
+	
+	.buttons {
+		.opacity(0);
+		a {
+			background: url("/resource/img/examples/icon_sprite.png") no-repeat scroll 0 0 transparent;
+			display: inline-block;
+			color: #959595;
+			padding: 1px 0 0 21px;
+			height: 16px;
+			.link-color(#959595, #d49b50);
+			font-size: 12px;
+		}
+		.sepbar {
+			display: inline-block;
+			border-width: 0 0 0 1px;
+			border-color: #959595;
+			border-style: solid;
+			height: 12px;
+			vertical-align: middle;
+			margin: 1px 9px 0 14px;
+		}
+		
+		.source {
+			background-position: 0 -16px;
+		} 
+		.blog {
+			background-position: 0 -32px;
+		}
+		
+	}
+	
+	
+}
+.ie8 #page-content .item {
+	background: #FFFFFF url("/resource/img/template/blizzard.png") repeat scroll 0 0;
+}

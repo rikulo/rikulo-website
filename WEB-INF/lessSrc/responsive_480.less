@@ -28,25 +28,24 @@
 		.container_12 .grid_10,
 		.container_12 .grid_11,
 		.container_12 .grid_12 {
-			margin-left: 10px;
-			margin-right: 10px;
 			width: 460px;
 		}
 		
 		/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
 		----------------------------------------------------------------------------------------------------*/
-		.container_12 {
-			.alpha {
-			  margin-left: 0;
+		#index-header #main_menu {
+			margin-left: 0 !important;
+			.navigation_menu {
+				ul.menu {
+				    float: left;
+					li {
+					    display: block;
+					    float: left;
+					    padding-left: 0;
+						padding-right: 22px;
+					}
+				}
 			}
-
-			.omega {
-			  margin-right: 0;
-			}
-		}
-		
-		.navigation_menu ul.menu {
-		    float: left;
 		}
 		
 		#row-banner {
@@ -79,16 +78,9 @@
 			.why {
 				margin-bottom: 44px;
 			}
-			.how  {
-				margin-left: 0;
-			}
-			
 		}
 		
 		#page-content.learn-page {
-			.reference, .support {
-				margin-left: 0;
-			}
 			.item {
 				margin-bottom: 20px;
 			}
