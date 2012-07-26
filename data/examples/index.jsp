@@ -1,80 +1,99 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>		
 <div id="page-content" class="examples-page grid_12 clearfix">
 	<div class="item grid_4 alpha">
-		<a class="img" target="_blank" href="/">
-			<img alt="Snake Game" src="/resource/img/examples/demo_snake3.png">
+		<a class="img" href="/resource/js/examples/index-snake.html">
+			<img alt="Snake Game" src="/resource/img/examples/demo_snake.png">
 		</a>
-		<h3 class="title"><a target="_blank" href="/">
+		<h3 class="title"><a href="/resource/js/examples/index-snake.html">
 			Snake Game</a></h3>
 		<p class="desc">
-			Using Rikulo, Dart, HTML 5 and Canvas to create a snake style game
+			Implement a simple Snake game using Rikulo's canvas
 		</p>
 		<div class="buttons">
-			<a class="demo" target="_blank" href="/">Demo</a>
+			<a class="demo" href="/resource/js/examples/index-snake.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" target="_blank" href="/">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/rikulo/tree/master/samples/snake">Source Code</a>
 			<span class="sepbar"></span>
-			<a class="blog" target="_blank" href="/">Blog post</a>
+			<a class="blog" href="http://blog.rikulo.org/posts/2012/Jul/Tutorial/creating-a-snake-game-using-rikulo-html-5-and-the-canvas/">Blog post</a>
 		</div>
 	</div>
 	<div class="item grid_4">
-		<a class="img" target="_blank" href="/">
+		<a class="img" href="/resource/js/examples/index-circles.html">
 			<img alt="Circles" src="/resource/img/examples/demo_circles.png">
 		</a>
-		<h3 class="title"><a target="_blank" href="/">
+		<h3 class="title"><a href="/resource/js/examples/index-circles.html">
 			Circles</a></h3>
 		<p class="desc">
-			Simple dart game by <a class="highlight" target="_blank" href="/">John Don</a>
+			Implement a circular animation using Rikulo's canvas
 		</p>
+		<div class="buttons">
+			<a class="demo" href="/resource/js/examples/index-circles.html">Demo</a>
+			<span class="sepbar"></span>
+			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/samples/circle/CircleOnCanvas.dart">Source Code</a>
+		</div>
 	</div>
 	<div class="item support grid_4 omega">
-		<a class="img" target="_blank" href="/">
-			<img alt="Spirodraw" src="/resource/img/examples/demo_spirodraw.png">
+		<a class="img" href="/resource/js/examples/index-angryhead.html">
+			<img alt="Angry Head" src="/resource/img/examples/demo_angryhead.png">
 		</a>
-		<h3 class="title"><a target="_blank" href="/">
-			Spirodraw</a></h3>
+		<h3 class="title"><a href="/resource/js/examples/index-angryhead.html">
+			Angry Head</a></h3>
 		<p class="desc">
-			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-			sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-			magna aliquam erat volutpat.
+			Learn how to bounce a head around a container without a canvas
 		</p>
+		<div class="buttons">
+			<a class="demo" href="/resource/js/examples/index-angryhead.html">Demo</a>
+			<span class="sepbar"></span>
+			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/samples/test/TestAnimation3.dart">Source Code</a>
+		</div>
 	</div>
 	<div class="sep clearfix"></div>
 	<div class="item grid_4 alpha">
-		<a class="img" target="_blank" href="/">
-			<img alt="Slider" src="/resource/img/examples/demo_slider2.png">
+		<a class="img" href="/resource/js/examples/index-star.html">
+			<img alt="Star Chart" src="/resource/img/examples/demo_scroll-view-starchart.png">
 		</a>
-		<h3 class="title"><a target="_blank" href="/">
-			Slider</a></h3>
+		<h3 class="title"><a href="/resource/js/examples/index-star.html">
+			Star Chart</a></h3>
 		<p class="desc">
-			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-			sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-			magna aliquam erat volutpat.
+			Create the stars using Rikulo's ScrollView!
 		</p>
+		<div class="buttons">
+			<a class="demo" href="/resource/js/examples/index-star.html">Demo</a>
+			<span class="sepbar"></span>
+			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/samples/scroll-view/StarChartDemo.dart">Source Code</a>
+		</div>
 	</div>
 	<div class="item grid_4">
-		<a class="img" target="_blank" href="/">
-			<img alt="Scroll View" src="/resource/img/examples/demo_scroll-view.png">
+		<a class="img" href="/resource/js/examples/index-list.html">
+			<img alt="List" src="/resource/img/examples/demo_scroll-view-list.png">
 		</a>
-		<h3 class="title"><a target="_blank" href="/">
-			Scroll View</a></h3>
+		<h3 class="title"><a href="/resource/js/examples/index-list.html">
+			List</a></h3>
 		<p class="desc">
-			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-			sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-			magna aliquam erat volutpat.
+			List your data using Rikulo's ScrollView
 		</p>
+		<div class="buttons">
+			<a class="demo" href="/resource/js/examples/index-list.html">Demo</a>
+			<span class="sepbar"></span>
+			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/samples/scroll-view/ListViewDemo.dart">Source Code</a>
+			<span class="sepbar"></span>
+			<a class="blog" href="http://blog.rikulo.org/posts/2012/Jul/Tutorial/building-a-list-view-demo-using-rikulo/">Blog post</a>
+		</div>
 	</div>
 	<div class="item grid_4 omega">
-		<a class="img" target="_blank" href="/">
-			<img alt="Linear Layout" src="/resource/img/examples/demo_linear-layout.png">
+		<a class="img" href="/resource/js/examples/index-grid.html">
+			<img alt="Grid" src="/resource/img/examples/demo_scroll-view-grid.png">
 		</a>
-		<h3 class="title"><a target="_blank" href="/">
-			Linear Layout</a></h3>
+		<h3 class="title"><a href="/resource/js/examples/index-grid.html">
+			Grid</a></h3>
 		<p class="desc">
-			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-			sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-			magna aliquam erat volutpat.
+			Display a large amount of data in a Grid using Rikulo's ScrollView
 		</p>
+		<div class="buttons">
+			<a class="demo" href="/resource/js/examples/index-grid.html">Demo</a>
+			<span class="sepbar"></span>
+			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/samples/scroll-view/GridViewDemo.dart">Source Code</a>
+		</div>
 	</div>
 </div>
 <script type="text/javascript">
