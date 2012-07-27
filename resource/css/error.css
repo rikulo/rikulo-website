@@ -3,7 +3,6 @@
 }
 .header {
 	color: #0d0d0d;
-	height: 447px;
 	padding-top: 130px;
 	font-family: 'Asap',sans-serif;
 }
@@ -17,7 +16,6 @@
 .desc {
 	font-family: 'Lora', sans-serif;
 	font-size: 20px;
-	width: 350px;
 	margin-top: -9px;
 }
 
@@ -38,4 +36,15 @@
 }
 .button a:hover {
 	color: #F2F2E1;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#template-inner {
+		min-height: 400px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#template-inner {
+		min-height: 400px;
+	}
 }
