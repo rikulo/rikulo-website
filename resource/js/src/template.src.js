@@ -41,6 +41,18 @@ $(function() {
 	var b=document.getElementsByTagName("script")[0];
 	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/4259.js?"+Math.floor(new Date().getTime()/3600000);
 	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	
+	var _scrollbarWidth
+	$.scrollbarWidth = function () {
+		if (_scrollbarWidth == null) {
+			var _sbwDiv = document.createElement("div");
+			_sbwDiv.style.cssText = "top:-1000px;left:-1000px;position:absolute;visibility:hidden;border:none;width:50px;height:50px;overflow:scroll;";
+			document.body.appendChild(_sbwDiv);
+			_scrollbarWidth =  _sbwDiv.offsetWidth - _sbwDiv.clientWidth;
+			$(_sbwDiv).remove();
+		}
+		return _scrollbarWidth;
+	};
 });
 function isTouchDevice() { 
 	return ('ontouchstart' in window);
@@ -54,7 +66,7 @@ google.setOnLoadCallback(function() {
 */
 var ADAPT_CONFIG = {
   // Where is your CSS?
-  path: 'http://rikulo.org/less/',
+  path: 'http://10.1.3.113/less/',
 
   // false = Only run once, when page first loads.
   // true = Change on window resize and page tilt.
@@ -103,7 +115,7 @@ if (!config) {
 
 var hostname = window.location.hostname;
 
-if (hostname == 'docs.rikulo.org' || hostname == 'blog.rikulo.org')
+if (hostname == 'docs.rikulo.org')
 	return;
 
 // Empty vars to use later.

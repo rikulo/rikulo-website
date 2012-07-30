@@ -1,1 +1,253 @@
-$(function(){var b=$.browser.msie&&$.browser.version=="6.0";if($.browser.safari){$("body").addClass("safari")}$.fn.bgPos=function(){var c=$(this).css("background-position");if(typeof(c)==="undefined"){return $(this).css("background-position-x")+" "+$(this).css("background-position-y")}else{return c}};$.fn.bgPosSplit=function(){return $(this).bgPos().split(" ")};var a=isTouchDevice();if(a){$("body").addClass("touch")}else{}setTimeout(function(){var d=document.createElement("script");var c=document.getElementsByTagName("script")[0];d.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/4259.js?"+Math.floor(new Date().getTime()/3600000);d.async=true;d.type="text/javascript";c.parentNode.insertBefore(d,c)},1)});function isTouchDevice(){return("ontouchstart" in window)}var ADAPT_CONFIG={path:"http://rikulo.org/less/",dynamic:true,callback:function(a,b){if(a==0){$(".responsive-image").each(function(){var c=$(this),d=c.attr("src");if(d!=c.attr("data-320src")){c.attr("src",c.attr("data-320src"))}})}else{$(".responsive-image").each(function(){var c=$(this),d=c.attr("src");if(d==c.attr("data-320src")){c.attr("src",c.attr("data-fullsrc"))}})}},range:["0px    to 479px  = responsive_320","479px  to 767px  = responsive_480","767px  to 959px  = responsive_768","959px            = responsive_960"]};(function(o,l,e,f){if(!e){return}var n=window.location.hostname;if(n=="docs.rikulo.org"||n=="blog.rikulo.org"){return}var a,h,c;var p=typeof e.callback==="function"?e.callback:f;var q=e.path?e.path:"";var i=e.range;var b=i.length;var j=$('link[href*="responsive"]')[0];j.rel="stylesheet";j.media="screen";function m(d,r){if(j.href!=a){j.href=a;h=a;p&&p(d,r)}}function k(){clearTimeout(c);var d=o.innerWidth||l.documentElement.clientWidth||l.body.clientWidth||0;var v,u,x,w,r,s;var t=b;var y=b-1;while(t--){a="";v=i[t].split("=");u=v[0];s=v[1]?v[1].replace(/\s/g,""):f;r=u.match("to");x=r?parseInt(u.split("to")[0],10):parseInt(u,10);w=r?parseInt(u.split("to")[1],10):f;if((!w&&t===y&&d>x)||(d>x&&d<=w)){s&&(a=q+s);break}}if(!h){m(t,d)}else{if(h!==a){m(t,d)}}}k();function g(){clearTimeout(c);c=setTimeout(k,16)}if(e.dynamic){if(o.addEventListener){o.addEventListener("resize",g,false)}else{if(o.attachEvent){o.attachEvent("onresize",g)}else{o.onresize=g}}}})(this,this.document,ADAPT_CONFIG);
+$(function() {
+	var ie6 = $.browser.msie && $.browser.version == '6.0';
+	
+	if ($.browser.safari)
+		$("body").addClass("safari");
+	
+	/*Fix JQ For Idiot IE*/
+	$.fn.bgPos = function() {
+		var p = $(this).css('background-position');
+		if(typeof(p) === 'undefined') return $(this).css('background-position-x') + ' ' + $(this).css('background-position-y');
+		else return p;
+	};
+	$.fn.bgPosSplit = function() {
+		return $(this).bgPos().split(" ");
+	};
+	
+	/*Menu Control*/	
+	var isTouch = isTouchDevice();
+	if (isTouch) {
+		$("body").addClass("touch");
+	} else {
+	}
+	/* Facebook Like 
+	window.fbAsyncInit = function() { 
+	    FB.init({ 
+	      appId  : '215879398442065', 
+	      status : true, // check login status 
+	      cookie : true, // enable cookies to allow the server to access the session 
+	      xfbml  : true  // parse XFBML 
+	    }); 
+	}; 
+	if (document.getElementById('fb-root') != null ) {
+	    var e = document.createElement('script'); 
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js'; 
+		e.async = true; 
+		document.getElementById('fb-root').appendChild(e);
+	}
+	*/
+	/*Crazy Egg*/
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/4259.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	
+	var _scrollbarWidth
+	$.scrollbarWidth = function () {
+		if (_scrollbarWidth == null) {
+			var _sbwDiv = document.createElement("div");
+			_sbwDiv.style.cssText = "top:-1000px;left:-1000px;position:absolute;visibility:hidden;border:none;width:50px;height:50px;overflow:scroll;";
+			document.body.appendChild(_sbwDiv);
+			_scrollbarWidth =  _sbwDiv.offsetWidth - _sbwDiv.clientWidth;
+			$(_sbwDiv).remove();
+		}
+		return _scrollbarWidth;
+	};
+});
+function isTouchDevice() { 
+	return ('ontouchstart' in window);
+}
+/*Google Custom Search
+google.load('search', '1');
+google.setOnLoadCallback(function() {
+	google.search.CustomSearchControl.attachAutoCompletion('008321236477929467003:63kdpeqkkvw',
+	document.getElementById('q'),'cse-search-box');
+});
+*/
+var ADAPT_CONFIG = {
+  // Where is your CSS?
+  path: 'http://10.1.3.113/less/',
+
+  // false = Only run once, when page first loads.
+  // true = Change on window resize and page tilt.
+  dynamic: true,
+  callback: function(i, width) {
+	if (i == 0) {//responsive_320
+		$('.responsive-image').each(function() {
+			var $n = $(this),
+				src = $n.attr('src');
+			
+			if (src != $n.attr('data-320src'))
+				$n.attr('src', $n.attr('data-320src'));
+		});
+	} else {
+		$('.responsive-image').each(function() {
+			var $n = $(this),
+				src = $n.attr('src');
+			
+			if (src == $n.attr('data-320src'))
+				$n.attr('src', $n.attr('data-fullsrc'));
+		});
+	}
+  },
+  // First range entry is the minimum.
+  // Last range entry is the maximum.
+  // Separate ranges by "to" keyword.
+  range: [
+    '0px    to 479px  = responsive_320',
+    '479px  to 767px  = responsive_480',
+    '767px  to 959px  = responsive_768',
+    '959px            = responsive_960'
+  ]
+};
+/*
+Adapt.js licensed under GPL and MIT.
+
+Read more here: http://adapt.960.gs
+*/
+
+//Closure.
+(function(w, d, config, undefined) {
+// If no config, exit.
+if (!config) {
+  return;
+}
+
+var hostname = window.location.hostname;
+
+if (hostname == 'docs.rikulo.org')
+	return;
+
+// Empty vars to use later.
+var url, url_old, timer;
+
+// Alias config values.
+var callback = typeof config.callback === 'function' ? config.callback : undefined;
+var path = config.path ? config.path : '';
+var range = config.range;
+var range_len = range.length;
+
+// Create empty link tag:
+// <link rel="stylesheet" />
+var css = $('link[href*="responsive"]')[0];
+css.rel = 'stylesheet';
+css.media = 'screen';
+
+// Called from within adapt().
+function change(i, width) {
+	if (css.href != url) {
+		// Set the URL.
+		css.href = url;
+		url_old = url;
+		// Call callback, if defined.
+		callback && callback(i, width);
+	}
+}
+
+// Adapt to width.
+function adapt() {
+  // This clearTimeout is for IE.
+  // Really it belongs in react(),
+  // but doesn't do any harm here.
+  clearTimeout(timer);
+
+  // Parse browser width.
+  var width = w.innerWidth || d.documentElement.clientWidth || d.body.clientWidth || 0;
+
+  // While loop vars.
+  var arr, arr_0, val_1, val_2, is_range, file;
+
+  // How many ranges?
+  var i = range_len;
+  var last = range_len - 1;
+
+  while (i--) {
+    // Blank if no conditions met.
+    url = '';
+
+    // Turn string into array.
+    arr = range[i].split('=');
+
+    // Width is to the left of "=".
+    arr_0 = arr[0];
+
+    // File name is to the right of "=".
+    // Presuppoes a file with no spaces.
+    // If no file specified, make empty.
+    file = arr[1] ? arr[1].replace(/\s/g, '') : undefined;
+
+    // Assume max if "to" isn't present.
+    is_range = arr_0.match('to');
+
+    // If it's a range, split left/right sides of "to",
+    // and then convert each one into numerical values.
+    // If it's not a range, turn maximum into a number.
+    val_1 = is_range ? parseInt(arr_0.split('to')[0], 10) : parseInt(arr_0, 10);
+    val_2 = is_range ? parseInt(arr_0.split('to')[1], 10) : undefined;
+
+    // Check for maxiumum or range.
+    if ((!val_2 && i === last && width > val_1) || (width > val_1 && width <= val_2)) {
+      // Build full URL to CSS file.
+      file && (url = path + file);
+
+      // Exit the while loop. No need to continue
+      // if we've already found a matching range.
+      break;
+    }
+  }
+
+  // Was it created yet?
+  if (!url_old) {
+    // Apply changes.
+    change(i, width);
+
+    // Add the CSS, only if path is defined.
+    // Use faster document.head if possible.
+    //path && (d.head || d.getElementsByTagName('head')[0]).appendChild(css);
+  }
+  else if (url_old !== url) {
+    // Apply changes.
+    change(i, width);
+  }
+}
+
+// Fire off once.
+adapt();
+
+// Slight delay.
+function react() {
+  // Clear the timer as window resize fires,
+  // so that it only calls adapt() when the
+  // user has finished resizing the window.
+  clearTimeout(timer);
+
+  // Start the timer countdown.
+  timer = setTimeout(adapt, 16);
+  // -----------------------^^
+  // Note: 15.6 milliseconds is lowest "safe"
+  // duration for setTimeout and setInterval.
+  //
+  // http://www.nczonline.net/blog/2011/12/14/timer-resolution-in-browsers
+}
+
+// Do we want to watch for
+// resize and device tilt?
+if (config.dynamic) {
+  // Event listener for window resize,
+  // also triggered by phone rotation.
+  if (w.addEventListener) {
+    // Good browsers.
+    w.addEventListener('resize', react, false);
+  }
+  else if (w.attachEvent) {
+    // Legacy IE support.
+    w.attachEvent('onresize', react);
+  }
+  else {
+    // Old-school fallback.
+    w.onresize = react;
+  }
+}
+
+//Pass in window, document, config, undefined.
+})(this, this.document, ADAPT_CONFIG);
