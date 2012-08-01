@@ -72,6 +72,7 @@ var ADAPT_CONFIG = {
   // true = Change on window resize and page tilt.
   dynamic: true,
   callback: function(i, width) {
+	  $(window).trigger('onResponsiveCssChange', [i, width]);
 	if (i == 0) {//responsive_320
 		$('.responsive-image').each(function() {
 			var $n = $(this),
@@ -115,9 +116,6 @@ if (!config) {
 
 var hostname = window.location.hostname;
 
-if (hostname == 'docs.rikulo.org')
-	return;
-
 // Empty vars to use later.
 var url, url_old, timer;
 
@@ -129,9 +127,11 @@ var range_len = range.length;
 
 // Create empty link tag:
 // <link rel="stylesheet" />
-var css = $('link[href*="responsive"]')[0];
+var css = $('link[href*="responsive"]')[0],
+	isTouch = isTouchDevice();;
 css.rel = 'stylesheet';
 css.media = 'screen';
+
 
 // Called from within adapt().
 function change(i, width) {
