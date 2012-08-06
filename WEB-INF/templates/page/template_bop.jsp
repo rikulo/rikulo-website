@@ -36,7 +36,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="shortcut icon" type="image/ico" href="/resource/img/favicon.ico" >
 	<link rel="bookmark" href="/resource/img/favicon.ico" >
-	<link rel="stylesheet" type="text/css" href="http://rikulo.org/less/<%=responsiveCSS%>" />
+	<link rel="stylesheet" type="text/css" href="http://10.1.3.113/less/<%=responsiveCSS%>" />
 	<link rel="stylesheet" type="text/css" href="/less/template" />
 	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic|Oswald:400,300,700|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href="http://blog.rikulo.org/feeds/all.rss.xml" rel="alternate" type="application/rss+xml" title="Rikulo RSS FEED" />
