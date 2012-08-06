@@ -93,6 +93,8 @@
 			<a class="demo" href="/resource/js/examples/index-grid.html">Demo</a>
 			<span class="sepbar"></span>
 			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/samples/scroll-view/GridViewDemo.dart">Source Code</a>
+			<span class="sepbar"></span>
+			<a class="blog" href="http://blog.rikulo.org/posts/2012/Aug/Tutorial/building-a-grid-demo-using-rikulo/">Blog post</a>
 		</div>
 	</div>
 </div>
