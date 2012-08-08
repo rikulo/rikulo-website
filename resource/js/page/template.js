@@ -66,7 +66,7 @@ google.setOnLoadCallback(function() {
 */
 var ADAPT_CONFIG = {
   // Where is your CSS?
-  path: 'http://10.1.3.113/less/',
+  path: 'http://10.1.3.115/less/',
 
   // false = Only run once, when page first loads.
   // true = Change on window resize and page tilt.
