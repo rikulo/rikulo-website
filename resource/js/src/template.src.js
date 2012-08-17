@@ -1,6 +1,4 @@
 $(function() {
-	var ie6 = $.browser.msie && $.browser.version == '6.0';
-	
 	if ($.browser.safari)
 		$("body").addClass("safari");
 	

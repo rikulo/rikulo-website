@@ -38,10 +38,7 @@
 			</header>
 			<div class="banners banner1">
 				<div class="banner-img grid_6">
-					<!--[if lt IE 7]>
-		        		<img class="img" src="/resource/img/index/src/banner_imagebg.png" alt="Rikulo Live Demo"  title="Rikulo Live Demo"/>
-		        	<![endif]-->
-					<!--[if !IE 6]>
+					<!--[if IE]>
 						<img class="img" src="/resource/img/index/src/banner_image.png" alt="Rikulo Live Demo" title="Rikulo Live Demo"/>
 					<![endif]-->
 					<!--[if !IE]>-->
