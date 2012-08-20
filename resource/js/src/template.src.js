@@ -39,6 +39,11 @@ $(function() {
 	var b=document.getElementsByTagName("script")[0];
 	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/4259.js?"+Math.floor(new Date().getTime()/3600000);
 	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	
+	/*google plus*/
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 });
 function isTouchDevice() { 
 	return ('ontouchstart' in window);

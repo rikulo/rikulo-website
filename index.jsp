@@ -55,7 +55,7 @@
 							<h2 class="text">Apps on target</h2>
 						</div>
 						<h1 class="desc grid_6 alpha">Rikulo is a free and open source framework for creating incredible cross-platform web and native mobile applications in Dart &amp; HTML5.</h1>
-						<div class="buttons grid_4 alpha">
+						<div class="buttons grid_3 alpha">
 							<div class="download-button">
 								<div class="hover grid_4 alpha omega"></div>	
 								<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);"
@@ -70,9 +70,9 @@
 								class="git-link" title="Other Versions on GitHub">
 								Other Versions on GitHub<span></span></a>
 						</div>
-						<div class="google-plus grid_2 omega">
+						<div class="google-plus grid_3 omega">
 							<!-- Place this tag where you want the +1 button to render. -->
-							<div class="g-plusone" data-href="http://www.rikulo.org"></div>
+							<div class="g-plus" data-width="170" data-height="69" data-href="https://plus.google.com/117602514255061155793?rel=publisher"></div>
 						</div>
 					</header> 
 				</section>

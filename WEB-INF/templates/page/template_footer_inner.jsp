@@ -1,10 +1,14 @@
 <div id="footer-inner" class="container_12">
-	<div id="footer-txt" class="grid_8">
+	<div id="footer-txt" class="grid_5">
 	Rikulo is a registered trademark of 
 	<a href="http://www.zkoss.org/support/about" target="_blank">Potix Corporation</a>.<br />
 	Copyright &copy; 2012 
 	<a href="http://www.zkoss.org/support/about" target="_blank">Potix Corporation</a>. 
 	All rights reserved.</div>
+	<div id="google-plus" class="grid_3">
+		<!-- Place this tag where you want the +1 button to render. -->
+		<div class="g-plusone" data-href="http://www.rikulo.org"></div>
+	</div>
 	<div id="sns-items" class="grid_4">
 		<ul>
 			<li class="label">Follow us on</li>
