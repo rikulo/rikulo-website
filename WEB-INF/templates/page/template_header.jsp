@@ -4,7 +4,6 @@
 		<script src="/resource/js/lib/html5.js"></script>
 	<![endif]-->
 </head>
-<!--[if lte IE 7]><body id="zbody" class="ie ie7 ie78 ie789"><![endif]-->
 <!--[if IE 8]><body id="zbody" class="ie ie8 ie89"><![endif]-->
 <!--[if gte IE 9]><body id="zbody" class="ie ie9"><![endif]-->
 <!--[if !IE]>--><body id="zbody" class=""><!--<![endif]-->
