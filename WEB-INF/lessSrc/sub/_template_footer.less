@@ -2,90 +2,73 @@
 #footer {
 	font-family: 'Asap', sans-serif;
 	margin-top: 17px;
-}
-.ie67 {
-	#footer {
-		background: url("/resource/img/template/broken_noise.jpg") repeat 0 0 scroll transparent;
-		width:100%;
-		display: block;
-		margin-bottom: 0;
-	}
-}
-
-/**Footer text***/
-
-#footer-txt {
-	float: left;
-	color: #f2f2e1;
-	font-size: 12px;
-	line-height: 135%;
-}
-
-/**Footer SNS***/
-
-#sns-items {
-	float:right;
-	li {
-		float: left;
-	}
-	a {
-		text-indent: 180%;
-		white-space: nowrap; /* IE 6 7 9 */
-		overflow: hidden;
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
-	
-	.sns-btn {
-		background: url("/resource/img/template/footer_icons.png") no-repeat scroll 0 0 transparent;
-		margin-left: 2px;
-		width: 32px;
-		height: 32px;
-	}
-	
-	.label {
-		line-height: 24px;
+	/**Footer text***/
+	#footer-txt, #footer-txt a {
 		color: #f2f2e1;
-		font-size: 14px;
+		font-size: 12px;
+		line-height: 135%;
+	}
+	
+	#footer-txt {
+		float: left;
+		a:hover {
+			text-decoration:underline;
+		}
+	}
+	
+	#google-plus {
 		padding-top: 4px;
-		margin-right: 3px;
 	}
-	.twitter {
-		background-position: -32px 0;
+	
+	/**Footer SNS***/
+	
+	#sns-items {
+		float:right;
+		li {
+			float: left;
+		}
+		a {
+			text-indent: 180%;
+			white-space: nowrap; /* IE 6 7 9 */
+			overflow: hidden;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.sns-btn {
+			background: url("/resource/img/template/footer_icons.png") no-repeat scroll 0 0 transparent;
+			margin-left: 2px;
+			width: 32px;
+			height: 32px;
+		}
+		
+		.label {
+			line-height: 24px;
+			color: #f2f2e1;
+			font-size: 14px;
+			padding-top: 4px;
+			margin-right: 3px;
+		}
+		.twitter {
+			background-position: -32px 0;
+		}
+		.googleplus {
+			background-position: -64px 0;
+		}
+		.rss {
+			background-position: -96px 0;
+		}
+		.git {
+			background-position: -128px 0;
+		}
 	}
-	.googleplus {
-		background-position: -64px 0;
-	}
-	.rss {
-		background-position: -96px 0;
-	}
-	.git {
-		background-position: -128px 0;
+	#sns-items, #footer-txt {
+		margin-bottom: 17px;
 	}
 }
-.ie6 #sns-items {
-	.sns-btn {
-		background: url("/resource/img/template/fix/footer_icons.png") no-repeat scroll 0 0 transparent;
-	}
-	.twitter {
-		background-position: -32px 0;
-	}
-	.googleplus {
-		background-position: -64px 0;
-	}
-	.rss {
-		background-position: -96px 0;
-	}
-}
 
-
-
-#sns-items, #footer-txt {
-	margin-bottom: 17px;
-}
-
-.ie8 {
+.ie8 #footer {
 	#sns-items, #footer-txt {
 		margin-top: 17px;
 	}
