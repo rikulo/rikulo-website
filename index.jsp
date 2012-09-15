@@ -72,7 +72,7 @@
 								Other Versions on GitHub<span></span></a>
 						</div>
 						<div class="google-plus grid_3 omega">
-							<!-- Place this tag where you want the +1 button to render. -->
+							<%-- Place this tag where you want the +1 button to render. --%>
 							<div class="g-plus" data-width="170" data-height="69" data-href="https://plus.google.com/117602514255061155793?rel=publisher"></div>
 						</div>
 					</header> 
