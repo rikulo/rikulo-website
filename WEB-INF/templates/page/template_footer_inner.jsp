@@ -6,8 +6,8 @@
 	<a href="http://www.zkoss.org/support/about" target="_blank">Potix Corporation</a>. 
 	All rights reserved.</div>
 	<div id="google-plus" class="grid_3">
-		<%-- Place this tag where you want the +1 button to render. --%>
 		<div class="g-plusone" data-annotation="none" data-href="http://www.rikulo.org"></div>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-hashtags="rikulo">Tweet</a>
 	</div>
 	<div id="sns-items" class="grid_4">
 		<ul>
