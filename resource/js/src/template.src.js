@@ -14,6 +14,7 @@ $(function() {
 	
 	/*Menu Control*/	
 	var isTouch = isTouchDevice();
+	$("body").addClass("touch");
 	if (isTouch) {
 		$("body").addClass("touch");
 	} else {
@@ -69,7 +70,7 @@ google.setOnLoadCallback(function() {
 */
 var ADAPT_CONFIG = {
   // Where is your CSS?
-  path: 'http://10.1.3.113/less/',
+  path: 'http://10.1.3.109/less/',
 
   // false = Only run once, when page first loads.
   // true = Change on window resize and page tilt.

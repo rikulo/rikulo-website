@@ -57,10 +57,6 @@ $(function() {
 	//apply selected item
 	applySelected();
 	
-	if (!pageInfo.isTouch || pageInfo.is960) {
-		setTimeout(syncTocPos ,responsiveCssDelay);
-		setTimeout(bindScrollSync ,responsiveCssDelay);
-	}
 	setTimeout(syncSelectedPos ,responsiveCssDelay);
 	
 	var lastIndex;
@@ -93,17 +89,6 @@ function applySelected() {
 	});
 }
 
-function syncTocPos() {
-	 if (_selItem) {
-		 
-		 var $toc = $('#toc'),
-		 	tocTop;
-		 
-		 if ((tocTop = $(document).scrollTop() - $toc.offset().top) > 0)
-			 $toc[0].style.top = tocTop + 'px';
-	 }
-}
-
 function syncSelectedPos() {
 	 if (_selItem) {
 		 var $toc = $('#toc'),
@@ -118,27 +103,6 @@ function syncSelectedPos() {
 			 $toc.stop().animate({ scrollTop: scrollTop}, 500);
 		 }
 	 }
-}
-
-function bindScrollSync() {
-	//sync TOC position
-	var $toc = $('#toc'),
-		top = $('#content h1').offset().top,
-		scrollTop, timer;
-	
-	
-	//console.log('top: '+top);
-	//top is wrong, use fixed number
-	$(document).scroll(function() {
-		clearTimeout(timer);
-		timer = setTimeout(function() {
-			if ((scrollTop = $(document).scrollTop() - top) > 0) {
-				$toc.stop().animate({ top: scrollTop + 'px' }, 100);
-			} else {
-				$toc[0].style.top = 0;
-			}
-		},50);
-	});
 }
 
 
@@ -175,10 +139,4 @@ function syncSizeChanged() {
 		
 		$(document).scrollTop(0);
 	}
-	
-	$(document).unbind('scroll');
-	if (!pageInfo.isTouch || pageInfo.is960) {
-		setTimeout(bindScrollSync ,responsiveCssDelay);
-	}
-	
 }
