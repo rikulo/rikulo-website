@@ -3,7 +3,7 @@
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
 	 --%>
-	<%! String _init_time = new Integer((short)(new java.util.Date().getTime() & 0xffff)).toHexString(); %>
+	<%! String _init_time = Integer.toHexString(new Integer((short)(new java.util.Date().getTime() & 0xffff))); %>
 	<script type="text/javascript" src="/resource/js/page/template.js?v=<%=_init_time %>"></script>
 	<script type="text/javascript" src="/resource/js/page/gaz.js"></script>
 	<footer id="footer">
