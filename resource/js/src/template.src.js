@@ -73,7 +73,7 @@ google.setOnLoadCallback(function() {
 */
 var ADAPT_CONFIG = {
   // Where is your CSS?
-  path: 'http://10.1.3.109/less/',
+  path: 'http://rikulo.org/less/',
 
   // false = Only run once, when page first loads.
   // true = Change on window resize and page tilt.
