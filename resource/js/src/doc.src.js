@@ -21,27 +21,6 @@ $(function() {
 				myScroll = new iScroll('toc', { hScrollbar: false, vScrollbar: false });
 			} ,responsiveCssDelay);
 		
-		
-		$('.control-button').click(function () {
-			var left = $toc.position().left,
-				ofs = $toc.outerWidth(true),
-				doClose = left == 0,
-				cntHeight = ($toc.height() - 82)+ 'px';
-			
-			$toc.stop().animate({left: (doClose?  -ofs - 32: 0)}, 600);
-			$('.control-button').stop().animate({left: (doClose?  0: ofs)}, 600);
-			
-			$('#content').css('max-height', (doClose? '': cntHeight))
-				.css('overflow', (doClose? '': 'hidden'));
-			
-			if (pageInfo.is768) {
-				$('#content').width(doClose? 748: 470)
-					.css('padding-left', (doClose? '0': '266px'))
-					.css('min-height', (doClose? '': cntHeight))
-					.css('max-height', '');
-			}
-		});
-		
 	} else {
 		$tocRoot.css('padding-right', scrollbarWidth + 'px');
 		// apply hover effect
@@ -53,6 +32,27 @@ $(function() {
 			$tocRoot.css('padding-right', scrollbarWidth + 'px');
 		});
 	}
+	
+	
+	$('.control-button').click(function () {
+		var left = $toc.position().left,
+			ofs = $toc.outerWidth(true),
+			doClose = left == 0,
+			cntHeight = ($toc.height() - 82)+ 'px';
+		
+		$toc.stop().animate({left: (doClose?  -ofs - 32: 0)}, 600);
+		$('.control-button').stop().animate({left: (doClose?  0: ofs)}, 600);
+		
+		$('#content').css('max-height', (doClose? '': cntHeight))
+			.css('overflow', (doClose? '': 'hidden'));
+		
+		if (pageInfo.is768) {
+			$('#content').width(doClose? 748: 470)
+				.css('padding-left', (doClose? '0': '266px'))
+				.css('min-height', (doClose? '': cntHeight))
+				.css('max-height', '');
+		}
+	});
 	
 	//apply selected item
 	applySelected();
@@ -122,21 +122,20 @@ function syncSizeChanged() {
 		
 		if (pageInfo.is960)
 			myScroll = new iScroll('toc', { hScrollbar: false, vScrollbar: false });
-	
-		
-		var left = $toc.position().left,
-			ofs = $toc.outerWidth(true),
-			doClose = left == 0,
-			cntHeight = ($toc.height() - 82)+ 'px';
-		
-		$('.control-button').css('left', '');
-		$toc.css('top', '').css('left', '');
-		$('#content').css('overflow', '')
-			.css('width', '')
-			.css('padding-left', '')
-			.css('min-height', '')
-			.css('max-height', '');
-		
-		$(document).scrollTop(0);
 	}
+	
+	var left = $toc.position().left,
+		ofs = $toc.outerWidth(true),
+		doClose = left == 0,
+		cntHeight = ($toc.height() - 82)+ 'px';
+	
+	$('.control-button').css('left', '');
+	$toc.css('top', '').css('left', '');
+	$('#content').css('overflow', '')
+		.css('width', '')
+		.css('padding-left', '')
+		.css('min-height', '')
+		.css('max-height', '');
+	
+	$(document).scrollTop(0);
 }
