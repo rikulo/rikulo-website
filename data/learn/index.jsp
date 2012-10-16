@@ -14,7 +14,11 @@
 			<h2>Reference</h2>
 			<ul class="items">
 				<li><a href="http://docs.rikulo.org" title="Documentation">Documentation</a></li>
-				<li><a href="http://api.rikulo.org" title="API Reference">API Reference</a></li>
+				<li>API Reference
+					<ul>
+						<li><a href="http://api.rikulo.org" title="Rikulo API Reference">Rikulo API</a></li>
+						<li><a href="http://api.rikulo.org/rikulo-gap/latest/" title="Rikulo Gap API Reference">Rikulo Gap API</a></li>
+					</ul></li>
 			</ul>
 		</div>
 		<div class="item support grid_4 omega">
