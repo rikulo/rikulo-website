@@ -44,7 +44,7 @@
 		<div class="buttons">
 			<a class="demo" href="/resource/js/examples/index-angryhead.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/example/test/TestAnimation3.dart">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/test/TestAnimation3.dart">Source Code</a>
 		</div>
 	</div>
 	<div class="sep clearfix"></div>
