@@ -55,7 +55,7 @@
 						<div class="title grid_6 alpha">
 							<h2 class="text">Apps on target</h2>
 						</div>
-						<h1 class="desc grid_6 alpha">Rikulo is a free and open source framework for creating incredible cross-platform web and native mobile applications in Dart &amp; HTML5.</h1>
+						<h1 class="desc grid_6 alpha">Rikulo is a free and open source Dart framework for creating incredible cross-platform web and native mobile applications using HTML5.</h1>
 						<div class="buttons grid_3 alpha">
 							<div class="download-button">
 								<div class="hover grid_4 alpha omega"></div>	
