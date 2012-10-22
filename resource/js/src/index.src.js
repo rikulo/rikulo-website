@@ -32,9 +32,9 @@ $(function() {
 		$(".twitters. .bubble-cnt").addClass('edit');
 	} else {
 		$("#row-banner-inner .download-button").hover(function() {
-			$(this).children().first().fadeTo(200, 1);//duration, opacity
+			$(this).children().first().stop().fadeTo(200, 1);//duration, opacity
 		},function() {
-			$(this).children().first().fadeTo(200, 0);
+			$(this).children().first().stop().fadeTo(200, 0);
 		});
 		$(".twitters .bubble-cnt").hover(function() {
 			$(this).addClass('edit');

@@ -59,17 +59,17 @@
 						<div class="buttons grid_3 alpha">
 							<div class="download-button">
 								<div class="hover grid_4 alpha omega"></div>	
-								<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo', 'latest']);"
-								href="https://github.com/downloads/rikulo/rikulo/rikulo-2012-10-16.zip" title="Download"> 
-									<span class="name">Download</span><br> 
+								<a onclick="_gaq.push(['_trackEvent', 'install', 'rikulo']);"
+								href="http://docs.rikulo.org/rikulo/latest/Getting_Started/Introduction.html" title="Download"> 
+									<span class="name">Install...</span><br> 
 									<span class="version">Latest Version</span><br> 
 									<span class="license">Apache license 2.0</span>
 								</a>
 							</div>
-							<a onclick="_gaq.push(['_trackEvent', 'download', 'rikulo-list']);" 
-								href="https://github.com/rikulo/rikulo/downloads" 
+							<a onclick="_gaq.push(['_trackEvent', 'clone', 'rikulo']);" 
+								href="https://github.com/rikulo/rikulo/" 
 								class="git-link" title="Other Versions on GitHub">
-								Other Versions on GitHub<span></span></a>
+								Clone us on GitHub<span></span></a>
 						</div>
 						<div class="google-plus grid_3 omega">
 							<%-- Place this tag where you want the +1 button to render. --%>
