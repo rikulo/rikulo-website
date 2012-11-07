@@ -59,8 +59,8 @@
 						<div class="buttons grid_3 alpha">
 							<div class="download-button">
 								<div class="hover grid_4 alpha omega"></div>	
-								<a onclick="_gaq.push(['_trackEvent', 'install', 'rikulo']);"
-								href="http://docs.rikulo.org/rikulo/latest/Getting_Started/Introduction.html" title="Download"> 
+								<a onclick="_gaq.push(['_trackEvent', 'install', 'rikulo', 'latest']);"
+								href="http://docs.rikulo.org/rikulo/latest/Getting_Started/Introduction.html" title="Install Instructions"> 
 									<span class="name">Install...</span><br> 
 									<span class="version">Latest Version</span><br> 
 									<span class="license">Apache license 2.0</span>
@@ -68,7 +68,7 @@
 							</div>
 							<a onclick="_gaq.push(['_trackEvent', 'clone', 'rikulo']);" 
 								href="https://github.com/rikulo/rikulo/" 
-								class="git-link" title="Other Versions on GitHub">
+								class="git-link" title="Rikulo on Github">
 								Clone us on GitHub<span></span></a>
 						</div>
 						<div class="google-plus grid_3 omega">
