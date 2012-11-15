@@ -233,13 +233,14 @@
 		/*doc page*/
 		.touch {
 			.doc-page {
+				min-height: 650px !important;
 				#toc {
 					margin-top: 0;
 					top: 0;
 					left: -300px;
-					height: auto;
 					width: 266px;
 					margin-right: 0;
+					display: none;
 				}
 				#content {
 					width: 748px;
@@ -248,6 +249,9 @@
 				#controlbar {
 					display: block;
 				}
+			}
+			#template-inner {
+				min-height: 300px !important;
 			}
 		}
 	}

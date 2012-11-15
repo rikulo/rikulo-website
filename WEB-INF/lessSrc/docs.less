@@ -156,33 +156,93 @@ a {
 
 #toc {
 	background: #fefefe;
-	border: 1px solid #ccc;
   	margin-right:8px; /* border + margin = 10px */
-	border-radius: 3px;
 	margin-top: 30px;
-	font-size: 14px;
 	position: absolute;
-	height: 700px;
 	left: 0;
 	overflow-y: hidden;
 	ul, ol {
 		margin: 0;
 		padding: 0 0 0 1.3em;
 	}
-	li {
-		margin: 3px 0;
+	
+	
+	
+	
+	
+	ul {
+		padding: 0 7px;
+		
+		li {
+			list-style-type: none;
+			font-size: 16px;
+			color: #0d0d0d;
+			
+			margin-left: -11px;
+			padding-left: 15px;
+			a {
+				padding: 6px 0;
+				display: block;
+				font-size: 16px;
+				.link-color(#0d0d0d, #914503);
+			}
+			
+			ul {
+				margin-left: -15px;
+				padding-left: 15px;
+				padding-bottom: 5px;
+				
+				li {
+					font-size: 15px;
+					color: #808080;
+					
+					padding-top: 5px;
+					a {
+						padding: 0;
+						display: block;
+						font-size: 15px;
+						.link-color(#9d8f7c, #914503);
+					}
+					
+					ul {
+						padding-bottom: 0;
+						margin-top: 0 !important;
+						li {
+							font-size: 14px;
+							color: #808080;
+							
+							margin-top: 0;
+	   						padding-top: 5px;
+							padding-left: 23px;
+							a {
+								padding: 2px 0;
+								display: block;
+								font-size: 14px;
+								.link-color(#9d8f7c, #914503);
+							}
+							
+							li {
+								margin-left: 0;
+								margin: 0;
+								padding-left: 13px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.root-level > li.cate-sel {
+		background-color: #F4E9DD;
+		padding-top: 8px;
+		ul {
+			margin-top: 8px;
+			background-color: #F8F4EF;
+		}
 	}
 	a.item-sel {
-		color: #D49B50;
-		text-decoration: underline;
-	}
-	ul li.category {
-		list-style: none;
-		span{
-			color: #0d0d0d;
-			font-size: 15px;
-			font-weight: bold;
-		}
+		color: #D49B50 !important;
 	}
 }
 #content {
@@ -206,13 +266,13 @@ a {
 	h2 {
 		border-bottom: 1px solid #CCC;
 		font-size: 24px;
-		margin-bottom: 12px;
-    	margin-top: 14px;
+		margin-bottom: 16px;
+		margin-top: 48px;
 	}
 	h3 {
 		font-size: 20px;
-	    margin-bottom: 8px;
-	    margin-top: 12px;
+		margin-bottom: -12px;
+		margin-top: 24px;
 	}
 	h4 {
 		font-size: 1.1em;
