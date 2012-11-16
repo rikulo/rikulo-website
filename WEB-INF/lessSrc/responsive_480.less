@@ -133,13 +133,16 @@
 		/*doc page*/
 		.touch {
 			.doc-page {
+				min-height: 300px !important;
 				#toc {
+					border: 1px solid #ccc;
 					margin-top: 0;
 					top: 0;
 					left: -350px;
 					width: 326px;
 					margin-right: 0;
 					display: none;
+					overflow: hidden;
 				}
 				#controlbar, #controlbar-bottom {
 					display: block;
@@ -147,7 +150,9 @@
 				#box {
 					min-height: 300px;
 				}
-				min-height: 300px !important;
+				.root-level {
+					margin-right: -7px !important;
+				}
 			}
 			#template-inner {
 				min-height: 300px !important;

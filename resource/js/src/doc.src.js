@@ -24,14 +24,19 @@ $(function() {
 		var left = $toc.position().left,
 			ofs = $toc.outerWidth(true),
 			doClose = left == 0,
-			cntHeight = ($toc.height()-(pageInfo.is768? 62:94))+ 'px';//for overlap on control bar height
+			cntHeight = ($toc.height()-(pageInfo.is768? 62:82))+ 'px';//for overlap on control bar height
 		
 		$toc.stop().animate({left: (doClose?  -ofs - 32: 0)}, 600, function() {
 		    if (doClose) {
 		    	$toc.css('display', '');
 		    	$content.css('min-height', '');
+		    	if (!pageInfo.is768)
+		    		$content.css('max-height', '').css('overflow', '');
 		    } else {
 		    	$content.css('min-height', cntHeight);
+		    		
+		    	if (!pageInfo.is768)
+		    		$content.css('max-height', cntHeight).css('overflow', 'hidden');
 		    }
 		 });
 		
@@ -60,7 +65,16 @@ $(function() {
 			syncSizeChanged();
 		lastIndex = i;
 	});
-		
+	
+	var gp = $('.google-plus'),
+		body = $('body');
+	body.css('overflow-x', 'hidden')
+	var timer = setInterval(function(){
+		if (gp.find('iframe').length == 2 && gp.find('iframe')[0].style.height) {
+			body.css('overflow-x', '')
+			clearInterval(timer);
+		}
+	},100);
 });
 
 function applySelected() { 
