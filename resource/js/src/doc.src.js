@@ -87,7 +87,8 @@ function applySelected() {
 	_selItem = $('#toc a[href="'+path+'"]');
 	if (_selItem[0]) {
 		_selItem.addClass('item-sel').removeAttr('href');
-		_selItem.parents('li').addClass('cate-sel');
+		_selItem.parents('li:last').addClass('cate-sel');
+		
 		$title.html(_selItem.html() + ' | ' + $title.html());
 	}
 }
