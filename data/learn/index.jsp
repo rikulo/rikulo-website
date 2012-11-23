@@ -17,10 +17,10 @@
 				<li>API Reference
 					<ul>
 						<li><a href="http://api.rikulo.org" title="Rikulo API Reference">Rikulo API</a></li>
-						<li><a href="http://api.rikulo.org/rikulo-uxl/latest/" title="Rikulo UXL API Reference">Rikulo UXL API</a></li>
-						<li><a href="http://api.rikulo.org/rikulo-gap/latest/" title="Rikulo Gap API Reference">Rikulo Gap API</a></li>
-						<li><a href="http://api.rikulo.org/rikulo-commons/latest/" title="Rikulo Commons API Reference">Rikulo Commons API</a></li>
-						<li><a href="http://api.rikulo.org/rikulo-el/latest/" title="Rikulo EL API Reference">Rikulo EL API</a></li>
+						<li><a href="http://api.rikulo.org/uxl/latest/" title="Rikulo UXL API Reference">Rikulo UXL API</a></li>
+						<li><a href="http://api.rikulo.org/gap/latest/" title="Rikulo Gap API Reference">Rikulo Gap API</a></li>
+						<li><a href="http://api.rikulo.org/commons/latest/" title="Rikulo Commons API Reference">Rikulo Commons API</a></li>
+						<li><a href="http://api.rikulo.org/el/latest/" title="Rikulo EL API Reference">Rikulo EL API</a></li>
 					</ul></li>
 			</ul>
 		</div>
