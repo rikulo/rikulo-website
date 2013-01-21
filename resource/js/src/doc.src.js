@@ -80,7 +80,7 @@ $(function() {
 function applySelected() { 
 	var path = window.location.href,
 		$title = $('title');
-	path = path.substring(path.indexOf('/rikulo/latest/'), path.length);
+	path = path.substring(path.indexOf('docs.rikulo.org/') + 15 , path.length);
 	if (path.charAt(path.length-1) == '/')
 		path = path.substring(0, path.length - 1);
 	
