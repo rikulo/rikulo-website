@@ -36,7 +36,7 @@
 <div id="row-banner">
 	<div id="row-banner-mobile" class="container_12 clearfix">
 		<div class="mobile-item clearfix">
-			<a href="/projects/rikuloui"></a>
+			<a href="/projects/ui"></a>
 			<div class="project-name-mobile">
 				Rikulo UI
 			</div>
@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="mobile-item clearfix">
-			<a href="/projects/rikulostream"></a>
+			<a href="/projects/stream"></a>
 			<div class="project-name-mobile">
 				Rikulo Stream
 			</div>
@@ -117,7 +117,7 @@
 							</div>
 						</div>
 						<div class="secondPart rikulo-stream-image">
-							<a href="/projects/rikulostream" ></a>
+							<a href="/projects/stream" ></a>
 						</div>
 					</div>
 				</div>
