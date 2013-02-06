@@ -25,7 +25,7 @@
 				<div class="buttons grid_4 alpha">
 					<div class="install">
 						<div class="download-button">	
-							<a title="Install Instructions" href="http://docs.rikulo.org/rikulo/ui/Getting_Started/Introduction.html" onclick="_gaq.push(['_trackEvent', 'install', 'rikulo', 'latest']);"> 
+							<a title="Install Instructions" href="http://docs.rikulo.org/ui/Getting_Started/Introduction.html" onclick="_gaq.push(['_trackEvent', 'install', 'rikulo', 'latest']);"> 
 							</a>
 						</div>
 						<a title="Rikulo on Github" class="git-link" href="https://github.com/rikulo/ui/" onclick="_gaq.push(['_trackEvent', 'clone', 'rikulo']);">
