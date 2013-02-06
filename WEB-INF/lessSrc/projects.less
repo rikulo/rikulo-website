@@ -1,0 +1,185 @@
+
+
+#page-banner {
+    height: 96px;
+    margin-bottom: 44px;
+
+    h1 {
+    	color: #F2F2E1;
+    	font-family: 'Oswald',sans-serif;
+    	font-size: 48px;
+    	letter-spacing: -1px;
+    	padding-top: 11px;
+    	text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    	text-transform: uppercase;
+	}
+}
+
+#rikulo-template {
+    background: url("/resource/img/template/title.png") repeat-x scroll 0 0 transparent;
+}
+
+#page-content {
+
+	color: #0D0D0D;
+    font-family: 'Asap',sans-serif;
+
+	h2 {
+	    font-family: 'Oswald',sans-serif;
+	    font-size: 20px;
+	    margin-bottom: 16px;
+	    text-transform: uppercase;
+	}
+
+	ul.features, ul.links {
+
+		li {
+    		background: url("/resource/img/contribute/bullet.png") no-repeat scroll 3px 6px transparent;
+    		letter-spacing: 0.45px;
+    		line-height: 160%;
+    		list-style: none outside none;
+    		padding-left: 27px;
+
+    		a {
+    			color: #914503;
+    			font-size: 15px;
+    		}
+		}
+	}
+}
+
+#banner {
+
+	overflow: hidden;
+	
+	.title {
+		padding: 30px 0 10px 0;
+		.text {
+			color: #0D0D0D;
+			font-family: 'Oswald',sans-serif;
+			font-size: 40px;
+			line-height: 117%;
+			text-transform: uppercase;
+		}
+	}
+
+	.desc {
+		color: #0D0D0D;
+		font-family: 'Lora',serif;
+		font-size: 18px;
+		letter-spacing: 0.95px;
+		line-height: 130%;
+		margin-top: 16px;
+	}
+
+	.project-image {
+		float: right;
+		position: relative;
+
+		img {
+			margin-left: -16px;
+		}
+	}
+
+	.mobile-image {
+		/* Smartphones (portrait and landscape) ----------- */
+		@media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
+		/* Styles */
+			display: block;
+			height: 200px
+			width: 130px;
+			background: url('/resource/img/index/image_rikuloui_responsive.png') no-repeat 0 0 transparent;
+		}
+	}
+
+	.rikulo-demo {
+
+		.ie & {
+			display: none;
+		}
+
+	  	border: medium none;
+		height: 250px;
+		left: 165px;
+		position: absolute;
+		top: 57px;
+		width: 157px;
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    		top: 55px;
+		}
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    		top: 45px;
+		}
+
+		/* Smartphones (portrait and landscape) ----------- */
+		@media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
+		/* Styles */
+			display: none;
+		}
+	}
+
+	.header {
+		display: block;
+	}
+
+	.buttons {
+		padding-top: 45px;
+		
+		.install {
+			float: left;
+			.download-button {
+	 					background: url("/resource/img/index/button_install.png") no-repeat scroll 0 0 transparent;
+	 					height: 44px;
+	 					position: relative;
+	 					&:hover {
+	 						background-position: 0 -44px;
+				}
+				a {
+				    display: block;
+				    height: 100%;
+				    position: relative;
+				    width: 109px;
+				}
+			}
+		}
+
+		.examples {
+			background: url("/resource/img/index/button_examples.png") no-repeat scroll 0 0 transparent;
+	 		height: 44px;
+	 		float: left;
+	 		position: relative;
+	 		width: 150px;
+	 		
+	 		&:hover {
+	 			background-position: 0 -44px;
+	 		}
+	 		
+	 		a {
+	 			display: block;
+	 			height: 100%;
+	 			position: relative;
+	 			width: 150px;
+	 		}
+		}
+	}
+}
+
+#bottom .example {
+
+	margin-bottom: 10px;
+
+	img {
+		width: 150px;
+		height: 100px;
+		float: left;
+		margin-right: 3px;
+	}
+
+	a {
+		color: #914503;
+    	font-family: 'Asap',sans-serif;
+    	font-size: 14px;
+	}
+}

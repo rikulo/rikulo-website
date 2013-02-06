@@ -36,5 +36,13 @@
 	<action path="/examples(.*)" class="com.potix.website.rikulo.action.RedirectAction" >
 		<result>${action.template}?t=Examples%20|%20Rikulo&amp;css=/less/examples&amp;p=${action.templateResource}/template_pagecontent.jsp&amp;banner=Examples&amp;pn=${action.resourcePath}&amp;menu=${matches[0]}</result>
 	</action>
+
+	<action path="/projects/rikuloui" class="com.potix.website.rikulo.action.RedirectAction" >
+		<result>${action.template}?t=Rikulo UI%20|%20Projects%20|%20Rikulo&amp;css=/less/projects&amp;p=${action.templateResource}/template_pagecontent.jsp&amp;banner=Rikulo%20UI&amp;pn=${action.resourcePath}&amp;menu=${matches[0]}</result>
+	</action>
+
+	<action path="/projects/rikulostream" class="com.potix.website.rikulo.action.RedirectAction" >
+		<result>${action.template}?t=Rikulo Stream%20|%20Projects%20|%20Rikulo&amp;css=/less/projects&amp;p=${action.templateResource}/template_pagecontent.jsp&amp;banner=Rikulo%20Stream&amp;pn=${action.resourcePath}&amp;menu=${matches[0]}</result>
+	</action>
 	
 </zest>

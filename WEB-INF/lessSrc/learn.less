@@ -1,14 +1,27 @@
 @import "sub/_template_page_common.less";
 #page-content {
+
+	padding: 30px 0;
+
 	.sep {
 		margin-bottom: 54px;
 	}
+
 	p, a {
 		font-size: 14px;
 	}
+
 	a {
 		.link-color(#914503, #d49b50);
 	}
+
+	h1 {
+		font-family: 'Oswald',sans-serif;
+    	font-size: 26px;
+    	padding-bottom: 15px;
+    	text-transform: uppercase;
+	}
+
 	ul.items {
 		list-style: none outside none;
 		margin-top: 7px;
@@ -23,6 +36,11 @@
 			}
 		}
 	}
+
+	#rikulo-ui, #rikulo-stream {
+		padding-bottom: 10px;
+	}
+
 	.license h2 {
 		margin-bottom: 32px;
 	}
@@ -36,5 +54,9 @@
 			letter-spacing: 0.4px;
     		line-height: 150%;
 		}
+	}
+
+	.no-margin-right {
+		margin-right: 0px;
 	}
 }

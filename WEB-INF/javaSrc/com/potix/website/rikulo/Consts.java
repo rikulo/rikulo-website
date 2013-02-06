@@ -9,7 +9,7 @@ public class Consts {
 	public static final String MENU_CATEGORY_DISCUSS = "MENU_CATEGORY_DISCUSS";
 	public static final String MENU_CATEGORY_LEARN = "MENU_CATEGORY_LEARN";
 	public static final String MENU_CATEGORY_BLOG = "MENU_CATEGORY_BLOG";
-	public static final String MENU_CATEGORY_EXAMPLES = "MENU_CATEGORY_EXAMPLES";
+	public static final String MENU_CATEGORY_PROJECTS = "MENU_CATEGORY_PROJECTS";
 	
 	
 	
@@ -70,8 +70,8 @@ public class Consts {
 			return MENU_CATEGORY_LEARN;
 		} else if (name.contains("blog")) {
 			return MENU_CATEGORY_BLOG;
-		} else if (name.contains("examples")) {
-			return MENU_CATEGORY_EXAMPLES;
+		} else if (name.contains("projects")) {
+			return MENU_CATEGORY_PROJECTS;
 		} else {
 			return null;
 		}

@@ -12,7 +12,7 @@
 		<div class="buttons">
 			<a class="demo" href="/resource/js/examples/index-snake.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/rikulo/tree/master/example/snake">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/ui/tree/master/example/snake">Source Code</a>
 			<span class="sepbar"></span>
 			<a class="blog" href="http://blog.rikulo.org/posts/2012/Jul/Tutorial/creating-a-snake-game-using-rikulo-html-5-and-the-canvas/">Blog post</a>
 		</div>
@@ -29,7 +29,7 @@
 		<div class="buttons">
 			<a class="demo" href="/resource/js/examples/index-circles.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/example/circle/CircleOnCanvas.dart">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/ui/blob/master/example/circle/CircleOnCanvas.dart">Source Code</a>
 		</div>
 	</div>
 	<div class="item support grid_4 omega">
@@ -44,7 +44,7 @@
 		<div class="buttons">
 			<a class="demo" href="/resource/js/examples/index-angryhead.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/test/TestAnimation3.dart">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/ui/blob/master/test/TestAnimation3.dart">Source Code</a>
 		</div>
 	</div>
 	<div class="sep clearfix"></div>
@@ -60,7 +60,7 @@
 		<div class="buttons">
 			<a class="demo" href="/resource/js/examples/index-star.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/example/scroll-view/StarChartDemo.dart">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/ui/blob/master/example/scroll-view/StarChartDemo.dart">Source Code</a>
 		</div>
 	</div>
 	<div class="item grid_4">
@@ -75,7 +75,7 @@
 		<div class="buttons">
 			<a class="demo" href="/resource/js/examples/index-list.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/example/scroll-view/ListViewDemo.dart">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/ui/blob/master/example/scroll-view/ListViewDemo.dart">Source Code</a>
 			<span class="sepbar"></span>
 			<a class="blog" href="http://blog.rikulo.org/posts/2012/Jul/Tutorial/building-a-list-view-demo-using-rikulo/">Blog post</a>
 		</div>
@@ -92,7 +92,7 @@
 		<div class="buttons">
 			<a class="demo" href="/resource/js/examples/index-grid.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/rikulo/blob/master/example/scroll-view/GridViewDemo.dart">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/ui/blob/master/example/scroll-view/GridViewDemo.dart">Source Code</a>
 			<span class="sepbar"></span>
 			<a class="blog" href="http://blog.rikulo.org/posts/2012/Aug/Tutorial/building-a-grid-demo-using-rikulo/">Blog post</a>
 		</div>

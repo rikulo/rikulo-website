@@ -18,140 +18,395 @@ body {
 	display:none;
 }
 
-#row-banner .banners {
-	overflow: hidden;
-	
-}
 #row-banner article header.header {
 	display: block;
 }
 
-#row-banner .title,
-#row-banner .desc {
-	float:left;
+.git-link {
+	color: #914503;
+	font-size: 11px;
+	font-style: italic;
+
 }
-#row-banner .title {
-	margin-top: 8px;
+
+.git-link:hover {
+	color: #d49b50;
 }
-#row-banner .title .text {
-    padding: 30px 0 0 0;
-	text-transform:uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	color: #0d0d0d;
-	line-height: 117%;
+
+.git-link span {
+	background: url("/resource/img/index/icon_exlink.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    height: 8px;
+    margin: 6px 0 0 4px;
+    width: 8px;
 }
-#row-banner .desc {
-	margin-top: 16px;
-	letter-spacing: 0.95px;
-    line-height: 130%;
-	font-family: 'Lora', serif;
-    font-size: 18px;
-	color: #0d0d0d;
+
+.git-link:hover span {
+	background-position: -8px 0;
 }
-#row-banner .banner-img {
-	height:374px;
-	float: right;
-	position: relative;
-	img {
-		margin-left: -16px;
-	}
-	.rikulo-demo {
-	    position: absolute;
-	    width: 157px;
-		height: 250px;
-	    top: 40px;
-	    left: 165px;
-		border: medium none;
-	}
-}
+
+@normal_banner_area_width: 960px;
+@iPad_portrait_width: 760px;
+
 #row-banner {
-	.header {
-		font-family: 'Asap', sans-serif;
+
+	background: url("/resource/img/index/exclusive_paper.jpg") repeat scroll 0 0 transparent;
+	padding: 12px 0 12px 0;
+
+	-moz-box-shadow:    inset  0  3px 3px -3px rgba(0,0,0,0.15),
+                        inset  0 -3px 3px -3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset  0  3px 3px -3px rgba(0,0,0,0.15), 
+                        inset  0 -3px 3px -3px rgba(0,0,0,0.15);
+     box-shadow: 		inset 0 1px 6px 0px rgba(0,0,0,0.15),
+     					inset 0 -3px 0px -3px rgba(0,0,0,0.15);
+
+
+    @media only screen and (max-device-width: 768px) {
+		background: none;
+
+		-moz-box-shadow: none;
+    	-webkit-box-shadow: none;
+    	box-shadow: none;
 	}
-	.buttons {
-		margin-top: 45px;
-	}
-	.google-plus {
-		margin-top: 56px;
-		padding-left: 15px;
-		width: 205px;
-	}
-	.download-button {
-		background: url("/resource/img/index/button_download.png") no-repeat scroll -1px 0 transparent;
-		height: 79px;
-		float: left;
-		position: relative;
-		.hover {
-			position: absolute;
-			background: url("/resource/img/index/button_download.png") no-repeat scroll -1px -82px transparent;
-			height: 79px;
-			width: 220px;
-			top: 0;
-			.opacity(0);
+
+    @mobile-height: 120px;
+    @mobile-width: 300px;
+    @mobile-name-height: 40px;
+    @mobile-image-width: 100px;
+
+    #row-banner-mobile {
+
+    	display: none;
+    	margin: 0 auto;
+
+    	@media only screen and (max-device-width: 755px) {
+			display: inherit;
 		}
-		a {
-			.div-button-a;
-			width: 220px;
-			position: relative;
-			span {
+
+		.mobile-item {
+
+			background-color: white;
+			height: @mobile-height;
+			margin-bottom: 5px;
+			padding: 8px 2px 8px 2px;
+			width: @mobile-width;
+
+			box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+			-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+			-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+
+			a {
+				display: block;
+				height: @mobile-height;
 				position: absolute;
-				cursor: pointer;
-				color: #f2f2e1;
+				width: @mobile-width;
 			}
-			.name {
-				top: 13px;
-				left: 70px;
-				font-weight: bold;
-				font-size: 22px;
-				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-			}
-			.version {
-				top: 34px;
-				left: 71px;
-				font-size: 12px;
-				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-			}
-			.license {
-				top: 61px;
-				left: 60px;
-				font-size: 11px;
-				color: #a68a63;
+
+			.project-name-mobile {
+				color: #0d0d0d;
+				font-family: Oswald;
+				font-size: 20px;
+				height: @mobile-name-height;
+				padding: 3px 0 0 5px;
 				text-transform: uppercase;
-				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+				width: @mobile-width;
+			}
+
+			.project-image-mobile {
+				height: @mobile-height - @mobile-name-height;
+				float: left;
+				width: @mobile-image-width;
+			}
+
+			.rikulo-ui-image-mobile {
+				background: url("/resource/img/index/image_rikuloui_small.png") no-repeat scroll 0 0 transparent;
+			}
+
+			.rikulo-stream-image-mobile {
+				background: url("/resource/img/index/image_rikulostream_small.png") no-repeat scroll 0 0 transparent;
+			}
+
+			.project-text-mobile {
+				color: #0d0d0d; 
+				font-family: Lora;
+				font-size: 12px;
+				line-height: 16px;
+				height: @mobile-height - @mobile-name-height;
+				float: left;
+				width: @mobile-width - @mobile-image-width;
 			}
 		}
-	}
-	
-	a.git-link { 
-		margin: 1px 0 0 58px;
-		float: left;
-		color: #914503;
-		font-size: 11px;
-		font-style: italic;
-		span {
-			background: url("/resource/img/index/icon_exlink.png") no-repeat scroll 0 0 transparent;
-			float: right;
-			display: block;
-			width: 8px;
-			height: 8px;
-			margin: 3px 0 0 4px;
+    }
+
+	#row-banner-inner {
+		
+		@media only screen and (max-device-width: 755px) {
+			display: none;
 		}
-	}
-	a:hover.git-link { 
-		color: #d49b50;
-		span {
-			background-position: -8px 0;
+
+		height: 414px;
+
+		#banner-accordion {
+
+			height: 394px;
+			overflow: hidden;
+			padding: 10px 0 10px 0;
+			position: absolute;
+			width: @normal_banner_area_width;
+
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    			width: @iPad_portrait_width; 
+    			margin-left: 5px;
+			}
+
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    			width: @normal_banner_area_width; 
+			}
+
+			.ui {
+				background: url("/resource/img/index/accordion_images.png") repeat scroll 0 0 transparent;
+			}
+
+			.server {
+				background: url("/resource/img/index/accordion_images.png") repeat scroll 0 -400px transparent;
+			}
+
+			.ui:hover {
+				background: url("/resource/img/index/accordion_images.png") repeat scroll -40px 0 transparent;
+			}
+
+			.server:hover {
+				background: url("/resource/img/index/accordion_images.png") repeat scroll -40px -400px transparent;
+			}
+
+			.ui_selected {
+				background: url("/resource/img/index/accordion_images.png") repeat scroll -80px 0 transparent;
+			}
+
+			.server_selected {
+				background: url("/resource/img/index/accordion_images.png") repeat scroll -80px -400px transparent;
+			}
+
+			.accord {
+				background-color: white;
+				display: block;
+				float: left;
+				height: 100%;
+				margin-right: 6px;
+				overflow: hidden;
+				width: 40px;
+
+				box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+				-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+				-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+
+				.accord-name {
+					cursor: pointer;
+					cursor: hand;
+					height: 394px;
+					overflow: hidden;
+				}
+			
+				.accord-name {
+					position: absolute;
+					width: 40px;
+
+					a {
+						display: block;
+						height: 100%;
+						width: 100%;
+					}
+				}
+
+				.accord-info {
+					margin: 10px 0 0 45px;
+					width: 855px;
+
+					@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    					width: 668px;
+					}
+
+					.firstPart {
+						float: left;
+						height: 374px;
+						padding-left: 20px;
+						width: 400px;
+
+					}
+
+					.secondPart {
+						float: left;
+						height: 374px;
+						width: 430px;
+
+						@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    						width: 233px;
+						}
+
+						a {
+							width: 100%;
+							height: 100%;
+							display: block;
+						}
+
+						.rikulo-demo {
+
+							.ie & {
+								display: none;
+							}
+
+		    				border: medium none;
+							height: 250px;
+							left: 155px;
+							position: absolute;
+							top: 40px;
+							width: 157px;
+
+							@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    							left: 38px;
+    							top: 41px;
+							}
+		    			}
+					}
+
+					.rikulo-ui-image {
+						background: url('/resource/img/index/image_rikuloui.png') no-repeat center center;
+
+						.ie & {
+							background: url('/resource/img/index/src/banner_image.png') no-repeat center center;
+							background-size: contain;
+						}
+
+						position: relative;
+
+						@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    						background: url('/resource/img/index/image_rikuloui_responsive.png') no-repeat center center;
+						}
+					}
+
+					.rikulo-stream-image {
+						background: url('/resource/img/index/image_stream.png') no-repeat center center;
+						background-size: contain;
+
+						@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    						background: url('/resource/img/index/image_rikulostream_responsive.png') no-repeat center center;
+    						//background-size: contain;
+						}
+					}
+
+
+					.title {
+
+						padding: 30px 0 10px 0;
+
+						.text {
+							color: #0D0D0D;
+    						font-family: 'Oswald',sans-serif;
+    						font-size: 40px;
+    						line-height: 117%;
+    						text-transform: uppercase;
+						}
+					}
+
+					.desc {
+						color: #0D0D0D;
+    					font-family: 'Lora',serif;
+    					font-size: 18px;
+    					letter-spacing: 0.95px;
+    					line-height: 130%;
+    					margin-top: 16px;
+					}
+
+					.buttons {
+
+						padding-top: 45px;
+
+						.install {
+
+							@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    							display: none;
+							}
+				
+							@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+				    			display: none;
+							}
+
+							float: left;
+
+							.download-button {
+		    					background: url("/resource/img/index/button_install.png") no-repeat scroll 0 0 transparent;
+		    					height: 44px;
+		    					position: relative;
+
+		    					&:hover {
+		    						background-position: 0 -44px;
+
+								}
+
+								a {
+								    display: block;
+								    height: 100%;
+								    position: relative;
+								    width: 109px;
+								}
+							}
+						}
+
+						.examples {
+							background: url("/resource/img/index/button_examples.png") no-repeat scroll 0 0 transparent;
+		    				height: 44px;
+		    				float: left;
+		    				width: 150px;
+		    				position: relative;
+
+		    				&:hover {
+		    					background-position: 0 -44px;
+		    				}
+
+		    				a {
+		    					display: block;
+		    					height: 100%;
+		    					position: relative;
+		    					width: 150px;
+		    				}
+						}
+					}
+				}
+
+
+			}
+
+			.accord-trans-large {
+				width: 908px;
+
+				@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    				//width: 716px; 
+    				width: 706px;
+				}
+
+				transition: width 0.8s;
+				-moz-transition: width 0.8s; /* Firefox 4 */
+				-webkit-transition: width 0.8s; /* Safari and Chrome */
+				-o-transition: width 0.8s; /* Opera */
+			}
+
+			.accord-trans-small {
+				width: 40px;
+
+				transition: width 0.8s;
+				-moz-transition: width 0.8s; /* Firefox 4 */
+				-webkit-transition: width 0.8s; /* Safari and Chrome */
+				-o-transition: width 0.8s; /* Opera */
+			}
+
 		}
-	}
-	
+	}	
 }
 
 /***News Row***/
 /****News Section****/
 @import "index_articles.less";
-
-
 
 
 @media only screen and (device-width: 768px) {

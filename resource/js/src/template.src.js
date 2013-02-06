@@ -12,13 +12,45 @@ $(function() {
 		return $(this).bgPos().split(" ");
 	};
 	
-	/*Menu Control*/	
-	var isTouch = isTouchDevice();
-	$("body").addClass("touch");
-	if (isTouch) {
-		$("body").addClass("touch");
-	} else {
-	}
+	/*Menu Control*/
+  /*Menu Control*/  
+  var isTouch = isTouchDevice();
+  if (isTouch) {
+    $("body").addClass("touch");
+    /* Menu */
+    var sel;
+    $(document).mousedown(function(e){
+      if (sel && !$.contains($("#main_menu")[0] ,e.target))
+        sel.removeClass("menuitem-hover");
+    });
+    $(".menuitem-right > a").bind('click', function(e) {
+      var menu = $(this).parents("li.menuitem"),
+        menus = $("li.menuitem");
+      if (menu.hasClass("menuitem-hover")){
+        return true;
+      } else {
+        if (sel)
+          sel.removeClass("menuitem-hover");
+        menu.addClass("menuitem-hover");
+        sel = menu;
+        return false;
+      }
+    });
+    $(".touch-close > a").click(function() {
+      $(this).parents("li.menuitem").removeClass("menuitem-hover"); 
+    });
+    $("#index-header .item").click(function() {
+      $(this).toggleClass("item-hover");  
+    });
+  } else {
+    /* Menu */
+    $(".menuitem").hover(function() { 
+      $(this).addClass("menuitem-hover"); 
+    }, function(){
+       $(this).removeClass("menuitem-hover");
+    });
+  }	
+  
 	/* Facebook Like 
 	window.fbAsyncInit = function() { 
 	    FB.init({ 

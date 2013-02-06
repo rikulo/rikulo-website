@@ -28,7 +28,7 @@ $(function() {
 	});
 	
 	if (isTouchDevice()) {
-		$("#row-banner .buttons").css('display', 'none');
+		$("#row-banner .install").css('display', 'none');
 		$(".twitters. .bubble-cnt").addClass('edit');
 	} else {
 		$("#row-banner-inner .download-button").hover(function() {

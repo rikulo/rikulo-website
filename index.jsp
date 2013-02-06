@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	session="false" pageEncoding="UTF-8"%>
-<%@page import="java.text.*,java.util.*,com.potix.website.*,com.potix.website.rikulo.util.*"%>
+<%@page import="java.text.*,java.util.*"%>
 <%@include file="/WEB-INF/templates/page/template_bop.jsp"%>
 <%
 	SimpleDateFormat fmt = new SimpleDateFormat(
@@ -29,58 +29,138 @@
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
 </div>
 </div>
-<%--END OF TEMPLATE, NO NEED FOR INDEX--%>
+<style type="text/css">
+		
+</style>
+
 <div id="row-banner">
+	<div id="row-banner-mobile" class="container_12 clearfix">
+		<div class="mobile-item clearfix">
+			<a href="/projects/rikuloui"></a>
+			<div class="project-name-mobile">
+				Rikulo UI
+			</div>
+			<div class="project-image-mobile rikulo-ui-image-mobile">
+
+			</div>
+			<div class="project-text-mobile">Rikulo UI is a free and open source Dart framework for creating incredible cross-platform web and native mobile applications using HTML5.
+			</div>
+		</div>
+
+		<div class="mobile-item clearfix">
+			<a href="/projects/rikulostream"></a>
+			<div class="project-name-mobile">
+				Rikulo Stream
+			</div>
+			<div class="project-image-mobile rikulo-stream-image-mobile">
+			</div>
+			<div class="project-text-mobile">Rikulo Stream is a Dart web server supporting request routing, template technology, file-based static resources and MVC design pattern.
+			</div>
+		</div>
+	</div>
 	<div id="row-banner-inner" class="container_12 clearfix">
 		<article> 
 			<header class="h5header">
 				<h2>Rikulo - Web and Mobile in Dart</h2>
 				<h2>Build amazing native mobile application in Dart and Cordova (PhoneGap)</h2>
 			</header>
-			<div class="banners banner1">
-				<div class="banner-img grid_6">
-					<!--[if IE]>
-						<img class="img" src="/resource/img/index/src/banner_image.png" alt="Rikulo Live Demo" title="Rikulo Live Demo"/>
-					<![endif]-->
-					<!--[if !IE]>-->
-						<img class="responsive-image" alt="Rikulo Live Demo" title="Rikulo Live Demo" 
-							src="/resource/img/index/src/<%=bannerImage%>" 
-							data-320src="/resource/img/index/src/banner_image_responsive.png" 
-							data-fullsrc="/resource/img/index/src/banner_image_emptybg.png"/>
-						<iframe class="rikulo-demo" src="/data/index/demo1.html" ></iframe>
-					<!--<![endif]-->
-				</div>
-				<section> 
-					<header class="header grid_6">
-						<div class="title grid_6 alpha">
-							<h2 class="text">Apps on target</h2>
-						</div>
-						<h1 class="desc grid_6 alpha">Rikulo is a free and open source Dart framework for creating incredible cross-platform web and native mobile applications using HTML5.</h1>
-						<div class="buttons grid_3 alpha">
-							<div class="download-button">
-								<div class="hover grid_4 alpha omega"></div>	
-								<a onclick="_gaq.push(['_trackEvent', 'install', 'rikulo', 'latest']);"
-								href="http://docs.rikulo.org/rikulo/latest/Getting_Started/Introduction.html" title="Install Instructions"> 
-									<span class="name">Install...</span><br> 
-									<span class="version">Latest Version</span><br> 
-									<span class="license">Apache license 2.0</span>
-								</a>
+			<div id="banner-accordion" class="ipad-banner">
+				<div class="accord accord-trans-large">
+					<div class="accord-name ui_selected">
+					</div>
+					<div class="accord-info">
+						<div class="firstPart">
+							<header class="header">
+								<div class="title">
+									<h2 class="text">UI on target</h2>
+								</div>
+								<h1 class="desc"><span style="font-weight:bold;">Rikulo UI</span> is a free and open source Dart framework for creating incredible cross-platform web and native mobile applications using HTML5.</h1>
+							</header>
+							<div class="buttons grid_4 alpha">
+								<div class="install">
+									<div class="download-button">	
+										<a title="Install Instructions" href="http://docs.rikulo.org/ui/latest/Getting_Started/Introduction.html" onclick="_gaq.push(['_trackEvent', 'install', 'rikulo', 'latest']);"> 
+										</a>
+									</div>
+									<a title="Rikulo on Github" class="git-link" href="https://github.com/rikulo/ui/" onclick="_gaq.push(['_trackEvent', 'clone', 'rikulo']);">
+									Clone us on GitHub<span></span></a>
+								</div>
+								<div class="examples">
+									<a title="See the Examples" href="/examples/"> 
+									</a>
+								</div>
 							</div>
-							<a onclick="_gaq.push(['_trackEvent', 'clone', 'rikulo']);" 
-								href="https://github.com/rikulo/rikulo/" 
-								class="git-link" title="Rikulo on Github">
-								Clone us on GitHub<span></span></a>
 						</div>
-						<div class="google-plus grid_3 omega">
-							<%-- Place this tag where you want the +1 button to render. --%>
-							<div class="g-plus" data-width="170" data-height="69" data-href="https://plus.google.com/117602514255061155793?rel=publisher"></div>
+						<div class="secondPart rikulo-ui-image">
+							<iframe src="/data/index/demo1.html" class="rikulo-demo"></iframe>
 						</div>
-					</header> 
-				</section>
+					</div>
+				</div>
+				<div class="accord">
+					<div class="accord-name server">
+					</div>
+					<div class="accord-info">
+						<div class="firstPart">
+							<div class="title">
+									<h2 class="text">Serve your Web</h2>
+								</div>
+							<h1 class="desc"><span style="font-weight:bold;">Rikulo Stream</span> is a Dart web server supporting request routing, template technology, file-based static resources and MVC design pattern.</h1>
+							<div class="buttons grid_4 alpha">
+								<div class="install">
+									<div class="download-button">	
+										<a title="Install Instructions" href="http://docs.rikulo.org/stream/latest/Getting_Started/Introduction.html" onclick="_gaq.push(['_trackEvent', 'install', 'rikulo', 'latest']);"> 
+										</a>
+									</div>
+									<a title="Rikulo on Github" class="git-link" href="https://github.com/rikulo/stream" onclick="_gaq.push(['_trackEvent', 'clone', 'rikulo']);">
+									Clone us on GitHub<span></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="secondPart rikulo-stream-image">
+							<a href="/projects/rikulostream" ></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</article>
 	</div>
 </div>
+<script type="text/javascript">
+	var accords = $('.accord');
+	var currentAccord = $('#banner-accordion > :first-child');
+	var currentAccord_name = $(currentAccord).find('> :first-child');
+	var transSupported = Modernizr.csstransitions;
+
+	$(accords).click(function() {
+		var clicked = $(this);
+
+		//if already selected do nothing
+		if(clicked.is(currentAccord)) {
+			return;
+		}
+
+		var clicked_accordion_name = clicked.find('> :first-child');
+
+		if($(clicked_accordion_name).hasClass('ui')) {
+			$(clicked_accordion_name).addClass("ui_selected").removeClass("ui");
+			$(currentAccord_name).addClass("server").removeClass("server_selected");
+		} else {
+			$(clicked_accordion_name).addClass("server_selected").removeClass("server");
+			$(currentAccord_name).addClass("ui").removeClass("ui_selected");
+		}
+
+		if(transSupported) {
+			$(currentAccord).addClass("accord-trans-small").removeClass("accord-trans-large");
+			$(clicked).addClass("accord-trans-large").removeClass("accord-trans-small");
+		} else {
+			$(currentAccord).animate({"width": "40px"}, { queue: false, duration:600 });
+			$(clicked).animate({"width": "908px"}, { queue: false, duration:600});
+		}
+
+		currentAccord = clicked;
+		currentAccord_name = clicked.find('> :first-child');
+	});
+</script>
 <jsp:include page="/WEB-INF/templates/page/index_articlerow.jsp" />
 <div>
 	<div>
