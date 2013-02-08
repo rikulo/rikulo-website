@@ -86,7 +86,7 @@
 									Clone us on GitHub<span></span></a>
 								</div>
 								<div class="examples">
-									<a title="See the Examples" href="/examples/"> 
+									<a title="See the Rikulo UI project page" href="/projects/ui"> 
 									</a>
 								</div>
 							</div>
@@ -113,6 +113,10 @@
 									</div>
 									<a title="Rikulo on Github" class="git-link" href="https://github.com/rikulo/stream" onclick="_gaq.push(['_trackEvent', 'clone', 'rikulo']);">
 									Clone us on GitHub<span></span></a>
+								</div>
+								<div class="examples">
+									<a title="See the Rikulo Stream project page" href="/projects/stream"> 
+									</a>
 								</div>
 							</div>
 						</div>
