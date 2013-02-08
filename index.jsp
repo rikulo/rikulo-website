@@ -74,7 +74,7 @@
 								<div class="title">
 									<h2 class="text">UI on target</h2>
 								</div>
-								<h1 class="desc"><span style="font-weight:bold;">Rikulo UI</span> is a free and open source Dart framework for creating incredible cross-platform web and native mobile applications using HTML5.</h1>
+								<h1 class="desc"><span style="font-weight:bold;"><a href="/projects/ui" style="color: #0D0D0D; font-size: 18px;">Rikulo UI</a></span> is a free and open source Dart framework for creating incredible cross-platform web and native mobile applications using HTML5.</h1>
 							</header>
 							<div class="buttons grid_4 alpha">
 								<div class="install">
@@ -104,7 +104,7 @@
 							<div class="title">
 									<h2 class="text">Serve your Web</h2>
 								</div>
-							<h1 class="desc"><span style="font-weight:bold;">Rikulo Stream</span> is a Dart web server supporting request routing, template technology, file-based static resources and MVC design pattern.</h1>
+							<h1 class="desc"><span style="font-weight:bold;"><a href="/projects/stream" style="color: #0D0D0D; font-size: 18px;">Rikulo Stream</a></span> is a Dart web server supporting request routing, template technology, file-based static resources and MVC design pattern.</h1>
 							<div class="buttons grid_4 alpha">
 								<div class="install">
 									<div class="download-button">	
