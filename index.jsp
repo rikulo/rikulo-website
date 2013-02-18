@@ -54,7 +54,7 @@
 			</div>
 			<div class="project-image-mobile rikulo-stream-image-mobile">
 			</div>
-			<div class="project-text-mobile">Rikulo Stream is a Dart web server supporting request routing, template technology, file-based static resources and MVC design pattern.
+			<div class="project-text-mobile">Rikulo Stream is a Dart web server supporting request routing, filtering, template technology, file-based static resources and MVC design pattern.
 			</div>
 		</div>
 	</div>

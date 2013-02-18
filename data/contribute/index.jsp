@@ -9,7 +9,7 @@
 		</div>
 		<div class="project clearfix">
 			<img alt="Rikulo Stream" src="/resource/img/index/image_rikulostream_small.png">
-			<div>Rikulo Stream is a Dart web server supporting request routing, template technology, file-based static resources and MVC design pattern.</div>			
+			<div>Rikulo Stream is a Dart web server supporting request routing, filtering, template technology, file-based static resources and MVC design pattern.</div>			
 		</div>
 		<p>
 			There is a large community currently supporting Rikulo's various projects but we are always looking for 

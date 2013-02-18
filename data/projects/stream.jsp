@@ -10,7 +10,7 @@
 			<div class="title">
 				<h2 class="text">Serve your Web</h2>
 			</div>
-			<h1 class="desc">Rikulo Stream is a Dart web server supporting request routing, template technology, file-based static resources and MVC design pattern.</h1>
+			<h1 class="desc">Rikulo Stream is a Dart web server supporting request routing, filtering, template technology, file-based static resources and MVC design pattern.</h1>
 			<div class="buttons grid_4 alpha">
 				<div class="install">
 					<div class="download-button">	
@@ -31,6 +31,7 @@
 			<h2>Features</h2>
 			<ul class="features">
 				<li>Request Routing</li>
+				<li>Request Filtering</li>
 				<li>Template Technology</li>
 				<li>File-based static resources</li>
 				<li>MVC design pattern</li>
