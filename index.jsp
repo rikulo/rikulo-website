@@ -20,8 +20,8 @@
 <meta name="alexaVerifyID" content="Pm7SNmKasZyei0xlIk-o1dFuxro">
 <meta name="verify-v1" content="gBA1yn9Oo4XnNC1ORE1yoH0Q/ssiWgaPOwCGZAXzM4Q=">
 --%>
-<meta name="description" content="Rikulo is a free and open source framework for creating incredible cross-platform web and native mobile applications in Dart and HTML5.">
-<meta name="keywords" content="Rikulo, Web, Mobile, Dart, Web framework, Mobile framekwork, Open Source, Apache, PhoneGap, Cordova">
+<meta name="description" content="Rikulo is a free and open source framework for creating incredible cross-platform web, native mobile and server applications in Dart and HTML5.">
+<meta name="keywords" content="Rikulo, Web, Mobile, Dart, Web framework, Dart server, Mobile framekwork, Open Source, Apache, PhoneGap, Cordova">
 <title>Web and Mobile Dart Framework | Rikulo</title>
 
 <link rel="stylesheet" type="text/css" href="/less/index" />
