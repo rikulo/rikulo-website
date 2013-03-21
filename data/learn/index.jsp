@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div id="page-content" class="learn-page grid_12 clearfix">
 		<%
-			String product = request.getParameter("product");
+			String product = request.getParameter("project");
 			boolean isEmpty = product == null || product.length() == 0;
 		
 			if (isEmpty || "rikulo-ui".equals(product)) {
