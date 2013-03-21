@@ -40,7 +40,7 @@
 		<div class="grid_6 clearfix">
 			<h2>Links</h2>
 			<ul class="features">
-				<li><a href="/learn/">Learn about Rikulo Stream</a></li>
+				<li><a href="/learn/?product=stream">Learn about Rikulo Stream</a></li>
 				<li><a href="/contribute/">Contribute to Rikulo Stream</a></li>
 				<li><a href="/discuss/">Get help with Rikulo Stream</a></li>
 			</ul>

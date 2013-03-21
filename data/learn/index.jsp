@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div id="page-content" class="learn-page grid_12 clearfix">
+		<%
+			String product = request.getParameter("product");
+			boolean isEmpty = product == null || product.length() == 0;
+		
+			if (isEmpty || "rikulo-ui".equals(product)) {
+		%>
+		
 		<div id="rikulo-ui" class="item container_12 alpha">
 			<h1 class="section-title">Rikulo UI</h1>
 			<div class="container_12 clearfix">
@@ -37,7 +44,10 @@
 		</div>
 
 		<div class="sep clearfix"></div>
-
+		<%
+			}
+			if (isEmpty || "stream".equals(product)) {
+		%>
 		<div id="rikulo-stream" class="container_12 clearfix">
 			<h1 class="section-title">Rikulo Stream</h1>
 
@@ -73,7 +83,9 @@
 		</div>
 		
 		<div class="sep clearfix"></div>
-
+		<%
+			}
+		%>
 		<div class="grid_12">
 			<div class="item license grid_6 alpha">
 				<h2>Licensing</h2>
