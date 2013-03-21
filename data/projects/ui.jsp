@@ -77,7 +77,7 @@
 		<div class="grid_4 clearfix">
 			<h2>Links</h2>
 			<ul class="features">
-				<li><a href="/learn/?project=rikulo-ui">Learn about Rikulo UI</a></li>
+				<li><a href="/learn/?project=ui">Learn about Rikulo UI</a></li>
 				<li><a href="/contribute/">Contribute to Rikulo UI</a></li>
 				<li><a href="/discuss/">Get help with Rikulo UI</a></li>
 			</ul>

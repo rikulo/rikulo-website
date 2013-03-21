@@ -4,7 +4,7 @@
 			String product = request.getParameter("project");
 			boolean isEmpty = product == null || product.length() == 0;
 		
-			if (isEmpty || "rikulo-ui".equals(product)) {
+			if (isEmpty || "ui".equals(product)) {
 		%>
 		
 		<div id="rikulo-ui" class="item container_12 alpha">
