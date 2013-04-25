@@ -67,7 +67,8 @@
 						<li><a href="http://docs.rikulo.org/stream/latest/" title="Documentation">Documentation</a></li>
 						<li>API Reference
 							<ul>
-								<li><a href="http://api.rikulo.org/stream/latest" title="Rikulo API Reference">Rikulo Steam API</a></li>
+								<li><a href="http://api.rikulo.org/stream/latest" title="Rikulo Stream API Reference">Rikulo Steam API</a></li>
+								<li><a href="http://api.rikulo.org/security/latest/" title="Rikulo Security API Reference">Rikulo Security API</a></li>
 								<li><a href="http://api.rikulo.org/commons/latest/" title="Rikulo Commons API Reference">Rikulo Commons API</a></li>
 							</ul></li>
 					</ul>
