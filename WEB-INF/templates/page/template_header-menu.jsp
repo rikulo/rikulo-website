@@ -2,20 +2,16 @@
 	pageEncoding="UTF-8"%>
 <%@page import="com.potix.website.rikulo.*,com.potix.website.rikulo.util.*"%>
 <%
-	String ua = request.getHeader("user-agent");
-	if (ua != null)
-		ua = ua.toLowerCase();
-	String name = request.getAttribute(Consts.MENU_CATEGORY) == null ? ""
-			: request.getAttribute(Consts.MENU_CATEGORY).toString();
+	Object val = request.getAttribute(Consts.MENU_CATEGORY);
+	String name = val == null ? "": val.toString();
 	String selClass = "menuitem-sel";
-	boolean oldBrowser = false;//(WebUtil.isMSIE(ua) && WebUtil.getIEVer(ua) < 9);
 %>
 <div id="main_menu" class="grid_9 clearfix">
 	<nav class="navigation_menu"> 
 		<header>
 			<h5>Navigation Menu</h5>
 		</header>
-		<ul class='menu <%=oldBrowser ? "old-style" : "new-style"%>'>
+		<ul class='menu new-style'>
 			<li class='menuitem <%=name.equals(Consts.MENU_CATEGORY_PROJECTS) ? selClass: ""%>'>
 				<div class="menuitem-right">
 					<a class="menulink" style="cursor: default;">Projects&nbsp;<img src="/resource/img/template/icon_arrowdown.png" alt="arrow down" style="height: 4px; width: 7px; margin-bottom: 4px;" /></a>
