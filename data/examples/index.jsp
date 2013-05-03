@@ -30,6 +30,8 @@
 			<a class="demo" href="/resource/js/examples/index-bootjackdquery.html">Demo</a>
 			<span class="sepbar"></span>
 			<a class="source" href="https://github.com/rikulo/bootjack/blob/master/example/demo.dart">Source Code</a>
+			<span class="sepbar"></span>
+			<a class="blog" href="http://blog.rikulo.org/posts/2013/May/General/bootjack-dquery/">Blog post</a>
 		</div>
 	</div>
 	<div class="item support grid_4 omega">
