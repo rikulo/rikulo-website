@@ -18,18 +18,18 @@
 		</div>
 	</div>
 	<div class="item grid_4">
-		<a class="img" href="/resource/js/examples/index-circles.html">
-			<img alt="Circles" src="/resource/img/examples/demo_circles.png">
+		<a class="img" href="/resource/js/examples/index-bootjackdquery.html">
+			<img alt="Circles" src="/resource/img/examples/demo_bootjack.png">
 		</a>
 		<h3 class="title"><a href="/resource/js/examples/index-circles.html">
-			Circles</a></h3>
+			Bootjack</a></h3>
 		<p class="desc">
-			Implement a circular animation using Rikulo's canvas
+			Bring the power of Twitter Bootstrap and jQuery into your Dart application
 		</p>
 		<div class="buttons">
-			<a class="demo" href="/resource/js/examples/index-circles.html">Demo</a>
+			<a class="demo" href="/resource/js/examples/index-bootjackdquery.html">Demo</a>
 			<span class="sepbar"></span>
-			<a class="source" href="https://github.com/rikulo/ui/blob/master/example/circle/CircleOnCanvas.dart">Source Code</a>
+			<a class="source" href="https://github.com/rikulo/bootjack/blob/master/example/demo.dart">Source Code</a>
 		</div>
 	</div>
 	<div class="item support grid_4 omega">

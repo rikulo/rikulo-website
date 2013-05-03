@@ -55,7 +55,7 @@
 			</ul>
 		</div>
 		<div class="grid_4">
-			<h2>Examples</h2>
+			<h2><a href="/examples/">Examples</a></h2>
 			<div class="example clearfix" onClick="">
 				<a href="/resource/js/examples/index-snake.html">
 					<img src="/resource/img/examples/demo_snake.png" alt="Snake Game">

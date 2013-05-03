@@ -23,6 +23,8 @@
 						</ul>
 				</div>
 			</li>
+			<li class='menuitem <%=name.equals(Consts.MENU_CATEGORY_EXAMPLES) ? selClass: ""%>'>
+				<a href="/examples/" class="menulink">Examples</a>
 			<li class='menuitem <%=name.equals(Consts.MENU_CATEGORY_CONTRIBUTE) ? selClass: ""%>'>
 				<a href="/contribute/" class="menulink">Contribute</a>
 			</li>
