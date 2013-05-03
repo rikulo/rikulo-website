@@ -19,9 +19,9 @@
 	</div>
 	<div class="item grid_4">
 		<a class="img" href="/resource/js/examples/index-bootjackdquery.html">
-			<img alt="Circles" src="/resource/img/examples/demo_bootjack.png">
+			<img alt="Bootjack" src="/resource/img/examples/demo_bootjack.png">
 		</a>
-		<h3 class="title"><a href="/resource/js/examples/index-circles.html">
+		<h3 class="title"><a href="/resource/js/examples/index-bootjackdquery.html">
 			Bootjack</a></h3>
 		<p class="desc">
 			Bring the power of Twitter Bootstrap and jQuery into your Dart application
