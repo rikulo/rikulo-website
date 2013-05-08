@@ -29,9 +29,9 @@
 								<li><a href="http://api.rikulo.org" title="Rikulo API Reference">Rikulo UI API</a></li>
 								<li><a href="http://api.rikulo.org/bootjack/latest/" title="Bootjack API Reference">Bootjack API</a></li>
 								<li><a href="http://api.rikulo.org/dquery/latest/" title="DQuery API Reference">DQuery API</a></li>
-								<li><a href="http://api.rikulo.org/uxl/latest/" title="Rikulo UXL API Reference">Rikulo UXL API</a></li>
 								<li><a href="http://api.rikulo.org/gap/latest/" title="Rikulo Gap API Reference">Rikulo Gap API</a></li>
 								<li><a href="http://api.rikulo.org/commons/latest/" title="Rikulo Commons API Reference">Rikulo Commons API</a></li>
+								<li><a href="http://api.rikulo.org/uxl/latest/" title="Rikulo UXL API Reference">Rikulo UXL API</a></li>
 							</ul></li>
 					</ul>
 				</div>
