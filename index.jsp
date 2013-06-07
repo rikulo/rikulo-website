@@ -29,9 +29,6 @@
 <%@include file="/WEB-INF/templates/page/template_header.jsp"%>
 </div>
 </div>
-<style type="text/css">
-		
-</style>
 
 <div id="row-banner">
 	<div id="row-banner-mobile" class="container_12 clearfix">
