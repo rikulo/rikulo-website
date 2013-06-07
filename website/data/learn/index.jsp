@@ -38,8 +38,9 @@
 				<div class="support grid_4 omega">
 					<h2>Support</h2>
 					<ul class="items">
-						<li><a onclick="_gaq.push(['_trackEvent', 'question', 'support-stack']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Discussion at Stackoverflow">Discussion</a></li>
-						<li><a href="https://github.com/rikulo/ui/issues" title="Issues">Issues</a></li>
+						<li><a onclick="_gaq.push(['_trackEvent', 'question', 'support-stack']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">HOWTO Questions</a></li>
+						<li><a onclick="_gaq.push(['_trackEvent', 'discussion', 'ask-button']);" href="https://groups.google.com/forum/?fromgroups#!forum/rikulo" title="Discuss on Discussion Group">General Discussion</a></li>
+						<li><a href="https://github.com/rikulo/ui/issues" title="Features and Bugs">Features and Bugs</a></li>
 					</ul>
 				</div>
 			</div>
@@ -79,8 +80,9 @@
 				<div class="support grid_4 omega">
 					<h2>Support</h2>
 					<ul class="items">
-						<li><a onclick="_gaq.push(['_trackEvent', 'question', 'support-stack']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Discussion at Stackoverflow">Discussion</a></li>
-						<li><a href="https://github.com/rikulo/stream/issues" title="Issues">Issues</a></li>
+						<li><a onclick="_gaq.push(['_trackEvent', 'question', 'support-stack']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask HOWTO Questions</a></li>
+						<li><a onclick="_gaq.push(['_trackEvent', 'discussion', 'ask-button']);" href="https://groups.google.com/forum/?fromgroups#!forum/rikulo" title="Discuss on Discussion Group">General Discussion</a></li>
+						<li><a href="https://github.com/rikulo/stream/issues" title="Features and Bugs">Features and Bugs</a></li>
 					</ul>
 				</div>
 			</div>

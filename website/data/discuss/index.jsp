@@ -6,9 +6,9 @@
 			<img src="/resource/img/discuss/stackoverflow.png" alt="Stackoverflow" title="Stackoverflow"/>
   			<div class="item-cnt">
 	  			<p class="desc">
-For HOWTO questions, please ask on <a href="http://stackoverflow.com/questions/tagged/rikulo">Stackoverflow</a>
+For HOWTO questions, please ask on <a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" href="http://stackoverflow.com/questions/tagged/rikulo">Stackoverflow</a>
 and use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.<br/>
-For the general issues, please discuss on <a href="https://groups.google.com/forum/?fromgroups#!forum/rikulo">Google Groups</a>.
+For the general issues, please discuss on <a onclick="_gaq.push(['_trackEvent', 'discussion', 'ask-button']);" href="https://groups.google.com/forum/?fromgroups#!forum/rikulo">Rikulo's discussion group</a>.
 		  		</p>
 	  		</div>
 	  		<div class="button">

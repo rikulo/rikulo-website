@@ -34,8 +34,8 @@
 				on Stackoverflow
 			</li>
 			<li>
-				<a href="mailto:info@rikulo.org" title="Share your thoughts">Share your thoughts</a> 
-				on the Rikulo's projects
+				<a href="https://groups.google.com/forum/?fromgroups#!forum/rikulo" title="Share your thoughts">Share your thoughts</a> 
+				on Rikulo's discussion group
 			</li>
 		</ul>
 	</div>
