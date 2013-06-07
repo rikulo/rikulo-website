@@ -7,19 +7,12 @@
   			<div class="item-cnt">
 	  			<p class="desc">
 For HOWTO questions, please ask on <a href="http://stackoverflow.com/questions/tagged/rikulo">Stackoverflow</a>
-and use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.
-		  		</p>
-	  		</div>
-	  		<div class="button">
-  				<a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
-	  		</div>
-  			<div class="item-cnt">
-	  			<p class="desc">
+and use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.<br/>
 For the general issues, please discuss on <a href="https://groups.google.com/forum/?fromgroups#!forum/rikulo">Google Groups</a>.
 		  		</p>
 	  		</div>
 	  		<div class="button">
-  				<a onclick="_gaq.push(['_trackEvent', 'discussion', 'ask-button']);" href="https://groups.google.com/forum/?fromgroups#!forum/rikulo" title="Discuss on Google Groups">Discuss on Google Groups</a>
+  				<a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
 	  		</div>
 		</div>
 		<div class="item email">
