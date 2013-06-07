@@ -1,5 +1,4 @@
-bin
-/.settings
-/.project
-/.classpath
-/WEB-INF/classes
+.settings
+.project
+.classpath
+/website/WEB-INF/classes
