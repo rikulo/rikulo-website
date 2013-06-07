@@ -11,8 +11,15 @@ and use the <img class="tag" src="../../resource/img/discuss/tag.png"> tag.<br/>
 For the general issues, please discuss on <a onclick="_gaq.push(['_trackEvent', 'discussion', 'ask-button']);" href="https://groups.google.com/forum/?fromgroups#!forum/rikulo">Rikulo's discussion group</a>.
 		  		</p>
 	  		</div>
-	  		<div class="button">
-  				<a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Ask Question on Stackoverflow">Ask Question on Stackoverflow</a>
+	  		<div class="button ask-button">
+	  			<a onclick="_gaq.push(['_trackEvent', 'question', 'ask-button']);" 
+	  				href="http://stackoverflow.com/questions/tagged/rikulo" 
+	  					title="Ask Question">Ask Question</a>
+			</div>
+			<div class="button discussion-button">
+  				<a onclick="_gaq.push(['_trackEvent', 'discussion', 'ask-button']);" 
+  					href="https://groups.google.com/forum/?fromgroups#!forum/rikulo" 
+  						title="Discussion Group">Discussion Group</a>
 	  		</div>
 		</div>
 		<div class="item email">
@@ -32,7 +39,9 @@ a technical problem please drop us an email.
 		<h2>Latest discussions</h2>
 		<jsp:include page="/WEB-INF/templates/articles/discussions-page.html" />
 		<div class="button">
-			<a onclick="_gaq.push(['_trackEvent', 'question', 'join-discussion']);" href="http://stackoverflow.com/questions/tagged/rikulo" title="Join Discussion">Join Discussion</a>
+			<a onclick="_gaq.push(['_trackEvent', 'question', 'join-discussion']);" 
+				href="http://stackoverflow.com/questions/tagged/rikulo" 
+				title="Ask Question">Ask Question</a>
   		</div>
 	</div>
 </div>
