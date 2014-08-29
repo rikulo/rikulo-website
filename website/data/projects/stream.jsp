@@ -44,6 +44,10 @@
 				<li><a href="/contribute/">Contribute to Rikulo Stream</a></li>
 				<li><a href="/discuss/">Get help with Rikulo Stream</a></li>
 			</ul>
+			<h2>Who Uses</h2>
+			<ul>
+			  <li><a href="https://quire.io">Quire</a> - a simple, collaborative, multi-level task management tool.</li>
+			</ul>
 		</div>
 	</div>
 </div>
